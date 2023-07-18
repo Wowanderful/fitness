@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -381,8 +382,16 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
   background-color: #ffffff;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 a {
@@ -483,6 +492,11 @@ button,
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
 }
 
 .wrapper {
@@ -1236,6 +1250,338 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.header {
+  background-color: #102654;
+}
+
+.header__phone {
+  color: #FFF;
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.78px;
+}
+
+.hero__header {
+  color: #FFF;
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 92px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+}
+
+.hero__city-name {
+  color: #FFF;
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+}
+
+.hero__list li {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.section-title {
+  color: #102654;
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+}
+
+.gym-text__subtitle {
+  color: #102654;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.gym-text__text {
+  color: #102654;
+  line-height: 24px;
+}
+
+.membership {
+  background-color: #F8F9FC;
+}
+
+.month {
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.plan__title {
+  color: #102654;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28.641px;
+}
+
+.plan__subtitle {
+  color: #102654;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.plan__price {
+  color: #103AAE;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px; /*Вставить иконку рубля*/
+}
+
+.supergames {
+  background-color: #ED0233;
+  color: #ffffff;
+}
+
+.supergames__title {
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 78.72px;
+  letter-spacing: 2.46px;
+}
+
+.date__title,
+.time__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.date__number,
+.time__data {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.date__other {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.slide {
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+}
+
+.slide__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.slide__subname {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.slide__list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.features {
+  background-color: #F8F9FC;
+}
+
+.feature__number {
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 106.5px;
+  color: #2E35AC;
+}
+
+.feature__name {
+  color: #102654;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.feature__legend {
+  color: #2E35AC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.feature__description {
+  color: #102654;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 122.4px;
+}
+
+.feature--highlighted {
+  background-color: #1C3374;
+}
+
+.feature--highlighted .feature__number {
+  color: #ffffff;
+}
+
+.feature--highlighted .feature__name {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.feature--highlighted .feature__description {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.promotion-main {
+  background-color: #ED0233;
+  color: #ffffff;
+}
+
+.promotion-main__legend {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.promotion-main__number {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 110px;
+}
+
+.promotion-main__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.promotion-main__link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.promotion {
+  color: #1C3374;
+}
+
+.promotion__name {
+  font-size: 26px;
+  line-height: 150px;
+  font-weight: 700;
+}
+
+.promotion__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.promotion__link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.faq {
+  background-color: #F8F9FC;
+}
+
+.tab {
+  color: #102654;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.question {
+  color: #102654;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.feedback-slide {
+  background-color: #1C3374;
+  color: #ffffff;
+}
+
+.feedback-slide__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.feedback-slide__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.free {
+  background-color: #102654;
+  color: #ffffff;
+}
+
+.free__title {
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: 1.62px;
+}
+
+.name-wrapper input,
+.tel-wrapper input {
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px #ffffff solid;
+  background-color: #102654;
+}
+
+.contact-block__header {
+  color: #102654;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contact-block__text {
+  color: #102654;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer {
+  background-color: #030A1A;
+}
+
+.footer-nav__link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {

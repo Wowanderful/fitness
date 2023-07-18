@@ -1,0 +1,52 @@
+.features {
+  background-color: #F8F9FC;
+}
+
+.feature__number {
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 106.5px;
+  color: #2E35AC;
+}
+
+.feature__name {
+  color: #102654;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.feature__legend {
+  color: #2E35AC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.feature__description {
+  color: #102654;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 122.4px;
+}
+
+.feature--highlighted {
+  background-color: #1C3374;
+}
+
+.feature--highlighted .feature__number {
+  color: #ffffff;
+}
+.feature--highlighted .feature__name {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.feature--highlighted .feature__description {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+

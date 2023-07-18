@@ -1,0 +1,21 @@
+.free {
+  background-color: #102654;
+  color: #ffffff;
+}
+
+.free__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: 1.62px;
+}
+
+.name-wrapper input,
+.tel-wrapper input {
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px #ffffff solid;
+  background-color: #102654;
+}
