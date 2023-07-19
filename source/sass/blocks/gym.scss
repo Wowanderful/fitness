@@ -9,11 +9,18 @@
 
 .gym-wrapper {
   display: flex;
+  position: relative;
 }
 
 .gym-text {
   display: flex;
   flex-direction: column;
+  width: 360px;
+  margin-right: 7%;
+}
+
+.gym-text__title {
+  margin-top: 30px;
 }
 
 .gym-text__subtitle {
@@ -26,4 +33,50 @@
 .gym-text__text {
   color: #102654;
   line-height: 24px;
+}
+
+.gym__photo-video {
+  position: relative;
+  margin-bottom:245px;
+}
+
+.gym-video {
+  position: absolute;
+  top: 75%;
+  left: -5%;
+}
+
+.gym-video__container {
+  position: relative;
+  &::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("../../img/playbutton.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    // background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%),
+    //           url("../../img/svg/logo-mobile.svg");
+    // background-size: 100%, 50% 50%;
+    // background-position: center, center;
+    // background-repeat: no-repeat, no-repeat;
+    // box-sizing: border-box;
+    // border: white 10px solid;
+    // outline: 2px #111 solid;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+
+    @include hover-focus {
+      background-image: url("../../img/playbutton-hover.png");
+    };
+
+    @include active {
+      background-image: url("../../img/playbutton-hover.png");
+    }
+  }
 }

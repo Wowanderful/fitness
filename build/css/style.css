@@ -392,6 +392,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -577,7 +579,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 100vp;
+  width: 100vw;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 100px;
@@ -1512,6 +1514,7 @@ h1, h2, h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .gym-text {
@@ -1522,6 +1525,12 @@ h1, h2, h3, h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 360px;
+  margin-right: 7%;
+}
+
+.gym-text__title {
+  margin-top: 30px;
 }
 
 .gym-text__subtitle {
@@ -1534,6 +1543,46 @@ h1, h2, h3, h4 {
 .gym-text__text {
   color: #102654;
   line-height: 24px;
+}
+
+.gym__photo-video {
+  position: relative;
+  margin-bottom: 245px;
+}
+
+.gym-video {
+  position: absolute;
+  top: 75%;
+  left: -5%;
+}
+
+.gym-video__container {
+  position: relative;
+}
+.gym-video__container::before {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("../../img/playbutton.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+}
+@media (hover: hover) {
+  .gym-video__container::before:hover:not(.focus-visible) {
+    background-image: url("../../img/playbutton-hover.png");
+  }
+}
+.gym-video__container::before.focus-visible:focus {
+  background-image: url("../../img/playbutton-hover.png");
+}
+.gym-video__container::before.focus-visible:active {
+  background-image: url("../../img/playbutton-hover.png");
 }
 
 .membership {
@@ -1860,6 +1909,8 @@ h1, h2, h3, h4 {
 
 .footer {
   background-color: #030A1A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer-wrapper {
@@ -1869,6 +1920,26 @@ h1, h2, h3, h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+@media (max-width: 1199px) {
+  .footer-wrapper {
+    padding-top: 47px;
+    padding-bottom: 49px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-wrapper {
+    padding-top: 50px;
+    padding-bottom: 52px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer-nav {
@@ -1877,12 +1948,83 @@ h1, h2, h3, h4 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .footer-nav {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-nav__item {
+  margin-right: 40px;
 }
 
 .footer-nav__link {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
+}
+@media (hover: hover) {
+  .footer-nav__link:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0px 2px 0px 0px #fff;
+            box-shadow: 0px 2px 0px 0px #fff;
+  }
+}
+.footer-nav__link.focus-visible:focus {
+  outline: solid 2px #fff;
+  border-radius: none;
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social__item {
+  margin-left: 11px;
+}
+
+.footer-social__link {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (hover: hover) {
+  .footer-social__link:hover:not(.focus-visible) {
+    background-color: #103AAE;
+  }
+}
+.footer-social__link.focus-visible:focus {
+  background-color: #103AAE;
+}
+.footer-social__link.focus-visible:active {
+  background-color: #102654;
+}
+
+.footer-social__link:hover svg, .footer-social__link:active svg,
+.footer-social__link:focus svg {
+  fill: #fff;
 }
 
 /* @mixin hover-focus {
