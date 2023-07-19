@@ -1257,7 +1257,7 @@ h1, h2, h3, h4 {
 }
 
 .header {
-  background-color: #102654;
+  background: conic-gradient(from 279deg at 16.03% 39.06%, #003d85 32deg, #b80027 152deg, #003d85 333deg);
 }
 
 .header-wrapper {
