@@ -7,6 +7,15 @@
   letter-spacing: 1.44px;
 }
 
+.gym-wrapper {
+  display: flex;
+}
+
+.gym-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .gym-text__subtitle {
   color: #102654;
   font-size: 18px;

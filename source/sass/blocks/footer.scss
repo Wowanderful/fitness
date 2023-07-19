@@ -1,6 +1,15 @@
 .footer {
   background-color: #030A1A;
+}
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-nav__link {

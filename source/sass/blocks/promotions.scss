@@ -1,6 +1,17 @@
+.promotions-list {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  grid-template-rows: 211px 211px;
+  grid-gap: 20px;
+  margin-bottom: 60px;
+}
+
 .promotion-main {
   background-color: #ED0233;
   color: #ffffff;
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  display: flex;
 }
 
 .promotion-main__legend {

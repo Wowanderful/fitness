@@ -24,7 +24,7 @@
   <body>
 
       <header class="header">
-        <div class="container">
+        <div class="container header-wrapper">
           <div class="header__upper-block upper-block">
             <a class="header__logo" href="index.html" aria-label="Логотип фитнесс-центра Supergym">
               <svg class="header__logo-img" width="119" height="23" viewBox="0 0 119 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,78 +58,85 @@
       <main class="main-page">
 
         <section class="gym"> <!--Блок тренажерные залы-->
-          <div class="gym__element gym-text">
-            <h2 class="section-title gym-text__title">Тренажёрный зал</h2>
-            <p class="gym-text__subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="gym-text__text">
-              <p class="gym-text__text-paragraph">
-                Supergym – самый большой фитнес центр за Уралом и идеальное место для
-                укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым
-                современным оборудованием для всех спортсменов.
+          <div class="container gym-wrapper">
+            <div class="gym__element gym-text">
+              <h2 class="section-title gym-text__title">Тренажёрный зал</h2>
+              <p class="gym-text__subtitle">Просторный зал площадью 900 кв/м</p>
+              <p class="gym-text__text">
+                <p class="gym-text__text-paragraph">
+                  Supergym – самый большой фитнес центр за Уралом и идеальное место для
+                  укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым
+                  современным оборудованием для всех спортсменов.
+                </p>
+                <p class="gym-text__text-paragraph">
+                  В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+                  Также в фитнес центре есть несколько оборудованных залов для различных
+                  видов групповых занятий.
+                </p>
               </p>
-              <p class="gym-text__text-paragraph">
-                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-                Также в фитнес центре есть несколько оборудованных залов для различных
-                видов групповых занятий.
-              </p>
-            </p>
-          </div>
-          <div class="gym__element gym-photo">
-            <div class="gym-photo__container">
-              <picture>
-                <img src="img/gym-desktop.jpg" width="660" height="401" alt="Фотография тренажёрного зала">
-              </picture>
             </div>
-          </div>
-          <div class="gym__element gym-video">
-            <div class="gym-video__container">
-            <video width="364" height="268" controls poster="img/gym-video-desktop.png">
-              <source src="https://www.youtube.com/watch?v=9TZXsZItgdw" type="video/mp4">
-            </video>
+            <div class="gym__element gym-photo">
+              <div class="gym-photo__container">
+                <picture>
+                  <img src="img/gym-desktop.jpg" width="660" height="401" alt="Фотография тренажёрного зала">
+                </picture>
+              </div>
+            </div>
+            <div class="gym__element gym-video">
+              <div class="gym-video__container">
+              <video width="364" height="268" controls poster="img/gym-video-desktop.png">
+                <source src="https://www.youtube.com/watch?v=9TZXsZItgdw" type="video/mp4">
+              </video>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="membership"> <!--Блок Абонементы-->
-          <h2 class="section-title membership__title">Абонементы</h2>
-          <div class="month">1 месяц</div>
-          <div class="month">6 месяцев</div>
-          <div class="month">12 месяцев</div>
-          <div class="membership__plan-card plan">
-            <h3 class="plan__title">С тренером</h3>
-            <p class="plan__subtitle">12 занятий</p>
-            <p class="plan__price">5000 P</p>
-            <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
-          </div>
-          <!--Реализация табов http://htmlonelove.top/liga-reshare/tabs.html-->
+          <div class="container">
+            <h2 class="section-title membership__title">Абонементы</h2>
+            <div class="month">1 месяц</div>
+            <div class="month">6 месяцев</div>
+            <div class="month">12 месяцев</div>
+            <div class="membership__plan-card plan">
+              <h3 class="plan__title">С тренером</h3>
+              <p class="plan__subtitle">12 занятий</p>
+              <p class="plan__price">5000 P</p>
+              <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+            </div>
+
+          </div>  <!--Реализация табов http://htmlonelove.top/liga-reshare/tabs.html-->
         </section>
 
         <aside class="commercial"> <!--Блок Supergames-->
-          <div class="commercial__text supergames">
-            <h2 class="supergames__title">Super Games</h2>
-            <div class="supergames__dateandtime dateandtime">
-              <p class="dateandtime__date-column date">
-                <p class="date__title">Дата</p>
-                <p class="date__data">
-                  <span class="date__number">7</span>
-                  <span class="date__other">марта 2019</span>
+          <div class="container commercial-wrapper">
+            <div class="commercial__text supergames">
+              <h2 class="supergames__title">Super Games</h2>
+              <div class="supergames__dateandtime dateandtime">
+                <p class="dateandtime__date-column date">
+                  <p class="date__title">Дата</p>
+                  <p class="date__data">
+                    <span class="date__number">7</span>
+                    <span class="date__other">марта 2019</span>
+                  </p>
                 </p>
-              </p>
-              <p class="dateandtime__time-column time">
-                <p class="time__title">Время</p>
-                <p class="time__data">12:00</p>
-              </p>
+                <p class="dateandtime__time-column time">
+                  <p class="time__title">Время</p>
+                  <p class="time__data">12:00</p>
+                </p>
+              </div>
+              <div class="supergames__description">Ежегодные соревнования по CrossFit</div>
+              <a class="button btn button-standard button-link" href="#">Заполнить заявку</a>
             </div>
-            <div class="supergames__description">Ежегодные соревнования по CrossFit</div>
-            <a class="button btn button-standard button-link" href="#">Заполнить заявку</a>
-          </div>
-          <div class="commercial__photo">
-            <img src="img/slpash-desktop.png" width="660" height="500" alt="Спортивный мужчина разбивает лёд, летят брызги">
+            <div class="commercial__photo">
+              <img src="img/slpash-desktop.png" width="660" height="500" alt="Спортивный мужчина разбивает лёд, летят брызги">
+            </div>
           </div>
         </aside>
 
         <section class="coaches"> <!--Раздел Тренеры-->
           <!--Реализация слайдера - SwiperJS-->
+          <div class="container">
           <h2 class="section-title coaches__title">Тренеры</h2>
           <div class="slide">
             <img src="img/coach1-desktop.png" width="260" height="294" alt="Фотография тренера">
@@ -141,74 +148,81 @@
               <li>Опыт- 6 лет</li>
             </ul>
           </div>
+          </div>
         </section>
 
         <section class="features"> <!--Блок Наши Преимущества-->
-          <h2 class="section-title features__title">Наши преимущества</h2>
-          <ul class="features__list features-list">
-            <li class="features__item feature">
-              <p class="feature__number">900</p>
-              <p class="feature__legend">кв/м</p>
-              <h3 class="feature__name">Площадь</h3>
-              <p class="feature__description">Занимайтесь без очередей и толкучки</p>
-            </li>
-            <li class="features__item feature">
-              <p class="feature__number">70</p>
-              <p class="feature__legend">машин</p>
-              <h3 class="feature__name">Собственная парковка</h3>
-              <p class="feature__description">Вы всегда найдете место для своей машины на нашей парковке</p>
-            </li>
-            <li class="features__item feature feature--highlighted">
-              <p class="feature__number">100</p>
-              <p class="feature__legend"></p>
-              <h3 class="feature__name">Тренажёров</h3>
-              <p class="feature__description">Современные тренажеры на все группы мышц</p>
-            </li>
-            <li class="features__item feature">
-              <p class="feature__number">350</p>
-              <p class="feature__legend">мест</p>
-              <h3 class="feature__name">Комфорт</h3>
-              <p class="feature__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </li>
-            <li class="features__item feature">
-              <p class="feature__number">5+</p>
-              <p class="feature__legend">лет</p>
-              <h3 class="feature__name">Тренерский опыт</h3>
-              <p class="feature__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-            </li>
-          </ul>
+          <div class="container">
+            <h2 class="section-title features__title">Наши преимущества</h2>
+            <ul class="features__list features-list">
+              <li class="features__item feature">
+                <p class="feature__number">900</p>
+                <p class="feature__legend">кв/м</p>
+                <h3 class="feature__name">Площадь</h3>
+                <p class="feature__description">Занимайтесь без очередей и толкучки</p>
+              </li>
+              <li class="features__item feature">
+                <p class="feature__number">70</p>
+                <p class="feature__legend">машин</p>
+                <h3 class="feature__name">Собственная парковка</h3>
+                <p class="feature__description">Вы всегда найдете место для своей машины на нашей парковке</p>
+              </li>
+              <li class="features__item feature feature--highlighted">
+                <p class="feature__number">100</p>
+                <p class="feature__legend"></p>
+                <h3 class="feature__name">Тренажёров</h3>
+                <p class="feature__description">Современные тренажеры на все группы мышц</p>
+              </li>
+              <li class="features__item feature">
+                <p class="feature__number">350</p>
+                <p class="feature__legend">мест</p>
+                <h3 class="feature__name">Комфорт</h3>
+                <p class="feature__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </li>
+              <li class="features__item feature">
+                <p class="feature__number">5+</p>
+                <p class="feature__legend">лет</p>
+                <h3 class="feature__name">Тренерский опыт</h3>
+                <p class="feature__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <aside class="promotions"> <!--Блок Акции-->
-          <h2 class="section-title promotions__title">Акции</h2>
-          <ul class="promotions__list promotions-list">
-            <li class="promotions-list__item promotion-main">
-              <div class="promotion-main__text-block">
-                <p class="promotion-main__legend">Год</p>
-                <p class="promotion-main__number">4999</p>
-                <p class="promotion-main__text">Безлимитный абонемент в тренажерный зал</p>
-                <a class="promotion-main__link">Подробнее</a>
-              </div>
-              <div class="promotion-main__photo block">
-                <img src="img/lady-desktop.jpg" width="280" height="462" alt="Изображениедевушка в синем спортивном костюме">
-              </div>
-            </li>
-            <li class="promotions-list__item promotion">
-              <p class="promotion__name">Месяц бесплатно</p>
-              <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
-              <a class="promotion__link">Подробнее</a>
-            </li>
-            <li class="promotions-list__item promotion">
-              <p class="promotion__name">Скидка 20%</p>
-              <p class="promotion__text">Корпоративный фитнес с командой</p>
-              <a class="promotion__link">Подробнее</a>
-            </li>
-          </ul>
+          <div class="container">
+            <h2 class="section-title promotions__title">Акции</h2>
+            <ul class="promotions__list promotions-list">
+              <li class="promotions-list__item promotion-main">
+                <div class="promotion-main__text-block">
+                  <p class="promotion-main__legend">Год</p>
+                  <p class="promotion-main__number">4999</p>
+                  <p class="promotion-main__text">Безлимитный абонемент в тренажерный зал</p>
+                  <a class="promotion-main__link">Подробнее</a>
+                </div>
+                <div class="promotion-main__photo block">
+                  <img src="img/lady-desktop.jpg" width="280" height="462" alt="Изображениедевушка в синем спортивном костюме">
+                </div>
+              </li>
+              <li class="promotions-list__item promotion">
+                <p class="promotion__name">Месяц бесплатно</p>
+                <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
+                <a class="promotion__link">Подробнее</a>
+              </li>
+              <li class="promotions-list__item promotion">
+                <p class="promotion__name">Скидка 20%</p>
+                <p class="promotion__text">Корпоративный фитнес с командой</p>
+                <a class="promotion__link">Подробнее</a>
+              </li>
+            </ul>
+          </div>
         </aside>
 
         <section class="faq"> <!--Блок Вопросы и ответы-->
           <!--Реализация аккордеона http://htmlonelove.top/liga-reshare/accordion.html-->
+          <div class="container">
           <h2 class="section-title faq__title">Вопросы и ответы</h2>
+          <div class="tab-wrapper">
           <div class="faq__tabsblock">
             <div class="tab">Центр</div>
             <div class="tab">Абонемент</div>
@@ -221,72 +235,82 @@
             <div class="question">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</div>
             <div class="question">Что такое семейный доступ и доступ для друзей?</div>
           </div>
+          </div>
+          </div>
         </section>
 
         <section class="feedback"> <!--Блок Отзывы-->
-          <h2 class="section-title feedback__title">Отзывы</h2>
-          <div class="feedback__slider feedback-slider">
-            <div class="feedback-slide">
-              <h3 class="feedback-slide__name">Анна Орлова</h3>
-              <p class="feedback-slide__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-            <div class="feedback-slide">
-              <h3 class="feedback-slide__name">Вася Пупкин</h3>
-              <p class="feedback-slide__text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.»</p>
+          <div class="container">
+            <h2 class="section-title feedback__title">Отзывы</h2>
+            <div class="feedback__slider feedback-slider">
+              <div class="feedback-slide">
+                <h3 class="feedback-slide__name">Анна Орлова</h3>
+                <p class="feedback-slide__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                  тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+              <div class="feedback-slide">
+                <h3 class="feedback-slide__name">Вася Пупкин</h3>
+                <p class="feedback-slide__text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.»</p>
+              </div>
             </div>
           </div>
         </section>
 
         <div class="lower-block">
+          <div class="container lower-wrapper">
           <section class="free"> <!--Блок Бесплатное занятие-->
-            <h2 class="free__title">Бесплатное занятие</h2>
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <div class="name-wrapper">
-                <label>
-                  <input type="text" name="name" id="name-form" placeholder="Имя" aria-label="Имя" required>
-                </label>
-              </div>
-              <div class="tel-wrapper">
-                <label>
-                  <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required
-                  pattern="[0-9]{10}">
-                </label>
-              </div>
-              <button type="submit" class="button btn button-standard button-send">Отправить</button>
-            </form>
+            <div class="container">
+              <h2 class="free__title">Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="name-wrapper">
+                  <label>
+                    <input type="text" name="name" id="name-form" placeholder="Имя" aria-label="Имя" required>
+                  </label>
+                </div>
+                <div class="tel-wrapper">
+                  <label>
+                    <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required
+                    pattern="[0-9]{10}">
+                  </label>
+                </div>
+                <button type="submit" class="button btn button-standard button-send">Отправить</button>
+              </form>
+            </div>
           </section>
 
           <section class="contact-block"> <!--Блок Контакты-->
-            <h2 class="section-title contact-block__title">Контакты</h2>
-            <div class="contact-block__item address">
-              <h3 class="contact-block__header address__title">Адрес</h3>
-              <p class="contact-block__text address__text">г. Омск, ул. 60 лет Октября, 7</p>
-            </div>
-            <div class="contact-block__item schedule">
-              <h3 class="contact-block__header schedule__title">График работы</h3>
-              <p class="contact-block__text schedule__text">Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            <div class="contact-block__item phone">
-              <h3 class="contact-block__header phone__title">Телефон</h3>
-              <a class="contact-block__text phone__text" href="88005555555">8-800-555-55-55</a>
-            </div>
-            <div class="contact-block__item email">
-              <h3 class="contact-block__header email__title">Email</h3>
-              <a class="contact-block__text email__text" href="omsk@supergym.ru">omsk@supergym.ru</a>
+            <div class="container">
+              <h2 class="section-title contact-block__title">Контакты</h2>
+              <div class="contact-block__item address">
+                <h3 class="contact-block__header address__title">Адрес</h3>
+                <p class="contact-block__text address__text">г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contact-block__item schedule">
+                <h3 class="contact-block__header schedule__title">График работы</h3>
+                <p class="contact-block__text schedule__text">Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="contact-block__item phone">
+                <h3 class="contact-block__header phone__title">Телефон</h3>
+                <a class="contact-block__text phone__text" href="88005555555">8-800-555-55-55</a>
+              </div>
+              <div class="contact-block__item email">
+                <h3 class="contact-block__header email__title">Email</h3>
+                <a class="contact-block__text email__text" href="omsk@supergym.ru">omsk@supergym.ru</a>
+              </div>
             </div>
           </section>
+        </div>
         </div>
       </main>
 
       <footer class="footer">
-        <div class="container">
+        <div class="container footer-wrapper">
           <div class="footer-logo">
             <a class="hfooter__logo" href="#" aria-label="Логотип фитнесс-центра Supergym">
-              <svg class="footer__logo-img" width="88" height="32" viewBox="0 0 88 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.768 22.252C4.592 22.252 3.572 22.072 2.708 21.712C1.844 21.352 1.184 20.716 0.728 19.804C0.296 18.892 0.08 17.608 0.08 15.952V14.728C0.656 14.728 1.244 14.728 1.844 14.728C2.444 14.728 3.032 14.728 3.608 14.728V16.24C3.608 17.248 3.704 18.028 3.896 18.58C4.088 19.132 4.352 19.516 4.688 19.732C5.024 19.924 5.408 20.02 5.84 20.02C6.536 20.02 7.088 19.792 7.496 19.336C7.928 18.856 8.144 17.968 8.144 16.672C8.144 15.712 8 14.992 7.712 14.512C7.424 14.032 6.968 13.648 6.344 13.36C5.744 13.048 4.964 12.7 4.004 12.316C3.212 11.956 2.528 11.536 1.952 11.056C1.376 10.576 0.944 9.964 0.656 9.22C0.368 8.476 0.224 7.552 0.224 6.448C0.224 5.104 0.392 4.012 0.728 3.172C1.088 2.308 1.688 1.684 2.528 1.3C3.368 0.891999 4.496 0.688 5.912 0.688C7.736 0.688 9.128 1.108 10.088 1.948C11.048 2.764 11.528 3.964 11.528 5.548V8.032C10.976 8.032 10.412 8.032 9.836 8.032C9.284 8.032 8.72 8.032 8.144 8.032V6.556C8.144 5.452 7.964 4.66 7.604 4.18C7.268 3.676 6.716 3.424 5.948 3.424C5.156 3.424 4.58 3.664 4.22 4.144C3.884 4.6 3.716 5.332 3.716 6.34C3.716 7.204 3.884 7.876 4.22 8.356C4.556 8.812 4.988 9.172 5.516 9.436C6.068 9.7 6.632 9.94 7.208 10.156C8.288 10.564 9.164 10.984 9.836 11.416C10.508 11.848 11 12.424 11.312 13.144C11.624 13.864 11.78 14.884 11.78 16.204C11.78 17.716 11.528 18.916 11.024 19.804C10.544 20.668 9.848 21.292 8.936 21.676C8.048 22.06 6.992 22.252 5.768 22.252ZM20.9164 22.432C20.1004 22.432 19.3444 22.372 18.6484 22.252C17.9524 22.132 17.3524 21.892 16.8484 21.532C16.3444 21.172 15.9484 20.632 15.6604 19.912C15.3724 19.192 15.2284 18.22 15.2284 16.996V0.723999H18.6844V17.896C18.6844 18.544 18.7804 19.048 18.9724 19.408C19.1884 19.744 19.4644 19.972 19.8004 20.092C20.1364 20.212 20.5084 20.272 20.9164 20.272C21.3244 20.272 21.6964 20.212 22.0324 20.092C22.3684 19.972 22.6324 19.744 22.8244 19.408C23.0404 19.048 23.1484 18.544 23.1484 17.896V0.723999H26.5684V16.96C26.5684 18.184 26.4244 19.168 26.1364 19.912C25.8724 20.632 25.4884 21.172 24.9844 21.532C24.4804 21.892 23.8804 22.132 23.1844 22.252C22.4884 22.372 21.7324 22.432 20.9164 22.432ZM30.822 22V0.723999H38.022C39.366 0.723999 40.398 1.024 41.118 1.624C41.838 2.224 42.198 3.112 42.198 4.288V8.068C42.198 8.98 42.078 9.832 41.838 10.624C41.622 11.392 41.19 12.016 40.542 12.496C39.918 12.976 39.006 13.216 37.806 13.216H34.422V22H30.822ZM34.422 11.272H36.618C37.338 11.272 37.878 10.996 38.238 10.444C38.598 9.868 38.778 8.944 38.778 7.672V5.764C38.778 4.636 38.622 3.832 38.31 3.352C37.998 2.872 37.566 2.632 37.014 2.632H34.422V11.272ZM45.6045 22V0.723999H55.1805V3.172H49.2045V9.616H54.1365V12.316H49.2045V19.624H55.1805V22H45.6045ZM58.4534 22V0.723999H65.7974C67.1414 0.723999 68.1734 1.024 68.8934 1.624C69.6374 2.224 70.0094 3.112 70.0094 4.288V7.672C70.0094 8.848 69.6854 9.808 69.0374 10.552C68.3894 11.272 67.4294 11.668 66.1574 11.74C66.9734 11.812 67.5494 12.076 67.8854 12.532C68.2454 12.988 68.5694 13.696 68.8574 14.656L70.9094 22H67.0934L65.4014 14.908C65.2334 14.308 65.0414 13.78 64.8254 13.324C64.6094 12.868 64.2614 12.64 63.7814 12.64H62.0174V22H58.4534ZM62.0174 10.228H64.3214C65.1614 10.228 65.7494 10.012 66.0854 9.58C66.4454 9.148 66.6254 8.488 66.6254 7.6V4.9C66.6254 4.108 66.4574 3.532 66.1214 3.172C65.8094 2.812 65.3174 2.632 64.6454 2.632H62.0174V10.228ZM78.6132 22.396C77.7972 22.396 77.0292 22.264 76.3092 22C75.5892 21.76 75.0012 21.268 74.5452 20.524C74.1132 19.756 73.8972 18.616 73.8972 17.104V5.224C73.8972 3.928 74.1372 2.944 74.6172 2.272C75.0972 1.576 75.7692 1.108 76.6332 0.868C77.4972 0.603999 78.4932 0.471998 79.6212 0.471998C80.7492 0.471998 81.7452 0.603999 82.6092 0.868C83.4732 1.132 84.1452 1.612 84.6252 2.308C85.1292 2.98 85.3812 3.952 85.3812 5.224V8.104H82.0332V5.08C82.0332 4.36 81.9252 3.82 81.7092 3.46C81.5172 3.1 81.2412 2.86 80.8812 2.74C80.5452 2.62 80.1372 2.56 79.6572 2.56C79.2252 2.56 78.8292 2.62 78.4692 2.74C78.1092 2.86 77.8212 3.1 77.6052 3.46C77.4132 3.82 77.3172 4.36 77.3172 5.08V17.86C77.3172 18.58 77.4132 19.12 77.6052 19.48C77.8212 19.84 78.1092 20.08 78.4692 20.2C78.8292 20.32 79.2252 20.38 79.6572 20.38C80.3532 20.38 80.9172 20.176 81.3492 19.768C81.8052 19.336 82.0332 18.7 82.0332 17.86V13.54H79.9092V11.56H85.3812V22H82.7892L82.6092 20.2C82.5612 20.296 82.5012 20.404 82.4292 20.524C82.3572 20.62 82.2972 20.704 82.2492 20.776C81.9612 21.208 81.5292 21.592 80.9532 21.928C80.4012 22.24 79.6212 22.396 78.6132 22.396ZM91.9112 22V12.856L87.9512 0.723999H91.3712L93.6032 7.996L93.7832 9.112L93.9992 7.996L96.3392 0.723999H99.5432L95.3672 13.036V22H91.9112ZM102.449 22V0.723999H106.697L110.261 15.844L113.861 0.723999H118.073V22H115.013V5.584L111.449 22H109.073L105.509 5.584V22H102.449Z" fill="white"/>
+              <svg class="footer__logo-img" width="86" height="17" viewBox="0 0 86 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.888 16.182C4.03867 16.182 3.302 16.052 2.678 15.792C2.054 15.532 1.57733 15.0727 1.248 14.414C0.936 13.7553 0.78 12.828 0.78 11.632V10.748C1.196 10.748 1.62067 10.748 2.054 10.748C2.48733 10.748 2.912 10.748 3.328 10.748V11.84C3.328 12.568 3.39733 13.1313 3.536 13.53C3.67467 13.9287 3.86533 14.206 4.108 14.362C4.35067 14.5007 4.628 14.57 4.94 14.57C5.44267 14.57 5.84133 14.4053 6.136 14.076C6.448 13.7293 6.604 13.088 6.604 12.152C6.604 11.4587 6.5 10.9387 6.292 10.592C6.084 10.2453 5.75467 9.968 5.304 9.76C4.87067 9.53467 4.30733 9.28333 3.614 9.006C3.042 8.746 2.548 8.44267 2.132 8.096C1.716 7.74933 1.404 7.30733 1.196 6.77C0.988 6.23267 0.884 5.56533 0.884 4.768C0.884 3.79733 1.00533 3.00867 1.248 2.402C1.508 1.778 1.94133 1.32733 2.548 1.05C3.15467 0.755333 3.96933 0.608 4.992 0.608C6.30933 0.608 7.31467 0.911333 8.008 1.518C8.70133 2.10733 9.048 2.974 9.048 4.118V5.912C8.64933 5.912 8.242 5.912 7.826 5.912C7.42733 5.912 7.02 5.912 6.604 5.912V4.846C6.604 4.04867 6.474 3.47667 6.214 3.13C5.97133 2.766 5.57267 2.584 5.018 2.584C4.446 2.584 4.03 2.75733 3.77 3.104C3.52733 3.43333 3.406 3.962 3.406 4.69C3.406 5.314 3.52733 5.79933 3.77 6.146C4.01267 6.47533 4.32467 6.73533 4.706 6.926C5.10467 7.11667 5.512 7.29 5.928 7.446C6.708 7.74067 7.34067 8.044 7.826 8.356C8.31133 8.668 8.66667 9.084 8.892 9.604C9.11733 10.124 9.23 10.8607 9.23 11.814C9.23 12.906 9.048 13.7727 8.684 14.414C8.33733 15.038 7.83467 15.4887 7.176 15.766C6.53467 16.0433 5.772 16.182 4.888 16.182ZM15.8285 16.312C15.2392 16.312 14.6932 16.2687 14.1905 16.182C13.6878 16.0953 13.2545 15.922 12.8905 15.662C12.5265 15.402 12.2405 15.012 12.0325 14.492C11.8245 13.972 11.7205 13.27 11.7205 12.386V0.633999H14.2165V13.036C14.2165 13.504 14.2858 13.868 14.4245 14.128C14.5805 14.3707 14.7798 14.5353 15.0225 14.622C15.2652 14.7087 15.5338 14.752 15.8285 14.752C16.1232 14.752 16.3918 14.7087 16.6345 14.622C16.8772 14.5353 17.0678 14.3707 17.2065 14.128C17.3625 13.868 17.4405 13.504 17.4405 13.036V0.633999H19.9105V12.36C19.9105 13.244 19.8065 13.9547 19.5985 14.492C19.4078 15.012 19.1305 15.402 18.7665 15.662C18.4025 15.922 17.9692 16.0953 17.4665 16.182C16.9638 16.2687 16.4178 16.312 15.8285 16.312ZM22.9826 16V0.633999H28.1826C29.1532 0.633999 29.8986 0.850666 30.4186 1.284C30.9386 1.71733 31.1986 2.35867 31.1986 3.208V5.938C31.1986 6.59667 31.1119 7.212 30.9386 7.784C30.7826 8.33867 30.4706 8.78933 30.0026 9.136C29.5519 9.48267 28.8932 9.656 28.0266 9.656H25.5826V16H22.9826ZM25.5826 8.252H27.1686C27.6886 8.252 28.0786 8.05267 28.3386 7.654C28.5986 7.238 28.7286 6.57067 28.7286 5.652V4.274C28.7286 3.45933 28.6159 2.87867 28.3906 2.532C28.1652 2.18533 27.8532 2.012 27.4546 2.012H25.5826V8.252ZM33.6588 16V0.633999H40.5748V2.402H36.2588V7.056H39.8208V9.006H36.2588V14.284H40.5748V16H33.6588ZM42.9386 16V0.633999H48.2426C49.2133 0.633999 49.9586 0.850666 50.4786 1.284C51.0159 1.71733 51.2846 2.35867 51.2846 3.208V5.652C51.2846 6.50133 51.0506 7.19467 50.5826 7.732C50.1146 8.252 49.4213 8.538 48.5026 8.59C49.0919 8.642 49.5079 8.83267 49.7506 9.162C50.0106 9.49133 50.2446 10.0027 50.4526 10.696L51.9346 16H49.1786L47.9566 10.878C47.8353 10.4447 47.6966 10.0633 47.5406 9.734C47.3846 9.40467 47.1333 9.24 46.7866 9.24H45.5126V16H42.9386ZM45.5126 7.498H47.1766C47.7833 7.498 48.2079 7.342 48.4506 7.03C48.7106 6.718 48.8406 6.24133 48.8406 5.6V3.65C48.8406 3.078 48.7193 2.662 48.4766 2.402C48.2513 2.142 47.8959 2.012 47.4106 2.012H45.5126V7.498ZM57.4984 16.286C56.9091 16.286 56.3544 16.1907 55.8344 16C55.3144 15.8267 54.8897 15.4713 54.5604 14.934C54.2484 14.3793 54.0924 13.556 54.0924 12.464V3.884C54.0924 2.948 54.2657 2.23733 54.6124 1.752C54.9591 1.24933 55.4444 0.911333 56.0684 0.738C56.6924 0.547332 57.4117 0.451999 58.2264 0.451999C59.0411 0.451999 59.7604 0.547332 60.3844 0.738C61.0084 0.928666 61.4937 1.27533 61.8404 1.778C62.2044 2.26333 62.3864 2.96533 62.3864 3.884V5.964H59.9684V3.78C59.9684 3.26 59.8904 2.87 59.7344 2.61C59.5957 2.35 59.3964 2.17667 59.1364 2.09C58.8937 2.00333 58.5991 1.96 58.2524 1.96C57.9404 1.96 57.6544 2.00333 57.3944 2.09C57.1344 2.17667 56.9264 2.35 56.7704 2.61C56.6317 2.87 56.5624 3.26 56.5624 3.78V13.01C56.5624 13.53 56.6317 13.92 56.7704 14.18C56.9264 14.44 57.1344 14.6133 57.3944 14.7C57.6544 14.7867 57.9404 14.83 58.2524 14.83C58.7551 14.83 59.1624 14.6827 59.4744 14.388C59.8037 14.076 59.9684 13.6167 59.9684 13.01V9.89H58.4344V8.46H62.3864V16H60.5144L60.3844 14.7C60.3497 14.7693 60.3064 14.8473 60.2544 14.934C60.2024 15.0033 60.1591 15.064 60.1244 15.116C59.9164 15.428 59.6044 15.7053 59.1884 15.948C58.7897 16.1733 58.2264 16.286 57.4984 16.286ZM67.1025 16V9.396L64.2425 0.633999H66.7125L68.3245 5.886L68.4545 6.692L68.6105 5.886L70.3005 0.633999H72.6145L69.5985 9.526V16H67.1025ZM74.7134 16V0.633999H77.7814L80.3554 11.554L82.9554 0.633999H85.9974V16H83.7874V4.144L81.2134 16H79.4974L76.9234 4.144V16H74.7134Z" fill="white"/>
                 </svg>
             </a>
           </div>

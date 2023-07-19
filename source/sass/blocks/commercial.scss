@@ -1,6 +1,12 @@
+.commercial-wrapper {
+  display: flex;
+}
+
 .supergames {
   background-color: #ED0233;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .supergames__title {

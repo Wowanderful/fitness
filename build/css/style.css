@@ -499,6 +499,10 @@ ul, ol {
   margin: 0;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -576,11 +580,11 @@ ul, ol {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 100px;
 }
 @media (max-width: 1439px) {
   .container {
-    padding: 0 32px;
+    padding: 0 100px;
   }
 }
 @media (max-width: 1023px) {
@@ -1256,12 +1260,45 @@ ul, ol {
   background-color: #102654;
 }
 
+.header-wrapper {
+  padding-top: 30px;
+}
+
+.upper-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__phone {
   color: #FFF;
   font-family: "Alumni Sans", Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10%;
 }
 
 .hero__header {
@@ -1271,6 +1308,8 @@ ul, ol {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .hero__city-name {
@@ -1296,6 +1335,22 @@ ul, ol {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.44px;
+}
+
+.gym-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gym-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gym-text__subtitle {
@@ -1342,9 +1397,20 @@ ul, ol {
   line-height: 90px; /*Вставить иконку рубля*/
 }
 
+.commercial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .supergames {
   background-color: #ED0233;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .supergames__title {
@@ -1402,6 +1468,15 @@ ul, ol {
   background-color: #F8F9FC;
 }
 
+.features-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 240px 240px 240px 240px 240px;
+  grid-template-columns: 240px 240px 240px 240px 240px;
+  -ms-grid-rows: 320px 320px;
+  grid-template-rows: 320px 320px;
+}
+
 .feature__number {
   font-size: 71px;
   font-weight: 700;
@@ -1450,9 +1525,29 @@ ul, ol {
   color: #ffffff;
 }
 
+.promotions-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 560px;
+  grid-template-columns: 560px 560px;
+  -ms-grid-rows: 211px 211px;
+  grid-template-rows: 211px 211px;
+  grid-gap: 20px;
+  margin-bottom: 60px;
+}
+
 .promotion-main {
   background-color: #ED0233;
   color: #ffffff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .promotion-main__legend {
@@ -1507,6 +1602,12 @@ ul, ol {
   background-color: #F8F9FC;
 }
 
+.tab-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .tab {
   color: #102654;
   font-size: 18px;
@@ -1519,6 +1620,12 @@ ul, ol {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
+}
+
+.feedback-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .feedback-slide {
@@ -1536,6 +1643,12 @@ ul, ol {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.lower-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .free {
@@ -1576,6 +1689,23 @@ ul, ol {
 
 .footer {
   background-color: #030A1A;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer-nav__link {

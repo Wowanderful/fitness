@@ -2,12 +2,32 @@
   background-color: #102654;
 }
 
+.header-wrapper {
+  padding-top: 30px;
+}
+
+.upper-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+}
+
 .header__phone {
   color: #FFF;
   font-family: $ff-alumni;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
 }
 
 .hero__header {
@@ -17,7 +37,11 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin: 0;
 }
+
+
 
 .hero__city-name {
   color: #FFF;

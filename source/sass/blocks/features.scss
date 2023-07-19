@@ -2,6 +2,12 @@
   background-color: #F8F9FC;
 }
 
+.features-list {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px 240px;
+  grid-template-rows: 320px 320px;
+}
+
 .feature__number {
   font-size: 71px;
   font-weight: 700;
