@@ -101,39 +101,90 @@
         </section>
 
         <section class="membership" id="membership"> <!--Блок Абонементы-->
-          <div class="container membership-wrapper">
+          <div class="container membership-wrapper" data-tabs="parent" data-delay="300" data-height="max">
 
             <h2 class="section-title membership__title">Абонементы</h2>
 
-            <div class=month-block>
-              <div class="month">1 месяц</div>
-              <div class="month">6 месяцев</div>
-              <div class="month">12 месяцев</div>
+            <div class="month-block" data-tabs="controls">
+              <button class="month" data-tabs="control" data-index="0">1 месяц</button>
+              <button class="month"data-tabs="control" data-index="1">6 месяцев</button>
+              <button class="month" data-tabs="control" data-index="2">12 месяцев</button>
             </div>
 
-            <div class="plan-list">
-              <div class="membership__plan-card plan">
-                <h3 class="plan__title">С тренером</h3>
-                <p class="plan__subtitle">12 занятий</p>
-                <p class="plan__price">5000</p>
-                <p class="plan__price-blur">5000</p>
-                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+            <div class="tabs-content" data-tabs="content">
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan" >
+                  <h3 class="plan__title">С тренером</h3>
+                  <p class="plan__subtitle">12 занятий</p>
+                  <p class="plan__price">5000</p>
+                  <p class="plan__price-blur">5000</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Дневной</h3>
+                  <p class="plan__subtitle">с 8:00 до 17:00</p>
+                  <p class="plan__price">1700</p>
+                  <p class="plan__price-blur">1700</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Полный день</h3>
+                  <p class="plan__subtitle">с 8:00 до 22:00</p>
+                  <p class="plan__price">2700</p>
+                  <p class="plan__price-blur">2700</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
               </div>
-              <div class="membership__plan-card plan">
-                <h3 class="plan__title">Дневной</h3>
-                <p class="plan__subtitle">с 8:00 до 17:00</p>
-                <p class="plan__price">1700</p>
-                <p class="plan__price-blur">1700</p>
-                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan" >
+                  <h3 class="plan__title">С тренером</h3>
+                  <p class="plan__subtitle">12 занятий</p>
+                  <p class="plan__price">5000</p>
+                  <p class="plan__price-blur">5000</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Дневной</h3>
+                  <p class="plan__subtitle">с 8:00 до 17:00</p>
+                  <p class="plan__price">8000</p>
+                  <p class="plan__price-blur">8000</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Полный день</h3>
+                  <p class="plan__subtitle">с 8:00 до 22:00</p>
+                  <p class="plan__price">12000</p>
+                  <p class="plan__price-blur">12000</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
               </div>
-              <div class="membership__plan-card plan">
-                <h3 class="plan__title">Полный день</h3>
-                <p class="plan__subtitle">с 8:00 до 22:00</p>
-                <p class="plan__price">2700</p>
-                <p class="plan__price-blur">2700</p>
-                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan" >
+                  <h3 class="plan__title">С тренером</h3>
+                  <p class="plan__subtitle">12 занятий</p>
+                  <p class="plan__price">5000</p>
+                  <p class="plan__price-blur">5000</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Дневной</h3>
+                  <p class="plan__subtitle">с 8:00 до 17:00</p>
+                  <p class="plan__price">11999</p>
+                  <p class="plan__price-blur">11999</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3 class="plan__title">Полный день</h3>
+                  <p class="plan__subtitle">с 8:00 до 22:00</p>
+                  <p class="plan__price">14999</p>
+                  <p class="plan__price-blur">14999</p>
+                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                </div>
               </div>
-            </div>
+
+          </div>
 
           </div>  <!--Реализация табов http://htmlonelove.top/liga-reshare/tabs.html-->
         </section>
