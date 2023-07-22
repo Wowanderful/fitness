@@ -186,8 +186,9 @@
 
           </div>
 
-          </div>  <!--Реализация табов http://htmlonelove.top/liga-reshare/tabs.html-->
+          </div>
         </section>
+
 
         <aside class="commercial"> <!--Блок Supergames-->
           <div class="container commercial-wrapper">
@@ -210,25 +211,58 @@
               <a class="button btn button-standard button-link" href="#">Заполнить заявку</a>
             </div>
             <div class="commercial__photo">
-              <img src="img/slpash-desktop.png" width="660" height="500" alt="Спортивный мужчина разбивает лёд, летят брызги">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/slpash-desktop.png" width="660" height="500">
+                <source media="(min-width:768px)" srcset="img/splash-tablet.png" width="386" height="292">
+                <img src="img/splash-mobile.png" width="290" height="292" alt="Спортивный мужчина разбивает лёд, летят брызги">
+              </picture>
             </div>
           </div>
         </aside>
 
         <section class="coaches"> <!--Раздел Тренеры-->
           <!--Реализация слайдера - SwiperJS-->
-          <div class="container">
-          <h2 class="section-title coaches__title">Тренеры</h2>
-          <div class="slide">
-            <img src="img/coach1-desktop.png" width="260" height="294" alt="Фотография тренера">
-            <p class="slide__name">Анна Павлова</p>
-            <p class="slide__subname">Cross Fit</p>
-            <ul class="slide__list">
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit</li>
-              <li>Опыт- 6 лет</li>
-            </ul>
-          </div>
+          <div class="container coaches-wrapper">
+            <h2 class="section-title coaches__title">Тренеры</h2>
+
+            <div class="slider">
+              <div class="slide">
+                <!-- <img src="img/coach1-desktop.png" width="260" height="294" alt="Фотография тренера"> -->
+                <p class="slide__name">Анна Павлова</p>
+                <p class="slide__subname">Cross Fit</p>
+                <ul class="slide__list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт- 6 лет</li>
+                </ul>
+              </div>
+              <div class="slide">
+                <!-- <img src="img/coach1-desktop.png" width="260" height="294" alt="Фотография тренера"> -->
+                <p class="slide__name">Анна Павлова</p>
+                <p class="slide__subname">Cross Fit</p>
+                <ul class="slide__list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт- 6 лет</li>
+                </ul>
+              </div>
+              <div class="slide">
+                <!-- <img src="img/coach1-desktop.png" width="260" height="294" alt="Фотография тренера"> -->
+                <p class="slide__name">Анна Павлова</p>
+                <p class="slide__subname">Cross Fit</p>
+                <ul class="slide__list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт- 6 лет</li>
+                </ul>
+              </div>
+
+              <div class="controls">
+                <span></span>
+                <span></span>
+              </div>
+
+            </div>
           </div>
         </section>
 
