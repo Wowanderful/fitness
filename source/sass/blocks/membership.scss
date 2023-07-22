@@ -2,11 +2,72 @@
   background-color: #F8F9FC;
 }
 
+.membership-wrapper {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.month-block {
+  display: flex;
+  width: 358px;
+  height: 40px;
+  padding: 2px;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 45px;
+  box-sizing: border-box;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 358px;
+    height: 1px;
+    background-color: #787878;
+    top: 35px;
+  }
+}
+
 .month {
   color: rgba(16, 38, 84, 0.50);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  box-sizing: border-box;
+}
+
+.plan-list {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 120px;
+}
+
+.plan {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 360px;
+  height: 448px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  align-items: center;
+  padding-top: 68px;
+  position: relative;
+
+  @include hover-focus {
+    border-width: 7px;
+    border-style: solid;
+    border-image: $red-to-blue 1;
+
+    .button-plan {
+      background: $red-to-blue;
+      border: none;
+      color: #fff;
+    }
+  }
 }
 
 .plan__title {
@@ -27,6 +88,46 @@
   color: #103AAE;
   font-size: 60px;
   font-weight: 700;
-  line-height: 90px; /*Вставить иконку рубля*/
+  position: absolute;
+  top: 170px;
+  left: 95px;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 42px;
+    background-image: url("../../img/svg/ruble.svg");
+    background-repeat: no-repeat;
+    top: -7px;
+    left: 133px;
+
+  }
+}
+
+.plan__price-blur {
+
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 60px;;
+  color: #E8E8E8;
+}
+
+.button-plan {
+  background-color: transparent;
+  border: 4px solid #102654;
+  color: #102654;
+
+  @include hover-focus {
+    background: $red-to-blue;
+    border: none;
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.button-plan:disabled {
+  color: rgba(16, 38, 84, 0.30);
+  border: 7px solid rgba(16, 38, 84, 0.30);
 }
 

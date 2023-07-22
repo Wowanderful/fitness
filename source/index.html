@@ -14,7 +14,7 @@
     <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font">
 
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
 
@@ -90,9 +90,10 @@
             </div>
             <div class="gym__element gym-video">
               <div class="gym-video__container">
-              <video width="364" height="268"  poster="img/gym-video-desktop.png" preload autoplay>
-                <source src="https://www.youtube.com/embed/9TZXsZItgdw" >
-              </video>
+                <div class="video-preload">
+                <img  src="img/gym-video-desktop.png" width="364" height="228">
+                </div>
+                <button type='button' class="button-play" aria-label='Запустить видео'></button>
               </div>
             </div>
             </div>
@@ -100,16 +101,38 @@
         </section>
 
         <section class="membership" id="membership"> <!--Блок Абонементы-->
-          <div class="container">
+          <div class="container membership-wrapper">
+
             <h2 class="section-title membership__title">Абонементы</h2>
-            <div class="month">1 месяц</div>
-            <div class="month">6 месяцев</div>
-            <div class="month">12 месяцев</div>
-            <div class="membership__plan-card plan">
-              <h3 class="plan__title">С тренером</h3>
-              <p class="plan__subtitle">12 занятий</p>
-              <p class="plan__price">5000 P</p>
-              <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+
+            <div class=month-block>
+              <div class="month">1 месяц</div>
+              <div class="month">6 месяцев</div>
+              <div class="month">12 месяцев</div>
+            </div>
+
+            <div class="plan-list">
+              <div class="membership__plan-card plan">
+                <h3 class="plan__title">С тренером</h3>
+                <p class="plan__subtitle">12 занятий</p>
+                <p class="plan__price">5000</p>
+                <p class="plan__price-blur">5000</p>
+                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+              </div>
+              <div class="membership__plan-card plan">
+                <h3 class="plan__title">Дневной</h3>
+                <p class="plan__subtitle">с 8:00 до 17:00</p>
+                <p class="plan__price">1700</p>
+                <p class="plan__price-blur">1700</p>
+                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+              </div>
+              <div class="membership__plan-card plan">
+                <h3 class="plan__title">Полный день</h3>
+                <p class="plan__subtitle">с 8:00 до 22:00</p>
+                <p class="plan__price">2700</p>
+                <p class="plan__price-blur">2700</p>
+                <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+              </div>
             </div>
 
           </div>  <!--Реализация табов http://htmlonelove.top/liga-reshare/tabs.html-->
@@ -367,9 +390,10 @@
         </div>
       </footer>
 
+      <!-- <script src="js/main.js" type="module"></script> -->
 
 
-    <!-- <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script> -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
