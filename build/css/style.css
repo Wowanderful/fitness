@@ -1730,6 +1730,7 @@ h1, h2, h3, h4 {
 
 .membership {
   background-color: #F8F9FC;
+  position: relative;
 }
 
 .membership-wrapper {
@@ -1949,6 +1950,30 @@ h1, h2, h3, h4 {
 .button-plan:disabled {
   color: rgba(16, 38, 84, 0.3);
   border: 7px solid rgba(16, 38, 84, 0.3);
+}
+
+.weight {
+  position: absolute;
+  width: 321px;
+  height: 374px;
+  background-image: url("../../img/weight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  bottom: -104px;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .weight {
+    width: 289px;
+    height: 345px;
+    bottom: -49px;
+  }
+}
+@media (max-width: 767px) {
+  .weight {
+    display: none;
+  }
 }
 
 .commercial-wrapper {

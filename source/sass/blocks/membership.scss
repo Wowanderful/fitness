@@ -1,5 +1,6 @@
 .membership {
   background-color: #F8F9FC;
+  position: relative;
 }
 
 .membership-wrapper {
@@ -175,3 +176,24 @@
   border: 7px solid rgba(16, 38, 84, 0.30);
 }
 
+.weight {
+  position: absolute;
+  width: 321px;
+  height: 374px;
+  background-image: url("../../img/weight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  bottom: -104px;
+  right: 0;
+
+  @include vp-1199 {
+    width: 289px;
+    height: 345px;
+    bottom: -49px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
