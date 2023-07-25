@@ -355,7 +355,7 @@
         </section>
 
         <aside class="promotions"> <!--Блок Акции-->
-          <div class="container">
+          <div class="container promotions-wrapper">
             <h2 class="section-title promotions__title">Акции</h2>
             <ul class="promotions__list promotions-list">
               <li class="promotions-list__item promotion-main">
@@ -363,21 +363,25 @@
                   <p class="promotion-main__legend">Год</p>
                   <p class="promotion-main__number">4999</p>
                   <p class="promotion-main__text">Безлимитный абонемент в тренажерный зал</p>
-                  <a class="promotion-main__link">Подробнее</a>
+                  <a class="promotion-main__link" tabindex="0">Подробнее</a>
                 </div>
-                <div class="promotion-main__photo block">
-                  <img src="img/lady-desktop.jpg" width="280" height="462" alt="Изображениедевушка в синем спортивном костюме">
+                <div class="promotion-main__photo-block">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/lady-desktop.jpg" width="280" height="462">
+                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg" width="399" height="462">
+                    <img src="img/lady-mobile.jpg" width="290" height="299" alt="Изображениедевушка в синем спортивном костюме">
+                  </picture>
                 </div>
               </li>
-              <li class="promotions-list__item promotion">
+              <li class="promotions-list__item promotion promotion-1">
                 <p class="promotion__name">Месяц бесплатно</p>
                 <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
-                <a class="promotion__link">Подробнее</a>
+                <a class="promotion__link" tabindex="0">Подробнее</a>
               </li>
-              <li class="promotions-list__item promotion">
+              <li class="promotions-list__item promotion promotion-2">
                 <p class="promotion__name">Скидка 20%</p>
                 <p class="promotion__text">Корпоративный фитнес с командой</p>
-                <a class="promotion__link">Подробнее</a>
+                <a class="promotion__link" tabindex="0">Подробнее</a>
               </li>
             </ul>
           </div>
