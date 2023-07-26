@@ -341,12 +341,8 @@
                 </div>
               </div>
               </div>
-
                 <div class="slider-button swiper-button-prev" tabindex="0"></div>
                 <div class="slider-button swiper-button-next" tabindex="0"></div>
-
-
-
             </div>
           </div>
         </section>
@@ -442,21 +438,45 @@
 
         <section class="faq"> <!--Блок Вопросы и ответы-->
           <!--Реализация аккордеона http://htmlonelove.top/liga-reshare/accordion.html-->
-          <div class="container">
+          <div class="container faq-wrapper">
           <h2 class="section-title faq__title">Вопросы и ответы</h2>
-          <div class="tab-wrapper">
-          <div class="faq__tabsblock">
-            <div class="tab">Центр</div>
-            <div class="tab">Абонемент</div>
-            <div class="tab">Услуги</div>
-            <div class="tab">Правила</div>
-          </div>
-          <div class="faq__questionblock question">
-            <div class="question">Занятия с тренером входят в абонемент?</div>
-            <div class="question">Можно ли заморозить абонемент?</div>
-            <div class="question">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</div>
-            <div class="question">Что такое семейный доступ и доступ для друзей?</div>
-          </div>
+
+          <div class="tab-wrapper" data-tabs="parent">
+
+            <div class="faq__controlblock" data-tabs="controls">
+              <button type="button" class="btn button-tab" data-tabs="control" data-index="0">Центр</button>
+              <button type="button" class="btn button-tab is-active" data-tabs="control" data-index="1">Абонемент</button>
+              <button type="button" class="btn button-tab" data-tabs="control" data-index="2">Услуги</button>
+              <button type="button" class="btn button-tab" data-tabs="control" data-index="3">Правила</button>
+            </div>
+
+            <div class="faq__questionblock" data-tabs="content">
+              <div class="question" data-tabs="element" data-index="0">
+                <div class="question__answer">Как стать членом фитнес-центра?</div>
+                <button class="btn button--open"></button>
+                <div class="question__answer">Где можно посмотреть расписание?</div>
+                <div class="question__answer">Есть кулеры в центре? Предоставляются полотенца?</div>
+                <div class="question__answer">Сколько тренеров работает в клубе и какова их квалификация?</div>
+              </div>
+              <div class="question" data-tabs="element">
+                <div class="question__answer">Занятия с тренером входят в абонемент?</div>
+                <div class="question__answer">Можно ли заморозить абонемент?</div>
+                <div class="question__answer">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</div>
+                <div class="question__answer">Что такое семейный доступ и доступ для друзей?</div>
+              </div>
+              <div class="question" data-tabs="element">
+                <div class="question__answer">Предлагает ли клуб услуги по консультированию по вопросам питания?</div>
+                <div class="question__answer">Проводятся ли в клубе какие-либо мероприятия или соревнования?</div>
+                <div class="question__answer">Можно ли приобрести в центре спортивное питание?</div>
+                <div class="question__answer">Есть ли в центре детская комната?</div>
+              </div>
+              <div class="question" data-tabs="element">
+                <div class="question__answer">Есть в фитнес-центре дресс-код?</div>
+                <div class="question__answer">Можно ли приводить с собой детей на тренировки?</div>
+                <div class="question__answer">Какие дополнительные правила посещения центра?</div>
+                <div class="question__answer">Нужна ли медицинская справка для посещения залов и бассейна?</div>
+              </div>
+            </div>
           </div>
           </div>
         </section>
