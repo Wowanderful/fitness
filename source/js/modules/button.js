@@ -1,8 +1,10 @@
-const button = document.querySelector('.button--open');
+const buttons = document.querySelectorAll('.button--open');
 
 const toggleButton = () => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('button--close');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', () => {
+      button.classList.toggle('button--close');
+    });
   });
 };
 
