@@ -1,20 +1,95 @@
+.feedback-wrapper {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .feedback-slider {
   display: flex;
+  padding-top: 37px;
+  margin-bottom: 120px;
+  padding-left: 70px;
+  padding-right:70px;
+
+  @include vp-767 {
+    padding-top: 42px;
+  }
+}
+
+.feedback-slider-wrapper {
+  min-width: 560px;
+  max-width: 700px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  padding-right: 50px;
+
+  @include vp-767 {
+    min-width: 226px;
+  }
 }
 
 .feedback-slide {
   background-color: #1C3374;
   color: #ffffff;
+  width: 560px;
+  padding-left: 30%;
+  box-sizing: border-box;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  background-image: url("../../img/author-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 13% 32%;
+  margin-left: -30px;
+
+  @include vp-1199 {
+    width: 566px;
+  }
+
+  @include vp-767 {
+    max-width: 226px;
+    padding-right: 20%;
+    background-size:35%;
+    background-position: 22% 16%;
+    margin-left: 0;
+  }
 }
 
 .feedback-slide__name {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
+  width: 330px;
+
+  @include vp-767 {
+    width: 62px;
+    align-self: end;
+  }
 }
 
 .feedback-slide__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  width: 330px;
+  margin-bottom: 62px;
+
+  @include vp-767 {
+    width: 176px;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.feedback-button-prev {
+  left: 0;
+}
+
+.feedback-button-next {
+  right: 7px;
+  z-index: 12;
 }

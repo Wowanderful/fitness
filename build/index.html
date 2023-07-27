@@ -437,7 +437,6 @@
         </aside>
 
         <section class="faq"> <!--Блок Вопросы и ответы-->
-          <!--Реализация аккордеона http://htmlonelove.top/liga-reshare/accordion.html-->
           <div class="container faq-wrapper">
           <h2 class="section-title faq__title">Вопросы и ответы</h2>
 
@@ -600,20 +599,24 @@
         </section>
 
         <section class="feedback"> <!--Блок Отзывы-->
-          <div class="container">
+          <div class="container feedback-wrapper">
             <h2 class="section-title feedback__title">Отзывы</h2>
-            <div class="feedback__slider feedback-slider">
-              <div class="feedback-slide">
-                <h3 class="feedback-slide__name">Анна Орлова</h3>
-                <p class="feedback-slide__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                  тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="feedback__slider swiper feedback-slider">
+              <div class="swiper-wrapper feedback-slider-wrapper ">
+                <div class="swiper-slide feedback-slide">
+                  <h3 class="feedback-slide__name">Анна Орлова</h3>
+                  <p class="feedback-slide__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+                <div class="swiper-slide feedback-slide">
+                  <h3 class="feedback-slide__name">Вася Пупкин</h3>
+                  <p class="feedback-slide__text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.»</p>
+                </div>
               </div>
-              <div class="feedback-slide">
-                <h3 class="feedback-slide__name">Вася Пупкин</h3>
-                <p class="feedback-slide__text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.»</p>
-              </div>
+              <div class="swiper-button-prev feedback-button-prev" tabindex="0"></div>
+              <div class="swiper-button-next feedback-button-next" tabindex="0"></div>
             </div>
           </div>
         </section>

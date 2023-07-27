@@ -28,4 +28,18 @@ const swiper = new Swiper('.swiper', {
 }
 );
 
+const feedbackSlider = new Swiper('.feedback-slider', {
+  cssMode: true,
+  loop: false,
+  direction: 'horizontal',
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.feedback-button-next',
+    prevEl: '.feedback-button-prev',
+    clickable: true,
+  },
+});
+
 export {swiper};
+export {feedbackSlider};

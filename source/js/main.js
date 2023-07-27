@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {playVideo} from './modules/playvideo';
 import {initTabs} from './tabs/init-tabs';
-import {swiper} from './modules/slider';
+import {swiper, feedbackSlider} from './modules/slider';
 import {initAccordions} from './accordion/init-accordion';
 import {toggleButton} from './modules/button';
 
@@ -11,13 +11,10 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();
     initAccordions();
+    playVideo();
+    toggleButton();
   });
 });
-
-
-playVideo();
-toggleButton();
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -38,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     swiper.init();
+    feedbackSlider.init();
   });
 });
 
