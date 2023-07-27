@@ -622,50 +622,58 @@
         </section>
 
         <div class="lower-block">
-          <div class="lower-wrapper">
+          <div class=" container lower-wrapper">
+
           <section class="free"> <!--Блок Бесплатное занятие-->
-            <div class="">
               <h2 class="free__title">Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="get">
-                <div class="name-wrapper">
-                  <label>
-                    <input type="text" name="name" id="name-form" placeholder="Имя" aria-label="Имя" required>
-                  </label>
+                <div class="form-wrapper">
+                  <div class="name-wrapper">
+                    <label>
+                      <input type="text" name="name" id="name-form" placeholder="Имя" aria-label="Имя" required>
+                    </label>
+                  </div>
+                  <div class="tel-wrapper">
+                    <label>
+                      <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required
+                      pattern="[0-9]{10}">
+                    </label>
+                  </div>
+                  <button type="submit" class="button btn button-standard button-send">Отправить</button>
                 </div>
-                <div class="tel-wrapper">
-                  <label>
-                    <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required
-                    pattern="[0-9]{10}">
-                  </label>
-                </div>
-                <button type="submit" class="button btn button-standard button-send">Отправить</button>
               </form>
-            </div>
+
+
           </section>
 
-          <section class="contact-block"> <!--Блок Контакты-->
-            <div class="">
+          <section class="contacts"> <!--Блок Контакты-->
+
               <h2 class="section-title contact-block__title">Контакты</h2>
-              <div class="contact-block__item address">
-                <h3 class="contact-block__header address__title">Адрес</h3>
-                <p class="contact-block__text address__text">г. Омск, ул. 60 лет Октября, 7</p>
+              <div class="contacts-wrapper">
+                <div class="address-block">
+                  <div class="contact-block__item address">
+                    <h3 class="contact-block__header address__title">Адрес</h3>
+                    <p class="contact-block__text address__text">г. Омск, ул. 60 лет Октября, 7</p>
+                  </div>
+                  <div class="contact-block__item schedule">
+                    <h3 class="contact-block__header schedule__title">График работы</h3>
+                    <p class="contact-block__text schedule__text">Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
+                </div>
+                <div class="phone-block">
+                  <div class="contact-block__item phone">
+                    <h3 class="contact-block__header phone__title">Телефон</h3>
+                    <a class="contact-block__text phone__text" href="88005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="contact-block__item email">
+                    <h3 class="contact-block__header email__title">Email</h3>
+                    <a class="contact-block__text email__text" href="omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
+                </div>
               </div>
-              <div class="contact-block__item schedule">
-                <h3 class="contact-block__header schedule__title">График работы</h3>
-                <p class="contact-block__text schedule__text">Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-              <div class="contact-block__item phone">
-                <h3 class="contact-block__header phone__title">Телефон</h3>
-                <a class="contact-block__text phone__text" href="88005555555">8-800-555-55-55</a>
-              </div>
-              <div class="contact-block__item email">
-                <h3 class="contact-block__header email__title">Email</h3>
-                <a class="contact-block__text email__text" href="omsk@supergym.ru">omsk@supergym.ru</a>
-              </div>
-            </div>
           </section>
         </div>
-        </div>
+
       </main>
 
       <footer class="footer">
