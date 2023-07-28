@@ -4,6 +4,18 @@
   padding-top: 60px;
   width: 50%;
   box-sizing: border-box;
+
+  @include vp-1199 {
+    width: 100%;
+    padding-top:70px;
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .contacts-wrapper {
@@ -11,6 +23,14 @@
   flex-wrap: wrap;
   padding-top: 43px;
   margin-bottom: 70px;
+
+  @include vp-767 {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+
 }
 
 .address-block {
@@ -26,6 +46,15 @@
     content: "";
     top: 21px;
     left: 211px;
+    @include vp-1199 {
+      left: 236px;
+    }
+    @include vp-767 {
+      display: none;
+    }
+  }
+  @include vp-1199 {
+    margin-right: 130px;
   }
 }
 
@@ -65,4 +94,12 @@
 .phone-block {
   display: flex;
   flex-direction: column;
+}
+
+.input-message {
+  color: #FF121F;
+}
+
+.is-invalid input {
+  border-bottom:  #FF121F solid 2px;
 }

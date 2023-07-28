@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleButton();
   });
 });
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

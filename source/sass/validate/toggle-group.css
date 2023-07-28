@@ -1,0 +1,36 @@
+.toggle-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 500px;
+  padding: 0;
+}
+
+.toggle-group.is-invalid label span {
+  color: #ff1553;
+}
+
+.toggle-group .input-message {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+
+.toggle-group .input-message.is-invalid {
+  color: #ff0000;
+}
+
+.toggle-group .input-message.is-valid {
+  color: #15ab07;
+}
+
+@media screen and (max-width: 767px) {
+  .toggle-group {
+    width: 100%;
+  }
+}

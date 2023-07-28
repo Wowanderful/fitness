@@ -622,28 +622,30 @@
         </section>
 
         <div class="lower-block">
-          <div class=" container lower-wrapper">
+          <div class="lower-wrapper">
 
           <section class="free"> <!--Блок Бесплатное занятие-->
               <h2 class="free__title">Бесплатное занятие</h2>
-              <form action="https://echo.htmlacademy.ru/" method="get">
+              <div class="form-container" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" enctype="multipart/form-data">
                 <div class="form-wrapper">
                   <div class="name-wrapper">
-                    <label>
+                    <label data-required data-validate-type="text" data-limitation="letters"
+                    data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля">
                       <input type="text" name="name" id="name-form" placeholder="Имя" aria-label="Имя" required>
                     </label>
                   </div>
                   <div class="tel-wrapper">
-                    <label>
+                    <label data-required data-validate-type="phone" data-message-base="Поле обязательно к заполнению",
+                    data-message-extra="Проверьте корректность заполнения поля" data-linitation="digit">
                       <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required
-                      pattern="[0-9]{10}">
+                      >
                     </label>
                   </div>
                   <button type="submit" class="button btn button-standard button-send">Отправить</button>
                 </div>
               </form>
-
-
+              </div>
           </section>
 
           <section class="contacts"> <!--Блок Контакты-->

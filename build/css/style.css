@@ -4332,12 +4332,29 @@ button.swiper-pagination-bullet {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #fff));
   background: linear-gradient(to right, #102654 50%, #fff 50%);
 }
+@media (max-width: 1199px) {
+  .lower-block {
+    background: none;
+  }
+}
 
 .lower-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+}
+@media (max-width: 1199px) {
+  .lower-wrapper {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .free {
@@ -4349,6 +4366,21 @@ button.swiper-pagination-bullet {
   padding-right: 100px;
   padding-top: 60px;
 }
+@media (max-width: 1199px) {
+  .free {
+    width: 100%;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-top: 70px;
+    background-color: #102654;
+  }
+}
+@media (max-width: 767px) {
+  .free {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .free__title {
   font-family: "Alumni Sans", Arial, sans-serif;
@@ -4356,6 +4388,16 @@ button.swiper-pagination-bullet {
   font-weight: 800;
   line-height: 85px;
   letter-spacing: 1.62px;
+}
+@media (max-width: 1199px) {
+  .free__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .free__title {
+    font-size: 32px;
+  }
 }
 
 .form-wrapper {
@@ -4367,15 +4409,46 @@ button.swiper-pagination-bullet {
       flex-wrap: wrap;
   width: 70%;
 }
+@media (max-width: 1199px) {
+  .form-wrapper {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
 
 .name-wrapper {
   margin-right: 30px;
   width: 45%;
 }
+@media (max-width: 767px) {
+  .name-wrapper {
+    margin-right: 0;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
 
 .tel-wrapper {
   margin-bottom: 30px;
   width: 45%;
+}
+@media (max-width: 767px) {
+  .tel-wrapper {
+    margin-right: 0;
+    width: 90%;
+    margin-bottom: 40px;
+  }
 }
 
 .name-wrapper input,
@@ -4429,6 +4502,19 @@ button.swiper-pagination-bullet {
   border-bottom: none;
   outline: 2px solid #fff;
   padding: 8px;
+}
+@media (max-width: 1199px) {
+  .name-wrapper input,
+.tel-wrapper input {
+    min-width: 206px;
+  }
+}
+@media (max-width: 767px) {
+  .name-wrapper input,
+.tel-wrapper input {
+    min-width: 290px;
+    width: 100%;
+  }
 }
 
 input:focus::-webkit-input-placeholder, input:active::-webkit-input-placeholder {
@@ -4504,6 +4590,20 @@ input:disabled::placeholder {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+@media (max-width: 1199px) {
+  .contacts {
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .contacts-wrapper {
   display: -webkit-box;
@@ -4513,6 +4613,18 @@ input:disabled::placeholder {
       flex-wrap: wrap;
   padding-top: 43px;
   margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .contacts-wrapper {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 .address-block {
@@ -4534,6 +4646,21 @@ input:disabled::placeholder {
   content: "";
   top: 21px;
   left: 211px;
+}
+@media (max-width: 1199px) {
+  .address-block::after {
+    left: 236px;
+  }
+}
+@media (max-width: 767px) {
+  .address-block::after {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .address-block {
+    margin-right: 130px;
+  }
 }
 
 .contact-block__header {
@@ -4577,6 +4704,14 @@ input:disabled::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.input-message {
+  color: #FF121F;
+}
+
+.is-invalid input {
+  border-bottom: #FF121F solid 2px;
 }
 
 .footer {
