@@ -7,11 +7,11 @@
     <meta name="description" content="Фитнесс-центр Supergym">
     <title>Supergym</title>
 
-    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font">
-    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-regular.woff2" as="font">
-    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
 
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -25,7 +25,7 @@
       <header class="header">
         <div class="container header-wrapper">
           <div class="header__upper-block upper-block">
-            <a class="header__logo" href="index.html">
+            <a class="header__logo" href="#">
               <picture>
                 <source media="(min-width:1200px)" srcset="img/svg/logo-desktop.svg" width="122" height="44">
                 <source media="(min-width:768px)" srcset="img/svg/logo-tablet.svg" width="82" height="17">
@@ -43,13 +43,16 @@
                 <li>Групповые занятия</li>
                 <li>Кардио-зона</li>
               </ul>
-              <a class="btn button-standard buy-button" href="#membership">Купить абонемент</a>
+              <a class="btn button-standard buy-button" href="#membership"
+              aria-label="Купить абонемент" tabindex="0">Купить абонемент</a>
             </div>
             <div class="header__image">
               <div class="header__image-container">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/hero-image-desktop.jpg" width="500" height="556">
-                  <img src="img/hero-image-tablet.jpg" width="324" height="390" alt="Фотография Супермэна">
+                  <source media="(min-width: 1200px)" srcset="img/hero-image-desktop.jpg 1x,
+                  img/hero-image-desktop-2x.jpg 2x" width="500" height="556">
+                  <img src="img/hero-image-tablet.jpg" width="324" height="390"
+                  srcset="img/hero-image-tablet-2x.jpg  2x" alt="Фотография Супермэна">
                 </picture>
               </div>
             </div>
@@ -79,9 +82,9 @@
             <div class="gym__element gym-photo">
               <div class="gym-photo__container">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/gym-desktop.jpg" width="660" height="401">
-                  <source media="(min-width:768px)" srcset="img/gym-tablet.jpg" width="678" height="345">
-                  <img src="img/gym-mobile.jpg" width="320" height="313" alt="Фотография тренажёрного зала">
+                  <source media="(min-width: 1200px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop-2x.jpg 2x" width="660" height="401">
+                  <source media="(min-width:768px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet-2x.jpg 2x" width="678" height="345">
+                  <img src="img/gym-mobile.jpg" srcset="img/gym-mobile-2x.jpg 2x" width="320" height="313" alt="Фотография тренажёрного зала">
                 </picture>
               </div>
             </div>
@@ -90,7 +93,7 @@
                 <div class="gym__video-preload">
                 <img  src="img/gym-video-desktop.png" width="364" height="228" alt="Просмотр видео">
                 </div>
-                <button type='button' class="button-play" aria-label='Запустить видео'></button>
+                <button type='button' class="button-play" aria-label="Запустить видео"></button>
               </div>
             </div>
             </div>
@@ -103,9 +106,12 @@
             <h2 class="section-title membership__title">Абонементы</h2>
 
             <div class="membership__controls tab-controls" data-tabs="controls">
-              <button class="tab-controls__month" data-tabs="control" data-index="0">1 месяц</button>
-              <button class="tab-controls__month" data-tabs="control" data-index="1">6 месяцев</button>
-              <button class="tab-controls__month" data-tabs="control" data-index="2">12 месяцев</button>
+              <button class="tab-controls__month" data-tabs="control" data-index="0"
+              aria-label="Абонементы на 1 месяц">1 месяц</button>
+              <button class="tab-controls__month" data-tabs="control" data-index="1"
+              aria-label="Абонементы на 6 месяцев">6 месяцев</button>
+              <button class="tab-controls__month" data-tabs="control" data-index="2"
+              aria-label="Абонементы на 12 месяцев">12 месяцев</button>
             </div>
 
             <div class="tabs-content" data-tabs="content">
@@ -210,9 +216,9 @@
             </div>
             <div class="commercial__photo">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/slpash-desktop.png" width="660" height="500">
-                <source media="(min-width:768px)" srcset="img/splash-tablet.png" width="386" height="292">
-                <img src="img/splash-mobile.png" width="290" height="292" alt="Спортивный мужчина разбивает лёд, летят брызги">
+                <source media="(min-width: 1200px)" srcset="img/slpash-desktop.png 1x, img/splash-desktop-2x.png 2x" width="660" height="500">
+                <source media="(min-width:768px)" srcset="img/splash-tablet.png 1x, img/splash-tablet-2x.png 2x" width="386" height="292">
+                <img src="img/splash-mobile.png" srcset="img/splash-mobile-2x.png 2x" width="290" height="292" alt="Спортивный мужчина разбивает лёд, летят брызги">
               </picture>
             </div>
           </div>
@@ -225,7 +231,7 @@
 
             <div class="slider swiper">
               <div class="swiper-wrapper">
-              <div class="slider__item swiper-slide slide slide--1">
+              <div class="slider__item swiper-slide slide slide--1" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Анна Павлова</div>
                 </div>
@@ -239,7 +245,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--2">
+              <div class="slider__item slide swiper-slide slide--2" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Алексей Лавров</div>
                 </div>
@@ -253,7 +259,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--3">
+              <div class="slider__item slide swiper-slide slide--3" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Александр Пашков</div>
                 </div>
@@ -267,7 +273,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--4">
+              <div class="slider__item slide swiper-slide slide--4" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Мария Кетова</div>
                 </div>
@@ -281,7 +287,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--5">
+              <div class="slider__item slide swiper-slide slide--5" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Анна Павлова</div>
                 </div>
@@ -295,7 +301,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--6">
+              <div class="slider__item slide swiper-slide slide--6" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Алексей Лавров</div>
                 </div>
@@ -309,7 +315,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--7">
+              <div class="slider__item slide swiper-slide slide--7" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Александр Пашков</div>
                 </div>
@@ -323,7 +329,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__item slide swiper-slide slide--8">
+              <div class="slider__item slide swiper-slide slide--8" tabindex="0" aria-label="Описание тренера">
                 <div class="slide__image-block">
                   <div class="slide__image-name">Мария Кетова</div>
                 </div>
@@ -413,9 +419,9 @@
                 </div>
                 <div class="promotion-main__photo-block">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/lady-desktop.jpg" width="280" height="462">
-                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg" width="399" height="462">
-                    <img src="img/lady-mobile.jpg" width="290" height="299" alt="Изображениедевушка в синем спортивном костюме">
+                    <source media="(min-width: 1200px)" srcset="img/lady-desktop.jpg 1x, img/lady-desktop-2x.jpg 2x" width="280" height="462">
+                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg 1x, img/lady-tablet-2x.jpg 2x" width="399" height="462">
+                    <img src="img/lady-mobile.jpg" srcset="img/lady-mobile-2x 2x" width="290" height="299" alt="Изображениедевушка в синем спортивном костюме">
                   </picture>
                 </div>
               </li>
@@ -451,7 +457,7 @@
               <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка ЦЕНТР-->
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Как стать членом фитнес-центра?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
                     При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
@@ -459,7 +465,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Где можно посмотреть расписание?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -467,7 +473,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Есть кулеры в центре? Предоставляются полотенца?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -475,7 +481,7 @@
                   </div>
                   <div class="question__answer-wrapper" data-accordion="element">
                     <div class="question__answer">Сколько тренеров работает в клубе и какова их квалификация?</div>
-                    <button class="question__button btn button-open" data-accordion="button"></button>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                     <div class="question__answer-text" data-accordion="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -486,7 +492,7 @@
               <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка АБОНЕМЕНТ-->
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Занятия с тренером входят в абонемент?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно.
                       В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
@@ -495,7 +501,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Можно ли заморозить абонемент?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -503,7 +509,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -511,7 +517,7 @@
                   </div>
                   <div class="question__answer-wrapper" data-accordion="element">
                     <div class="question__answer">Что такое семейный доступ и доступ для друзей?</div>
-                    <button class="question__button btn button-open" data-accordion="button"></button>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                     <div class="question__answer-text" data-accordion="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -522,7 +528,7 @@
               <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка УСЛУГИ-->
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Предлагает ли клуб услуги по консультированию по вопросам питания?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
                       Специалист уточнит ваши данные, цели и предложит программу питания.</p>
@@ -530,7 +536,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Проводятся ли в клубе какие-либо мероприятия или соревнования?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -538,7 +544,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Можно ли приобрести в центре спортивное питание?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -546,7 +552,7 @@
                   </div>
                   <div class="question__answer-wrapper" data-accordion="element">
                     <div class="question__answer">Есть ли в центре детская комната?</div>
-                    <button class="question__button btn button-open" data-accordion="button"></button>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                     <div class="question__answer-text" data-accordion="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -557,7 +563,7 @@
               <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка ПРАВИЛА-->
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Есть в фитнес-центре дресс-код?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
                       Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
@@ -567,7 +573,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Можно ли приводить с собой детей на тренировки?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -575,7 +581,7 @@
                 </div>
                 <div class="question__answer-wrapper" data-accordion="element">
                   <div class="question__answer">Какие дополнительные правила посещения центра?</div>
-                  <button class="question__button btn button-open" data-accordion="button"></button>
+                  <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                   <div class="question__answer-text" data-accordion="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -583,7 +589,7 @@
                   </div>
                   <div class="question__answer-wrapper" data-accordion="element">
                     <div class="question__answer">Нужна ли медицинская справка для посещения залов и бассейна?</div>
-                    <button class="question__button btn button-open" data-accordion="button"></button>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="Подробнее"></button>
                     <div class="question__answer-text" data-accordion="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
@@ -662,11 +668,11 @@
                 <div class="phone-block">
                   <div class="phone-block__item phone">
                     <h3 class="phone__title">Телефон</h3>
-                    <a class="phone__text" href="88005555555">8-800-555-55-55</a>
+                    <a class="phone__text" tel="88005555555">8-800-555-55-55</a>
                   </div>
                   <div class="phone-block__item email">
                     <h3 class="email__title">Email</h3>
-                    <a class="email__text" href="omsk@supergym.ru">omsk@supergym.ru</a>
+                    <a class="email__text" mailto="omsk@supergym.ru">omsk@supergym.ru</a>
                   </div>
                 </div>
               </div>

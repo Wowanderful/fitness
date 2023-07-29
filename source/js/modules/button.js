@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.button--open');
+const buttons = document.querySelectorAll('.button-open');
 
 const toggleButton = () => {
   buttons.forEach(function (button) {

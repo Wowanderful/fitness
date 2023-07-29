@@ -2,6 +2,7 @@
   background: conic-gradient(from 279deg at 16.03% 39.06%,#003d85 32deg,#b80027 152deg,#003d85 333deg);
   margin-bottom: 120px;
   box-sizing: border-box;
+  width: 100%;
 
   @include vp-1199 {
     margin-bottom: 100px;

@@ -315,43 +315,39 @@ template {
 }
 
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-300.woff2") format("woff2");
 }
-/* roboto-condensed-regular - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2") format("woff2");
 }
-/* roboto-condensed-700 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/roboto-condensed-v25-cyrillic_latin-700.woff2") format("woff2");
 }
-/* alumni-sans-regular - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/alumni-sans-v16-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/alumni-sans-v16-cyrillic_latin-regular.woff2") format("woff2");
 }
-/* alumni-sans-600 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/alumni-sans-v16-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/alumni-sans-v16-cyrillic_latin-600.woff2") format("woff2");
 }
 *,
 *::before,
@@ -588,11 +584,6 @@ h1, h2, h3, h4 {
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
   }
 }
 @media (max-width: 767px) {
@@ -1449,6 +1440,48 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+[data-tabs=parent] {
+  overflow: hidden;
+}
+[data-tabs=parent].no-transition > [data-tabs=control],
+[data-tabs=parent].no-transition > [data-tabs=content],
+[data-tabs=parent].no-transition > [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+[data-tabs=parent].no-transition-global [data-tabs=control],
+[data-tabs=parent].no-transition-global [data-tabs=content],
+[data-tabs=parent].no-transition-global [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent] [data-tabs=content] {
+  position: relative;
+}
+
+[data-tabs=element] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs=element].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=element].is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2139,6 +2172,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .header {
@@ -2358,6 +2392,15 @@ button.swiper-pagination-bullet {
   }
 }
 
+.main-page {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gym {
+  width: 100%;
+}
+
 .section-title {
   color: #102654;
   font-family: "Alumni Sans", Arial, sans-serif;
@@ -2456,6 +2499,8 @@ button.swiper-pagination-bullet {
 .gym__photo-video {
   position: relative;
   margin-bottom: 245px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (max-width: 1199px) {
   .gym__photo-video {
@@ -2590,9 +2635,9 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2661,7 +2706,8 @@ button.swiper-pagination-bullet {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-left: -590px;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
   margin-bottom: 120px;
 }
@@ -2671,7 +2717,9 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: -190px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2732,6 +2780,10 @@ button.swiper-pagination-bullet {
   background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
   border: none;
   color: #fff;
+}
+
+.plan-list div:last-child {
+  margin-right: 0;
 }
 
 .plan__title {
@@ -2830,6 +2882,9 @@ button.swiper-pagination-bullet {
   display: flex;
   padding-top: 120px;
   margin-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .commercial-wrapper {
@@ -3092,7 +3147,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-wrapper {
-  width: 1150px;
+  width: 1040px;
   margin-left: 100px;
 }
 @media (max-width: 1199px) {
@@ -3119,6 +3174,8 @@ button.swiper-pagination-bullet {
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
 }
 @media (max-width: 1199px) {
   .slide {
@@ -4152,7 +4209,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-.button--open {
+.button-open {
   position: absolute;
   width: 42px;
   height: 42px;
@@ -4164,20 +4221,20 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
 }
 @media (hover: hover) {
-  .button--open:hover:not(.focus-visible) {
+  .button-open:hover:not(.focus-visible) {
     background-image: url("../../img/svg/open-hover.svg");
     opacity: 1;
   }
 }
-.button--open.focus-visible:focus {
+.button-open.focus-visible:focus {
   background-image: url("../../img/svg/open-hover.svg");
   opacity: 1;
 }
-.button--open:disabled {
+.button-open:disabled {
   background-image: url("../../img/svg/open-disabled.svg");
 }
 @media (max-width: 767px) {
-  .button--open {
+  .button-open {
     top: 1%;
   }
 }
@@ -4832,48 +4889,6 @@ input:disabled::placeholder {
 .footer-social__link:hover svg, .footer-social__link:active svg,
 .footer-social__link:focus svg {
   fill: #fff;
-}
-
-[data-tabs=parent] {
-  overflow: hidden;
-}
-[data-tabs=parent].no-transition > [data-tabs=control],
-[data-tabs=parent].no-transition > [data-tabs=content],
-[data-tabs=parent].no-transition > [data-tabs=element] {
-  -webkit-transition: none;
-  transition: none;
-}
-[data-tabs=parent].no-transition-global [data-tabs=control],
-[data-tabs=parent].no-transition-global [data-tabs=content],
-[data-tabs=parent].no-transition-global [data-tabs=element] {
-  -webkit-transition: none;
-  transition: none;
-}
-
-[data-tabs=parent] [data-tabs=content] {
-  position: relative;
-}
-
-[data-tabs=element] {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-}
-
-[data-tabs=element].for-load {
-  position: static;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: none;
-  transition: none;
-}
-
-[data-tabs=element].is-active {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
 }
 
 /* @mixin hover-focus {
