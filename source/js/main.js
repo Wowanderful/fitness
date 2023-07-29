@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     playVideo();
     toggleButton();
+    swiper.init();
+    feedbackSlider.init();
   });
 });
 
@@ -35,8 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    swiper.init();
-    feedbackSlider.init();
   });
 });
 

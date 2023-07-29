@@ -140,7 +140,7 @@
   }
 }
 
-.feature--highlighted {
+.feature-highlighted {
   position: relative;
   &::before {
     position: absolute;
@@ -174,7 +174,7 @@
   }
 }
 
-.feature--highlighted-wrapper {
+.feature-highlighted-wrapper {
   background-color: #1C3374;
   width: 100%;
   height: 100%;
@@ -195,10 +195,10 @@
   }
 }
 
-.feature--highlighted .feature__number {
+.feature-highlighted__number {
   color: #ffffff;
 }
-.feature--highlighted .feature__name {
+.feature-highlighted__name {
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
@@ -210,7 +210,7 @@
 }
 }
 
-.feature--highlighted .feature__description {
+.feature-highlighted__description {
   margin-top: 50px;
   font-weight: 400;
   color: #ffffff;

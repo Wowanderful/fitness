@@ -37,7 +37,7 @@
   }
 }
 
-.main-block {
+.hero-block {
   display: flex;
   justify-content: center;
   width: 85%;
@@ -94,7 +94,7 @@
 
 
 
-.hero__city-name {
+.hero p {
   color: #FFF;
   font-family: $ff-alumni;
   font-size: 48px;
@@ -155,13 +155,13 @@
   }
 }
 
-.hero__image {
+.header__image {
   @include vp-767 {
     display: none;
   }
 }
 
-.hero__image-container {
+.header__image-container {
   transform: translateY(-30px);
   margin-bottom: 20px;
   box-sizing: border-box;

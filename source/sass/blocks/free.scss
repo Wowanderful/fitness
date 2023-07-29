@@ -61,7 +61,7 @@
   }
 }
 
-.form-wrapper {
+.free__form-wrapper {
   padding-top: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +78,7 @@
   }
 }
 
-.name-wrapper {
+.free__name-wrapper {
   margin-right: 30px;
   width: 45%;
 
@@ -89,7 +89,7 @@
   }
 }
 
-.tel-wrapper {
+.free__tel-wrapper {
   margin-bottom:30px;
   width: 45%;
 
@@ -100,8 +100,8 @@
   }
 }
 
-.name-wrapper input,
-.tel-wrapper input {
+.free__name-wrapper input,
+.free__tel-wrapper input {
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   background-color: #102654;

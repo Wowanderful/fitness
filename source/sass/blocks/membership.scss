@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.month-block {
+.tab-controls {
   display: flex;
   width: 358px;
   height: 40px;
@@ -33,7 +33,7 @@
   }
 }
 
-.month {
+.tab-controls__month {
   color: rgba(16, 38, 84, 0.50);
   font-size: 20px;
   font-weight: 400;
