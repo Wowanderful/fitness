@@ -1,0 +1,37 @@
+
+.footer-social {
+  display: flex;
+
+  @include vp-767 {
+    transform: translateX(-52px) translateY(-22px);
+  }
+}
+
+.footer-social__item {
+  margin-left: 11px;
+}
+
+.footer-social__link {
+  display: block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include hover-focus {
+    background-color: #103aae
+  }
+
+  @include active {
+    background-color: #102654;
+  }
+}
+
+.footer-social__link:hover svg,.footer-social__link:active svg,
+.footer-social__link:focus svg {
+  fill: $color-default-white;
+}

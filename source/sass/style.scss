@@ -22,15 +22,20 @@
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/header";
+@import "blocks/hero-block";
+@import "blocks/section-title";
 @import "blocks/gym";
 @import "blocks/membership";
-@import "blocks/commercial";
+@import "blocks/tab-controls";
+@import "blocks/plan-list";
+@import "blocks/commercial-wrapper";
+@import "blocks/supergames";
 @import "blocks/coaches";
+@import "blocks/slider";
 @import "blocks/features";
 @import "blocks/promotions";
 @import "blocks/faq";
@@ -38,10 +43,8 @@
 @import "blocks/free";
 @import "blocks/contacts";
 @import "blocks/footer";
-
-
-
-
+@import "blocks/footer-menu";
+@import "blocks/footer-social";
 
 // ---------------------------------
 

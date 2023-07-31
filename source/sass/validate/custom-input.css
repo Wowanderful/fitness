@@ -57,7 +57,7 @@
   position: absolute;
   right: 0;
   bottom: 35px;
-  color: #ff1553;
+  color: $color-torch-red;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -68,7 +68,7 @@
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border: 2px solid $color-torch-red;
 }
 
 .custom-input.is-invalid input:focus,

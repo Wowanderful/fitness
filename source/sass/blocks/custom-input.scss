@@ -61,7 +61,7 @@
     right: 0;
     bottom: 35px;
 
-    color: #ff1553;
+    color: $color-torch-red;
 
     opacity: 0;
 
@@ -75,11 +75,11 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 2px solid $color-torch-red;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 2px solid rgba($color-torch-red, 0.5);
       }
     }
   }

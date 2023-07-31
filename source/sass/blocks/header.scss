@@ -1,5 +1,5 @@
 .header {
-  background: conic-gradient(from 279deg at 16.03% 39.06%,#003d85 32deg,#b80027 152deg,#003d85 333deg);
+  background: conic-gradient(from 279deg at 16.03% 39.06%, #003d85 32deg, #b80027 152deg, #003d85 333deg);
   margin-bottom: 120px;
 
   width: 100%;
@@ -18,15 +18,15 @@
   padding-top: 38px;
 
   @include vp-1199 {
-    padding-top: 40px;
+    padding-top: 38px;
   }
 
   @include vp-767 {
-    padding-top: 15px;
+    padding-top: 20px;
   }
 }
 
-.upper-block{
+.upper-block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -34,22 +34,12 @@
   margin-left: 3px;
 
   @include vp-1199 {
-    margin-bottom: 25px;
-  }
-}
-
-.hero-block {
-  display: flex;
-  justify-content: center;
-  width: 83%;
-
-  @include vp-1199 {
-    width: 100%;
+    margin-bottom: 19px;
   }
 }
 
 .header__phone {
-  color: #FFF;
+  color: $color-default-white;
   font-family: $ff-alumni;
   font-size: 26px;
   font-weight: 600;
@@ -63,103 +53,10 @@
     font-size: 24px;
     letter-spacing: 0.48px;
   }
-}
-
-.hero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  width: 48%;
-  margin-bottom: 20px;
-  margin-top: 34px;
-}
-
-
-.hero__header {
-  color: #FFF;
-  font-family: $ff-alumni;
-  font-size: 92px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 4.6px;
-  text-transform: uppercase;
-  margin: 0;
-  order: 3;
-  width: 63%;
-  text-align: right;
-  padding-right: 27px;
-  padding-top:10px;
-
-  @include vp-1199 {
-    font-size: 72px;
-    letter-spacing: 3.6px;
-  }
-}
-
-
-
-.hero p {
-  color: #FFF;
-  font-family: Alumni Sans;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1.44px;
-  order: 1;
-  margin: 0;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: right;
-  align-self: end;
-  padding-right: 113px;
-  padding-top: 2px;
-
-  @include vp-1199 {
-    font-size: 34px;
-    letter-spacing: 0.84px;
-}
 
   @include vp-767 {
-    font-size: 28px;
-  }
-}
-
-.hero__list {
-  order: 2;
-  width: 170px;
-  text-align: right;
-  margin-left: -1px;
-  padding-top: 128px;
-  margin-left: -38px;
-}
-
-.hero__list li {
-  color: #FFF;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.buy-button {
-
-  order: 3;
-  background-color: transparent;
-  border: 4px solid #fff;
-  text-align: right;
-  margin-left: auto;
-  margin-right: 67px;
-  margin-top: -20px;
-
-  @include hover-focus {
-    background-color: #fff;
-    color: #103AAE;
-    opacity: 1;
-  };
-
-  &:active {
-    background-color: #fff;
-    color: #102654;
+    font-size: 20px;
+    margin-top: -5px;
   }
 }
 
@@ -172,7 +69,6 @@
 .header__image-container {
   transform: translateY(-21px);
   margin-bottom: 25px;
-
 
   @include vp-1199 {
     transform: none;

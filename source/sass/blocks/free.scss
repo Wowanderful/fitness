@@ -1,6 +1,6 @@
 .lower-block {
   width: 100%;
-  background: linear-gradient(to right, #102654 50%,#fff 50%);
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
 
   @include vp-1199 {
     background: none;
@@ -14,7 +14,6 @@
   padding: 0 100px;
   box-sizing: border-box;
   display: flex;
-
 
   @include vp-1199 {
     display: block;
@@ -36,13 +35,14 @@
     width: 100%;
     padding-left: 133px;
     padding-right: 133px;
-    padding-top: 70px;
+    padding-top: 45px;
     background-color: #102654;
   }
 
   @include vp-767 {
-    padding-left: 15px;
+    padding-left: 0;
     padding-right: 15px;
+    padding-top: 10px;
   }
 }
 
@@ -59,6 +59,7 @@
 
   @include vp-767 {
     font-size: 32px;
+    padding-left: 15px;
   }
 }
 
@@ -70,7 +71,8 @@
   margin-bottom: -5px;
 
   @include vp-1199 {
-    padding-top: 50px;
+    padding-top: 13px;
+    width: 94%;
   }
 
   @include vp-767 {
@@ -84,16 +86,24 @@
   margin-right: 30px;
   width: 45%;
 
+  @include vp-1199 {
+    margin-right: 47px;
+  }
+
   @include vp-767 {
     margin-right: 0;
     width: 90%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 .free__tel-wrapper {
-  margin-bottom:30px;
+  margin-bottom: 30px;
   width: 45%;
+
+  @include vp-1199 {
+    width: 45%
+  }
 
   @include vp-767 {
     margin-right: 0;
@@ -108,27 +118,27 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   background-color: #102654;
   padding-bottom: 5px;
-  color: #fff;
+  color: #ffffff;
 
   &::placeholder {
-    color: #fff;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 400;
   }
 
   @include hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
   }
 
   @include active {
     border-bottom: none;
-    outline: 2px solid #fff;
+    outline: 2px solid #ffffff;
     padding: 8px;
   }
 
   @include focus {
     border-bottom: none;
-    outline: 2px solid #fff;
+    outline: 2px solid #ffffff;
     padding: 8px;
   }
 
@@ -155,7 +165,7 @@ input:disabled::placeholder {
   width: 100%;
   background-color: transparent;
   box-sizing: border-box;
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
   margin-bottom: 70px;
 
   @include hover-focus {
@@ -166,5 +176,13 @@ input:disabled::placeholder {
 
   @include active {
     opacity: 0.5;
+  }
+
+  @include vp-1199 {
+    margin-bottom: 64px;
+  }
+
+  @include vp-767 {
+    margin-left: 9px;
   }
 }

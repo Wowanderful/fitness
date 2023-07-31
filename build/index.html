@@ -63,8 +63,8 @@
       <main class="main-page">
 
         <section class="gym"> <!--Блок тренажерные залы-->
-          <div class="container gym-wrapper">
-            <div class="gym__element gym-text">
+          <div class="gym-wrapper">
+            <div class="container gym__element gym-text">
               <h2 class="section-title gym-text__title">Тренажёрный зал</h2>
               <div class="gym-text__subtitle">Просторный зал площадью 900 кв/м</div>
               <div class="gym-text__text">
@@ -73,7 +73,7 @@
                   укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым
                   современным оборудованием для всех спортсменов.
                 </p>
-                <p>
+                <p class="gym-text__second-par">
                   В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
                   Также в фитнес центре есть несколько оборудованных залов для различных
                   видов групповых занятий.
@@ -94,7 +94,11 @@
             <div class="gym__element gym-video">
               <div class="gym-video__container">
                 <div class="gym__video-preload">
-                <img  src="img/gym-video-desktop.png" width="364" height="228" alt="Просмотр видео">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gym-video-desktop.png"  width="364" height="228">
+                    <source media="(min-width: 768px)" srcset="img/gym-video-desktop.png" width="266" height="167">
+                    <img  src="img/gym-video-mobile.png" width="364" height="167" alt="Просмотр видео">
+                  </picture>
                 </div>
                 <button type='button' class="button-play" aria-label="Запустить видео"></button>
               </div>
@@ -189,9 +193,7 @@
                   <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
                 </div>
               </div>
-
           </div>
-
           </div>
           <div class="weight"></div>
         </section>
@@ -423,8 +425,8 @@
                 <div class="promotion-main__photo-block">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/lady-desktop.jpg 1x, img/lady-desktop-2x.jpg 2x" width="280" height="462">
-                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg 1x, img/lady-tablet-2x.jpg 2x" width="399" height="462">
-                    <img src="img/lady-mobile.jpg" srcset="img/lady-mobile-2x 2x" width="290" height="299" alt="Изображениедевушка в синем спортивном костюме">
+                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg 1x, img/lady-tablet-2x.jpg 2x" width="399" height="499">
+                    <img src="img/lady-mobile.jpg" srcset="img/lady-mobile-2x.jpg 2x" width="290" height="299" alt="Изображениедевушка в синем спортивном костюме">
                   </picture>
                 </div>
               </li>

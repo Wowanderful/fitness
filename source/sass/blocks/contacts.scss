@@ -5,18 +5,19 @@
   width: 50%;
   box-sizing: border-box;
 
-
-
   @include vp-1199 {
     width: 100%;
-    padding-top:70px;
+    padding-top: 70px;
     padding-left: 133px;
     padding-right: 133px;
+    margin-bottom: 46px;
   }
 
   @include vp-767 {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 67px;
+    margin-bottom: 61px;
   }
 }
 
@@ -25,15 +26,15 @@
   flex-wrap: wrap;
   padding-top: 37px;
 
-
+  @include vp-1199 {
+    padding-top: 33px;
+  }
 
   @include vp-767 {
-    padding-top: 50px;
+    padding-top: 39px;
     flex-direction: column;
     align-items: start;
   }
-
-
 }
 
 .address-block {
@@ -41,6 +42,7 @@
   flex-direction: column;
   margin-right: 100px;
   position: relative;
+
   &::after {
     position: absolute;
     height: 102px;
@@ -58,6 +60,10 @@
   }
   @include vp-1199 {
     margin-right: 130px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }
 
@@ -78,20 +84,54 @@
 .address__text {
   margin-top: 0;
   margin-bottom: 15px;
+
+  @include vp-1199 {
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #102654;
+    margin-bottom: 21px;
+  }
 }
 
 .schedule__text {
   margin-top:12px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+  }
 }
 
 .phone__text {
   display: block;
   margin-top: 12px;
   margin-bottom: 5px;
+
+  @include vp-1199 {
+    margin-bottom: 23px;
+ }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
 }
 
 .email__text {
   margin-top: 12px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .phone-block {
@@ -100,9 +140,22 @@
 }
 
 .input-message {
-  color: #FF121F;
+  color: #ff121f;
 }
 
 .is-invalid input {
-  border-bottom:  #FF121F solid 2px;
+  border-bottom:  #ff121f solid 2px;
+}
+
+.address__title, .schedule__title,
+.phone__title, .email__title {
+  @include vp-767 {
+  font-size: 20px;
+  }
+}
+
+.email__title {
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
 }
