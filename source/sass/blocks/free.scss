@@ -27,9 +27,10 @@
   color: #ffffff;
   width: 50%;
   box-sizing: border-box;
-  padding-left: 100px;
+  padding-left: 2px;
   padding-right: 100px;
-  padding-top: 60px;
+  padding-top: 57px;
+
 
   @include vp-1199 {
     width: 100%;
@@ -62,10 +63,11 @@
 }
 
 .free__form-wrapper {
-  padding-top: 25px;
+  padding-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 86%;
+  margin-bottom: -5px;
 
   @include vp-1199 {
     padding-top: 50px;

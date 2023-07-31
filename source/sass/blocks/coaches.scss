@@ -8,7 +8,7 @@
 .coaches-wrapper {
   width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 65px;
   box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .swiper-wrapper {
-  width: 1040px;
+  width: 87%;
   margin-left: 100px;
 
   @include vp-1199 {
@@ -153,7 +153,7 @@
 }
 
 .swiper-button-prev {
-  left: 46px;
+  left: 29px;
   right:0;
   border-radius: 50%;
   width: 56px;
@@ -167,7 +167,7 @@
 }
 
 .swiper-button-next {
-  right: 163px;
+  right: 26px;
   left: auto;
   border-radius: 50%;
   width: 56px;

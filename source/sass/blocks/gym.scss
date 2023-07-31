@@ -9,7 +9,7 @@
 .section-title {
   color: #102654;
   font-family: $ff-alumni;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.44px;
@@ -36,9 +36,11 @@
 .gym-text {
   display: flex;
   flex-direction: column;
-  width: 360px;
-  margin-right: 7%;
-  box-sizing: border-box;
+  width: 398px;
+  margin-right: 9%;
+  padding-left: 64px;
+
+
 
   @include vp-1199 {
     margin-right: 0;
@@ -53,7 +55,8 @@
 }
 
 .gym-text__title {
-  margin-top: 30px;
+  margin-top: 46px;
+
 }
 
 .gym-text__subtitle {
@@ -61,11 +64,18 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+  margin-top: 4px;;
 }
 
 .gym-text__text {
+  margin-top: 20px;
+}
+.gym-text p {
   color: #102654;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 3px;
+
 
   @include vp-1199 {
     text-align: center;
@@ -96,8 +106,8 @@
 
 .gym-video {
   position: absolute;
-  top: 75%;
-  left: -5%;
+  top: 73%;
+  left: -9%;
 
   @include vp-1199 {
     left: 30%;
@@ -153,8 +163,8 @@
 .button-play {
     cursor: pointer;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: none;
     background-color: transparent;
@@ -163,8 +173,8 @@
     background-size: 100% 100%;
     background-position: center;
 
-    top: calc(50% - 35px);
-    left: calc(50% - 35px);
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
     z-index: 10;
 
     @include vp-1199 {

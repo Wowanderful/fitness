@@ -1,7 +1,7 @@
 .header {
   background: conic-gradient(from 279deg at 16.03% 39.06%,#003d85 32deg,#b80027 152deg,#003d85 333deg);
   margin-bottom: 120px;
-  box-sizing: border-box;
+
   width: 100%;
 
   @include vp-1199 {
@@ -15,8 +15,7 @@
 
 
 .header-wrapper {
-  padding-top: 30px;
-  box-sizing: border-box;
+  padding-top: 38px;
 
   @include vp-1199 {
     padding-top: 40px;
@@ -31,7 +30,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  box-sizing: border-box;
+
+  margin-left: 3px;
 
   @include vp-1199 {
     margin-bottom: 25px;
@@ -41,8 +41,7 @@
 .hero-block {
   display: flex;
   justify-content: center;
-  width: 85%;
-  box-sizing: border-box;
+  width: 83%;
 
   @include vp-1199 {
     width: 100%;
@@ -55,7 +54,10 @@
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
-  box-sizing: border-box;
+
+  display: block;
+  padding-left: 2px;
+
 
   @include vp-1199 {
     font-size: 24px;
@@ -67,11 +69,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 10%;
-  width: 50%;
+
+  width: 48%;
   margin-bottom: 20px;
-  box-sizing: border-box;
+  margin-top: 34px;
 }
+
 
 .hero__header {
   color: #FFF;
@@ -83,9 +86,10 @@
   text-transform: uppercase;
   margin: 0;
   order: 3;
-  width: 65%;
+  width: 63%;
   text-align: right;
-  box-sizing: border-box;
+  padding-right: 27px;
+  padding-top:10px;
 
   @include vp-1199 {
     font-size: 72px;
@@ -97,7 +101,7 @@
 
 .hero p {
   color: #FFF;
-  font-family: $ff-alumni;
+  font-family: Alumni Sans;
   font-size: 48px;
   font-weight: 600;
   line-height: normal;
@@ -108,7 +112,8 @@
   width: 100%;
   text-align: right;
   align-self: end;
-  box-sizing: border-box;
+  padding-right: 113px;
+  padding-top: 2px;
 
   @include vp-1199 {
     font-size: 34px;
@@ -125,8 +130,8 @@
   width: 170px;
   text-align: right;
   margin-left: -1px;
-  padding-top: 119px;
-  box-sizing: border-box;
+  padding-top: 128px;
+  margin-left: -38px;
 }
 
 .hero__list li {
@@ -143,6 +148,8 @@
   border: 4px solid #fff;
   text-align: right;
   margin-left: auto;
+  margin-right: 67px;
+  margin-top: -20px;
 
   @include hover-focus {
     background-color: #fff;
@@ -163,9 +170,9 @@
 }
 
 .header__image-container {
-  transform: translateY(-30px);
-  margin-bottom: 20px;
-  box-sizing: border-box;
+  transform: translateY(-21px);
+  margin-bottom: 25px;
+
 
   @include vp-1199 {
     transform: none;
