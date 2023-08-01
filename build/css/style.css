@@ -378,7 +378,7 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  background-color: $color-default-white;
+  background-color: #ffffff;
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -404,8 +404,8 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px $color-default-white;
-          box-shadow: inset 0 0 0 1000px $color-default-white;
+  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
+          box-shadow: inset 0 0 0 1000px #ffffff;
   -webkit-text-fill-color: #000000;
 }
 
@@ -1483,15 +1483,15 @@ button.swiper-pagination-bullet {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 10px 20px;
-  color: $color-default-white;
-  background-color: $color-neon-blue;
+  color: #ffffff;
+  background-color: #2c39f2;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 .btn--red {
-  background-color: $color-torch-red;
+  background-color: #ff1553;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -1538,7 +1538,7 @@ button.swiper-pagination-bullet {
       -ms-flex-order: 3;
           order: 3;
   background-color: transparent;
-  border: 4px solid $color-default-white;
+  border: 4px solid #ffffff;
   text-align: right;
   margin-left: auto;
   margin-right: 67px;
@@ -1546,18 +1546,18 @@ button.swiper-pagination-bullet {
 }
 @media (hover: hover) {
   .buy-button:hover:not(.focus-visible) {
-    background-color: $color-default-white;
+    background-color: #ffffff;
     color: #103aae;
     opacity: 1;
   }
 }
 .buy-button.focus-visible:focus {
-  background-color: $color-default-white;
+  background-color: #ffffff;
   color: #103aae;
   opacity: 1;
 }
 .buy-button:active {
-  background-color: $color-default-white;
+  background-color: #ffffff;
   color: #102654;
 }
 @media (max-width: 1199px) {
@@ -1624,14 +1624,14 @@ button.swiper-pagination-bullet {
   .button-plan:hover:not(.focus-visible) {
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border: none;
-    color: $color-default-white;
+    color: #ffffff;
     opacity: 1;
   }
 }
 .button-plan.focus-visible:focus {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border: none;
-  color: $color-default-white;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -1643,8 +1643,8 @@ button.swiper-pagination-bullet {
 .button-link {
   width: 343px;
   margin-left: 10px;
-  border: 4px solid $color-default-white;
-  color: $color-default-white;
+  border: 4px solid #ffffff;
+  color: #ffffff;
   background-color: transparent;
 }
 @media (max-width: 1199px) {
@@ -1666,7 +1666,7 @@ button.swiper-pagination-bullet {
   color: #103aae;
 }
 .button-link.focus-visible:active {
-  background-color: $color-default-white;
+  background-color: #ffffff;
   color: #103aae;
 }
 @media (max-width: 767px) {
@@ -1762,7 +1762,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   right: 0;
   bottom: 35px;
-  color: $color-torch-red;
+  color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1777,7 +1777,7 @@ button.swiper-pagination-bullet {
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid $color-torch-red;
+  border: 2px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
@@ -1859,7 +1859,7 @@ button.swiper-pagination-bullet {
   left: 0;
   width: 28px;
   height: 28px;
-  border: 1.5px solid $color-neon-blue;
+  border: 1.5px solid #2c39f2;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
@@ -1883,7 +1883,7 @@ button.swiper-pagination-bullet {
   left: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid $color-neon-blue;
+  border: 1px solid #2c39f2;
   border-radius: 50%;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -1904,13 +1904,13 @@ button.swiper-pagination-bullet {
   transition: color 0.3s ease;
 }
 .custom-toggle input:checked + .custom-toggle__icon {
-  border: 1.5px solid $color-neon-blue;
+  border: 1.5px solid #2c39f2;
 }
 .custom-toggle input:checked + .custom-toggle__icon::before {
-  background-color: $color-neon-blue;
+  background-color: #2c39f2;
 }
 .custom-toggle.is-invalid label span {
-  color: $color-torch-red;
+  color: #ff1553;
 }
 .custom-toggle .input-message {
   position: absolute;
@@ -2037,7 +2037,7 @@ button.swiper-pagination-bullet {
   padding: 0;
   overflow-y: auto;
   list-style: none;
-  background-color: $color-default-white;
+  background-color: #ffffff;
   border: 2px solid #000000;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
@@ -2077,7 +2077,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   bottom: -15px;
   left: 0;
-  color: $color-torch-red;
+  color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
@@ -2151,7 +2151,7 @@ button.swiper-pagination-bullet {
   opacity: 1;
 }
 .custom-select.is-invalid .custom-select__button {
-  border: 2px solid $color-torch-red;
+  border: 2px solid #ff1553;
 }
 .custom-select.is-invalid .custom-select__button:focus, .custom-select.is-invalid .custom-select__button:hover {
   border: 2px solid rgba(255, 21, 83, 0.5);
@@ -2236,7 +2236,7 @@ button.swiper-pagination-bullet {
 }
 
 .header__phone {
-  color: $color-default-white;
+  color: #ffffff;
   font-family: "Alumni Sans", Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
@@ -2321,7 +2321,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero__header {
-  color: $color-default-white;
+  color: #ffffff;
   font-family: "Alumni Sans", Arial, sans-serif;
   font-size: 92px;
   font-weight: 600;
@@ -2354,7 +2354,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero p {
-  color: $color-default-white;
+  color: #ffffff;
   font-family: Alumni Sans;
   font-size: 48px;
   font-weight: 600;
@@ -2416,7 +2416,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero__list li {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -2976,7 +2976,7 @@ button.swiper-pagination-bullet {
 
 .supergames {
   background-color: #ed0233;
-  color: $color-default-white;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3292,7 +3292,7 @@ button.swiper-pagination-bullet {
 }
 
 .slide__image-name {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   position: absolute;
@@ -3309,7 +3309,7 @@ button.swiper-pagination-bullet {
   display: none;
   position: absolute;
   background-color: rgba(16, 38, 84, 0.89);
-  color: $color-default-white;
+  color: #ffffff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3368,7 +3368,7 @@ button.swiper-pagination-bullet {
 .slide__list-item::before {
   position: absolute;
   content: "";
-  background-color: $color-default-white;
+  background-color: #ffffff;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -3769,7 +3769,7 @@ button.swiper-pagination-bullet {
 }
 
 .feature-highlighted__number {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 74px;
   font-style: normal;
   font-weight: 700;
@@ -3786,7 +3786,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   line-height: 39px;
   margin-top: 30px;
-  color: $color-default-white;
+  color: #ffffff;
   margin-top: -5px;
 }
 @media (max-width: 767px) {
@@ -3804,7 +3804,7 @@ button.swiper-pagination-bullet {
 .feature-highlighted__description {
   margin-top: 50px;
   font-weight: 400;
-  color: $color-default-white;
+  color: #ffffff;
   text-align: center;
   margin-top: 30px;
 }
@@ -3886,7 +3886,7 @@ button.swiper-pagination-bullet {
 
 .promotion-main {
   background-color: #ed0233;
-  color: $color-default-white;
+  color: #ffffff;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -4024,8 +4024,8 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  color: $color-default-white;
-  border-bottom: 2px solid $color-default-white;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -4035,11 +4035,11 @@ button.swiper-pagination-bullet {
   opacity: 0.7;
 }
 .promotion-main__link:focus {
-  outline: 2px solid $color-default-white;
+  outline: 2px solid #ffffff;
   opacity: 1;
 }
 .promotion-main__link:active {
-  border-bottom: 2px solid $color-default-white;
+  border-bottom: 2px solid #ffffff;
   outline: none;
   opacity: 1;
 }
@@ -4310,7 +4310,7 @@ button.swiper-pagination-bullet {
 }
 .button-tab.is-active {
   border: none;
-  color: $color-default-white;
+  color: #ffffff;
   background-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 @media (hover: hover) {
@@ -4435,7 +4435,7 @@ button.swiper-pagination-bullet {
   width: 42px;
   height: 42px;
   cursor: pointer;
-  right: -42px;
+  right: 0;
   top: -8px;
   background-color: transparent;
   background-image: url("../../img/svg/open-default.svg");
@@ -4555,7 +4555,7 @@ button.swiper-pagination-bullet {
 
 .feedback-slide {
   background-color: #1C3374;
-  color: $color-default-white;
+  color: #ffffff;
   width: 560px;
   padding-left: 33%;
   -webkit-box-sizing: border-box;
@@ -4636,8 +4636,8 @@ button.swiper-pagination-bullet {
 
 .lower-block {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, $color-default-white));
-  background: linear-gradient(to right, #102654 50%, $color-default-white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
 }
 @media (max-width: 1199px) {
   .lower-block {
@@ -4665,7 +4665,7 @@ button.swiper-pagination-bullet {
 }
 
 .free {
-  color: $color-default-white;
+  color: #ffffff;
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4778,50 +4778,50 @@ button.swiper-pagination-bullet {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   background-color: #102654;
   padding-bottom: 5px;
-  color: $color-default-white;
+  color: #ffffff;
 }
 .free__name-wrapper input::-webkit-input-placeholder, .free__tel-wrapper input::-webkit-input-placeholder {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 .free__name-wrapper input::-moz-placeholder, .free__tel-wrapper input::-moz-placeholder {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 .free__name-wrapper input:-ms-input-placeholder, .free__tel-wrapper input:-ms-input-placeholder {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 .free__name-wrapper input::-ms-input-placeholder, .free__tel-wrapper input::-ms-input-placeholder {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 .free__name-wrapper input::placeholder,
 .free__tel-wrapper input::placeholder {
-  color: $color-default-white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
 @media (hover: hover) {
   .free__name-wrapper input:hover:not(.focus-visible),
 .free__tel-wrapper input:hover:not(.focus-visible) {
-    border-bottom: 2px solid $color-default-white;
+    border-bottom: 2px solid #ffffff;
   }
 }
 .free__name-wrapper input.focus-visible:active,
 .free__tel-wrapper input.focus-visible:active {
   border-bottom: none;
-  outline: 2px solid $color-default-white;
+  outline: 2px solid #ffffff;
   padding: 8px;
 }
 .free__name-wrapper input.focus-visible:focus,
 .free__tel-wrapper input.focus-visible:focus {
   border-bottom: none;
-  outline: 2px solid $color-default-white;
+  outline: 2px solid #ffffff;
   padding: 8px;
 }
 @media (max-width: 1199px) {
@@ -4884,7 +4884,7 @@ input:disabled::placeholder {
   background-color: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 3px solid $color-default-white;
+  border: 3px solid #ffffff;
   margin-bottom: 70px;
 }
 @media (hover: hover) {
@@ -5253,7 +5253,7 @@ input:disabled::placeholder {
 .footer-nav__link {
   font-size: 14px;
   font-weight: 400;
-  color: $color-default-white;
+  color: #ffffff;
 }
 @media (hover: hover) {
   .footer-nav__link:hover:not(.focus-visible) {
@@ -5294,7 +5294,7 @@ input:disabled::placeholder {
           box-sizing: border-box;
   width: 25px;
   height: 25px;
-  background-color: $color-default-white;
+  background-color: #ffffff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5320,7 +5320,7 @@ input:disabled::placeholder {
 
 .footer-social__link:hover svg, .footer-social__link:active svg,
 .footer-social__link:focus svg {
-  fill: $color-default-white;
+  fill: #ffffff;
 }
 
 /* @mixin hover-focus {
