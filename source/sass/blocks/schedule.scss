@@ -1,0 +1,10 @@
+.schedule p {
+  margin-top:12px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+  }
+}

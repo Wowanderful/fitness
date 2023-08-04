@@ -41,5 +41,8 @@ const feedbackSlider = new Swiper('.feedback-slider', {
   },
 });
 
-export {swiper};
-export {feedbackSlider};
+const swiperArray = [];
+swiperArray.push(swiper);
+swiperArray.push(feedbackSlider);
+
+export {swiperArray};

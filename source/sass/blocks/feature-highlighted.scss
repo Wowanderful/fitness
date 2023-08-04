@@ -1,0 +1,117 @@
+.feature-highlighted {
+  position: relative;
+  grid-column: 3/4;
+  grid-row: 1/3;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: -169%;
+    width: 340px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+
+    @include vp-1199 {
+      display: none;
+    }
+
+    @include vp-767 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 129%;
+    width: 340px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.feature-highlighted-wrapper {
+  background-color: #1c3374;
+  width: 100%;
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include vp-1199 {
+    width: 64%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: -67px;
+    padding-left: 35px;
+    height: 239px;
+    margin-bottom: -31px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-top: 7px;
+    padding-top:22px;
+  }
+}
+
+.feature-highlighted__number {
+  color: $color-default-white;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    margin-top: 42px;
+    }
+}
+
+.feature-highlighted__name {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-top: 30px;
+  color: $color-default-white;
+  margin-top: -5px;
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    margin-top: -15px;
+  }
+}
+
+.feature-highlighted__description {
+  margin-top: 50px;
+  font-weight: 400;
+  color: $color-default-white;
+  text-align: center;
+  margin-top: 30px;
+
+  @include vp-1199 {
+    width: 50%;
+    margin-top: 11px;
+  }
+
+  @include vp-767 {
+    width: 74%;
+    margin-top: 6px;
+  }
+}

@@ -1,0 +1,11 @@
+.upper-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  margin-left: 3px;
+
+  @include vp-1199 {
+    margin-bottom: 19px;
+  }
+}

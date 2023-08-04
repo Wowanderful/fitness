@@ -2,6 +2,30 @@
   background-color: #F8F9FC;
   position: relative;
   margin-bottom: -67px;
+
+  &::after {
+    position: absolute;
+    width: 285px;
+    height: 353px;
+    background-image: url("../../img/weight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    bottom: -82px;
+    right: 0;
+
+
+  @include vp-1199 {
+    width: 341px;
+    height: 403px;
+    bottom: -49px;
+    background-image: url("../../img/weight-tablet.png");
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
 }
 
 .membership-wrapper {
@@ -24,27 +48,4 @@
 .membership__title {
   margin-left: -3px;
   margin-bottom: 10px;
-}
-
-.weight {
-  position: absolute;
-  width: 285px;
-  height: 353px;
-  background-image: url("../../img/weight.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  bottom: -82px;
-  right: 0;
-
-  @include vp-1199 {
-    width: 341px;
-    height: 403px;
-    bottom: -49px;
-    background-image: url("../../img/weight-tablet.png");
-  }
-
-  @include vp-767 {
-    display: none;
-  }
 }

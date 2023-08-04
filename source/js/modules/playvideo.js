@@ -1,6 +1,6 @@
 const videoContainer = document.querySelector('.gym-video__container');
 const button = document.querySelector('.button-play');
-const poster = document.querySelector('.video-preload');
+const poster = document.querySelector('.gym__video-preload');
 
 const onButtonClick = () => {
   poster.classList.add('img-hidden');
@@ -15,11 +15,12 @@ const onButtonClick = () => {
 };
 
 const playVideo = () => {
-  button.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    onButtonClick();
+  if (videoContainer && button && poster) {
+    button.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      onButtonClick();
+    });
   }
-  );
 };
 
 export {playVideo};

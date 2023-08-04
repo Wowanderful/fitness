@@ -1,0 +1,20 @@
+.phone-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone a {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+
+  @include vp-1199 {
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+}

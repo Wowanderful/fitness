@@ -1,0 +1,23 @@
+.lower-block {
+  width: 100%;
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+
+  @include vp-1199 {
+    background: none;
+  }
+}
+
+.lower-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+  display: flex;
+
+  @include vp-1199 {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}

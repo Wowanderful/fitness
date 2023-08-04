@@ -7,7 +7,7 @@
   }
 }
 
-.footer-social__item {
+.footer-social li {
   margin-left: 11px;
 }
 
@@ -31,7 +31,7 @@
   }
 }
 
-.footer-social__link:hover svg,.footer-social__link:active svg,
+.footer-social__link:hover svg, .footer-social__link:active svg,
 .footer-social__link:focus svg {
   fill: $color-default-white;
 }

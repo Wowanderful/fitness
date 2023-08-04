@@ -1,27 +1,3 @@
-.lower-block {
-  width: 100%;
-  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
-
-  @include vp-1199 {
-    background: none;
-  }
-}
-
-.lower-wrapper {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 100px;
-  box-sizing: border-box;
-  display: flex;
-
-  @include vp-1199 {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 .free {
   color: #ffffff;
   width: 50%;
@@ -152,37 +128,22 @@
   }
 }
 
-input:focus::placeholder,
-input:active::placeholder {
+.free__name-wrapper input:focus::placeholder,
+.free__name-wrapper input:active::placeholder,
+.free__tel-wrapper input:focus::placeholder,
+.free__tel-wrapper input:active::placeholder {
   color: transparent;
 }
 
-input:disabled::placeholder {
+.free__name-wrapper input:disabled::placeholder,
+.free__name-wrapper input:disabled::placeholder {
   opacity: 0.5;
 }
 
-.button-send {
-  width: 100%;
-  background-color: transparent;
-  box-sizing: border-box;
-  border: 3px solid #ffffff;
-  margin-bottom: 70px;
+.input-message {
+  color: #ff121f;
+}
 
-  @include hover-focus {
-    background-color: #fff;
-    opacity: 1;
-    color: #102654;
-  }
-
-  @include active {
-    opacity: 0.5;
-  }
-
-  @include vp-1199 {
-    margin-bottom: 64px;
-  }
-
-  @include vp-767 {
-    margin-left: 9px;
-  }
+.is-invalid input {
+  border-bottom:  #ff121f solid 2px;
 }
