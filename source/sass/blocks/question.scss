@@ -3,12 +3,13 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: rgba(28, 51, 116, 0.20);
+    background-color: rgba(28, 51, 116, 0.2);
     content: "";
     top: -35px;
     left: 0;
   }
 }
+
 .question__answer-wrapper {
   position: relative;
   margin-bottom: 60px;
@@ -46,7 +47,7 @@
   line-height: 25px;
   width: 75%;
 
-  @include vp-767{
+  @include vp-767 {
     width: 99%;
     font-size: 16px;
     margin-top: 10px;

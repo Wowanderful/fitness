@@ -1,5 +1,5 @@
 .membership {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   position: relative;
   margin-bottom: -67px;
 
@@ -14,18 +14,17 @@
     bottom: -82px;
     right: 0;
 
+    @include vp-1199 {
+      width: 341px;
+      height: 403px;
+      bottom: -49px;
+      background-image: url("../../img/weight-tablet.png");
+    }
 
-  @include vp-1199 {
-    width: 341px;
-    height: 403px;
-    bottom: -49px;
-    background-image: url("../../img/weight-tablet.png");
+    @include vp-767 {
+      display: none;
+    }
   }
-
-  @include vp-767 {
-    display: none;
-  }
-}
 }
 
 .membership-wrapper {
@@ -34,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  margin-bottom:3px;
+  margin-bottom: 3px;
 
   @include vp-1199 {
     padding-top: 100px;

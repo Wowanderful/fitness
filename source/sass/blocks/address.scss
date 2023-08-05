@@ -8,17 +8,20 @@
     position: absolute;
     height: 102px;
     width: 2px;
-    background-color: #74819C;
+    background-color: #74819c;
     content: "";
     top: 21px;
     left: 211px;
+
     @include vp-1199 {
       left: 236px;
     }
+
     @include vp-767 {
       display: none;
     }
   }
+
   @include vp-1199 {
     margin-right: 130px;
   }

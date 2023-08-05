@@ -150,7 +150,7 @@
   }
 
   @include hover-focus {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #103aae;
   }
 
@@ -203,7 +203,7 @@
 
   @include vp-1199 {
     min-width: 162px;
-    width:auto;
+    width: auto;
     margin-right: 20px;
   }
 
@@ -278,7 +278,7 @@
   margin-bottom: 70px;
 
   @include hover-focus {
-    background-color: #fff;
+    background-color: #ffffff;
     opacity: 1;
     color: #102654;
   }

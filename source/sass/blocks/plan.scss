@@ -1,5 +1,5 @@
 .plan {
-  background-color: #fff;
+  background-color: #ffffff;
   box-sizing: border-box;
   width: 360px;
   height: 448px;
@@ -30,7 +30,7 @@
     .button-plan {
       background: $red-to-blue;
       border: none;
-      color: #fff;
+      color: #ffffff;
     }
   }
 }
@@ -39,7 +39,7 @@
   color: #102654;
   font-size: 26px;
   font-weight: 700;
-  line-height: 28.641px;
+  line-height: 28px;
 
   @include vp-767 {
     font-size: 22px;
@@ -50,7 +50,7 @@
   color: #102654;
   font-size: 16px;
   font-weight: 400;
-  line-height:  24px;
+  line-height: 24px;
 
   @include vp-767 {
     margin-top: 5px;
@@ -58,7 +58,7 @@
 }
 
 .plan__price {
-  color: #103AAE;
+  color: #103aae;
   font-size: 60px;
   font-weight: 700;
   position: absolute;
@@ -68,10 +68,10 @@
   @include vp-767 {
     top: 130px;
     left: 77px;
-    font-size:48px;
+    font-size: 48px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 30px;
@@ -87,9 +87,10 @@
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  margin-top: 47px;;
-  color: #E8E8E8;
+  margin-top: 47px;
+  color: #e8e8e8;
+
   @include vp-767 {
-  margin-bottom: 72px;
+    margin-bottom: 72px;
   }
 }

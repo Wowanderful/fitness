@@ -1,6 +1,6 @@
 import Swiper from '../vendor/swiper';
 
-const swiper = new Swiper('.swiper', {
+const slider = new Swiper('.slider', {
   loop: true,
   cssMode: true,
   direction: 'horizontal',
@@ -21,8 +21,8 @@ const swiper = new Swiper('.swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider__swiper-button-next',
+    prevEl: '.slider__swiper-button-prev',
     clickable: true,
   },
 }
@@ -35,14 +35,10 @@ const feedbackSlider = new Swiper('.feedback-slider', {
   slidesPerView: 1,
 
   navigation: {
-    nextEl: '.feedback-button-next',
-    prevEl: '.feedback-button-prev',
+    nextEl: '.feedback__button-next',
+    prevEl: '.feedback__button-prev',
     clickable: true,
   },
 });
 
-const swiperArray = [];
-swiperArray.push(swiper);
-swiperArray.push(feedbackSlider);
-
-export {swiperArray};
+export {slider, feedbackSlider};

@@ -1,4 +1,3 @@
-
 .footer-social {
   display: flex;
 
@@ -12,7 +11,6 @@
 }
 
 .footer-social__link {
-  display: block;
   box-sizing: border-box;
   width: 25px;
   height: 25px;
@@ -23,7 +21,7 @@
   align-items: center;
 
   @include hover-focus {
-    background-color: #103aae
+    background-color: #103aae;
   }
 
   @include active {
@@ -31,7 +29,8 @@
   }
 }
 
-.footer-social__link:hover svg, .footer-social__link:active svg,
+.footer-social__link:hover svg,
+.footer-social__link:active svg,
 .footer-social__link:focus svg {
   fill: $color-default-white;
 }

@@ -78,7 +78,7 @@
   width: 45%;
 
   @include vp-1199 {
-    width: 45%
+    width: 45%;
   }
 
   @include vp-767 {
@@ -136,7 +136,7 @@
 }
 
 .free__name-wrapper input:disabled::placeholder,
-.free__name-wrapper input:disabled::placeholder {
+.free__tel-wrapper input:disabled::placeholder {
   opacity: 0.5;
 }
 
@@ -145,5 +145,5 @@
 }
 
 .is-invalid input {
-  border-bottom:  #ff121f solid 2px;
+  border-bottom: #ff121f solid 2px;
 }

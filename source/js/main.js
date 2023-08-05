@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {playVideo} from './modules/playvideo';
 import {initTabs} from './tabs/init-tabs';
-import {swiperArray} from './modules/slider';
+import {slider, feedbackSlider} from './modules/slider';
 import {initAccordions} from './accordion/init-accordion';
 import {toggleButton} from './modules/button';
 
@@ -37,7 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    swiperArray.init();
+    slider.init();
+    feedbackSlider.init();
 
   });
 });

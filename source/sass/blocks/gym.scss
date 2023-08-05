@@ -14,7 +14,7 @@
 
 .gym__photo-video {
   position: relative;
-  margin-bottom:245px;
+  margin-bottom: 245px;
   box-sizing: border-box;
 
   @include vp-1199 {
@@ -30,7 +30,6 @@
 }
 
 .gym-photo__container {
-
   @include vp-767 {
     margin-bottom: 40px;
     height: 313px;
@@ -65,7 +64,7 @@
   height: 228px;
 
   @include vp-1199 {
-    width:266px;
+    width: 266px;
     height: 167px;
     left: 24%;
   }

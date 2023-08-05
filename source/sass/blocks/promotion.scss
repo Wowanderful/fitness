@@ -1,7 +1,6 @@
 .promotion {
   color: #1c3374;
   padding: 35px;
-  padding-top: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -41,7 +40,7 @@
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 10px;
-  color: #1C3374;
+  color: #1c3374;
 
   @include vp-767 {
     align-self: center;
@@ -86,7 +85,7 @@
     outline: 2px solid #1c3374;
   }
 
-  &:acitve {
+  &:active {
     opacity: 1;
     border: 2px solid #1c3374;
     outline: none;

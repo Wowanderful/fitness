@@ -50,6 +50,7 @@
 
 .gym-text__text {
   margin-top: 20px;
+
   @include vp-767 {
     margin-top: -18px;
   }
@@ -70,7 +71,7 @@
   @include vp-767 {
     width: 255px;
     text-align: start;
-    margin-top:41px;
+    margin-top: 41px;
     margin-bottom: 33px;
   }
 }
