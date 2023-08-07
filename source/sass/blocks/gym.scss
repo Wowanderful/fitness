@@ -5,6 +5,7 @@
 .gym-wrapper {
   display: flex;
   position: relative;
+  justify-content: center;
 
   @include vp-1199 {
     flex-direction: column;

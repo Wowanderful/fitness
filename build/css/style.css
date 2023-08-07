@@ -1546,7 +1546,8 @@ button.swiper-pagination-bullet {
   text-align: right;
   margin-left: auto;
   margin-right: 67px;
-  margin-top: -20px;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 @media (hover: hover) {
   .buy-button:hover:not(.focus-visible) {
@@ -2495,7 +2496,7 @@ button.swiper-pagination-bullet {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 77px;
   letter-spacing: 4.6px;
   text-transform: uppercase;
   margin: 0;
@@ -2620,6 +2621,9 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .gym-wrapper {
@@ -3166,7 +3170,7 @@ button.swiper-pagination-bullet {
   background-image: url("../../img/sprite/ruble.svg");
   background-repeat: no-repeat;
   top: -7px;
-  left: 140px;
+  padding-left: 10px;
 }
 
 .plan__price-blur {
@@ -3736,14 +3740,14 @@ button.swiper-pagination-bullet {
 .features-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 220px 220px 220px 220px;
-  grid-template-columns: 220px 220px 220px 220px 220px;
+  -ms-grid-columns: 400px 260px 400px;
+  grid-template-columns: 400px 260px 400px;
   -ms-grid-rows: 154px 154px;
   grid-template-rows: 154px 154px;
   margin-bottom: 57px;
-  grid-gap: 76px;
+  grid-gap: 40px;
   margin-top: 50px;
-  padding-left: 205px;
+  padding-left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -3777,17 +3781,17 @@ button.swiper-pagination-bullet {
 
 .features-list li:first-child {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
 .features-list li:last-child {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4/6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -3912,9 +3916,9 @@ button.swiper-pagination-bullet {
 
 .feature-highlighted {
   position: relative;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 3/4;
+  grid-column: 2/3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -4559,11 +4563,91 @@ button.swiper-pagination-bullet {
 
 .feedback__button-prev {
   left: -19px;
+  right: 0;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+@media (hover: hover) {
+  .feedback__button-prev:hover:not(.focus-visible) {
+    border: 2px solid #102654;
+  }
+}
+.feedback__button-prev.focus-visible:focus {
+  border: 2px solid #102654;
+}
+.feedback__button-prev:active {
+  background-color: #102654;
+}
+@media (max-width: 767px) {
+  .feedback__button-prev {
+    left: -7px;
+  }
 }
 
 .feedback__button-next {
   right: 10px;
   z-index: 12;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+@media (hover: hover) {
+  .feedback__button-next:hover:not(.focus-visible) {
+    border: 2px solid #102654;
+  }
+}
+.feedback__button-next.focus-visible:focus {
+  border: 2px solid #102654;
+}
+.feedback__button-next:active {
+  background-color: #102654;
+}
+@media (max-width: 1199px) {
+  .feedback__button-next {
+    right: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__button-next {
+    right: -8px;
+  }
+}
+
+.feedback__button-prev::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/sprite/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 11;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.feedback__button-prev::after:active {
+  background-image: url("../../img/sprite/arrow-left-white.svg");
+}
+
+.feedback__button-next::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/sprite/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 11;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.feedback__button-next::after:active {
+  background-image: url("../../img/sprite/arrow-right-white.svg");
 }
 
 .feedback-slide {

@@ -43,9 +43,80 @@
 
 .feedback__button-prev {
   left: -19px;
+  right: 0;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+
+  @include hover-focus {
+    border: 2px solid #102654;
+  }
+
+  &:active {
+    background-color: #102654;
+  }
+
+  @include vp-767 {
+    left: -7px;
+  }
 }
 
 .feedback__button-next {
   right: 10px;
   z-index: 12;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+
+  @include hover-focus {
+    border: 2px solid #102654;
+  }
+
+  &:active {
+    background-color: #102654;
+  }
+
+  @include vp-1199 {
+    right: 26px;
+  }
+
+  @include vp-767 {
+    right: -8px;
+  }
+}
+
+.feedback__button-prev::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/sprite/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 11;
+  box-sizing: border-box;
+
+  &:active {
+    background-image: url("../../img/sprite/arrow-left-white.svg");
+  }
+}
+
+.feedback__button-next::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/sprite/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 11;
+  box-sizing: border-box;
+
+  &:active {
+    background-image: url("../../img/sprite/arrow-right-white.svg");
+  }
 }
