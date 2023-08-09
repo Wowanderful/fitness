@@ -3,7 +3,7 @@
   margin-bottom: 1px;
 }
 
-.features-wrapper {
+.features__wrapper {
   padding-top: 113px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   }
 }
 
-.features-list {
+.features__list {
   display: grid;
   grid-template-columns: 400px 260px 400px;
   grid-template-rows: 154px 154px;
@@ -46,12 +46,12 @@
   }
 }
 
-.features-list li:first-child {
+.features__list li:first-child {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
-.features-list li:last-child {
+.features__list li:last-child {
   grid-column: 3/4;
   grid-row: 2/3;
 }

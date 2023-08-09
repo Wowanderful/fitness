@@ -64,7 +64,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/sprite/arrow-left.svg");
+  background-image: url("/build/img/sprite.svg#arrow-left");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -72,7 +72,7 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("../../img/sprite/arrow-left-white.svg");
+    background-image: url("/build/img/sprite.svg#arrow-left-white");
   }
 }
 
@@ -82,7 +82,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/sprite/arrow-right.svg");
+  background-image: url("/build/img/sprite.svg#arrow-right");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -90,6 +90,6 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("../../img/sprite/arrow-right-white.svg");
+    background-image: url("/build/img/sprite.svg#arrow-right-white.svg");
   }
 }

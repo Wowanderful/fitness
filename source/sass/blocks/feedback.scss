@@ -1,4 +1,4 @@
-.feedback-wrapper {
+.feedback__wrapper {
   padding-top: 123px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   }
 }
 
-.feedback-slider {
+.feedback__feedback-slider {
   display: flex;
   padding-top: 37px;
   margin-bottom: 120px;
@@ -27,7 +27,7 @@
   }
 }
 
-.feedback-slider-wrapper {
+.feedback__feedback-slider-wrapper {
   min-width: 560px;
   max-width: 638px;
   display: flex;

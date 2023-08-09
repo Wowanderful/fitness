@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -22,7 +22,7 @@
   }
 }
 
-.footer-logo {
+.footer__footer-logo {
   padding-top: 8px;
 
   @include vp-1199 {

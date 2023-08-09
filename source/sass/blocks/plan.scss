@@ -76,7 +76,7 @@
     content: "";
     width: 30px;
     height: 42px;
-    background-image: url("../../img/sprite/ruble.svg");
+    background-image: url("/build/img/sprite.svg#ruble");
     background-repeat: no-repeat;
     top: -7px;
     padding-left: 10px;
@@ -93,4 +93,23 @@
   @include vp-767 {
     margin-bottom: 72px;
   }
+}
+
+.plan__button-plan {
+  background-color: transparent;
+  border: 4px solid #102654;
+  color: #102654;
+  width: 211px;
+
+  @include hover-focus {
+    background: $red-to-blue;
+    border: none;
+    color: $color-default-white;
+    opacity: 1;
+  }
+}
+
+.plan__button-plan:disabled {
+  color: rgba(16, 38, 84, 0.3);
+  border: 7px solid rgba(16, 38, 84, 0.3);
 }

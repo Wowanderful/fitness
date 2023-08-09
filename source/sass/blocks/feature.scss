@@ -1,12 +1,4 @@
-.feature--next {
-  grid-column: 1/3;
-  grid-row: 2/3;
 
-
-  @include vp-767 {
-    margin-top: 81px;
-  }
-}
 
 .feature {
   display: flex;
@@ -26,6 +18,16 @@
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
+  }
+}
+
+.feature--next {
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+
+  @include vp-767 {
+    margin-top: 81px;
   }
 }
 

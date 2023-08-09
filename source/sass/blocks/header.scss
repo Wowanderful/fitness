@@ -14,7 +14,7 @@
 }
 
 
-.header-wrapper {
+.header__wrapper {
   padding-top: 38px;
 
   @include vp-1199 {
@@ -23,6 +23,18 @@
 
   @include vp-767 {
     padding-top: 20px;
+  }
+}
+
+.header__upper-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  margin-left: 3px;
+
+  @include vp-1199 {
+    margin-bottom: 19px;
   }
 }
 
@@ -61,5 +73,15 @@
   @include vp-1199 {
     transform: none;
     margin-bottom: 82px;
+  }
+}
+
+.header__hero-block {
+  display: flex;
+  justify-content: center;
+  width: 83%;
+
+  @include vp-1199 {
+    width: 100%;
   }
 }

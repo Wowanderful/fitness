@@ -23,8 +23,8 @@
   <body>
 
       <header class="header">
-        <div class="container header-wrapper">
-          <div class="header__upper-block upper-block">
+        <div class="container header__wrapper">
+          <div class="header__upper-block">
             <a href="#">
               <picture>
                 <source media="(min-width:1200px)" srcset="img/svg/logo-desktop.svg" width="122" height="44">
@@ -34,8 +34,8 @@
             </a>
             <a class="header__phone" href="88005555555">8-800-555-55-55</a>
           </div>
-          <div class="header__main-block hero-block">
-            <div class="hero">
+          <div class="header__hero-block">
+            <div class="header__hero hero">
               <h1>Фитнес центр</h1>
               <p>Омск</p>
               <ul class="hero__list">
@@ -43,7 +43,7 @@
                 <li>Групповые занятия</li>
                 <li>Кардио-зона</li>
               </ul>
-              <a class="btn button-standard buy-button" href="#membership"
+              <a class="btn button-standard hero__buy-button" href="#membership"
               aria-label="Купить абонемент" tabindex="0">Купить абонемент</a>
             </div>
             <div class="header__image">
@@ -67,7 +67,7 @@
       <main class="main-page">
 
         <section class="gym"> <!--Блок тренажерные залы-->
-          <div class="gym-wrapper">
+          <div class="gym__wrapper">
             <div class="gym__element gym-text">
               <h2 class="section-title gym-text__title">Тренажёрный зал</h2>
               <div class="gym-text__subtitle">Просторный зал площадью 900 кв/м</div>
@@ -84,8 +84,8 @@
                 </p>
               </div>
             </div>
-            <div class="gym__photo-video">
-              <div class="gym__element gym-photo__container">
+            <div class="gym__photo-video photo-video">
+              <div class="gym__element photo-video__photo-container">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop-2x.webp 2x" width="660" height="401">
                   <source type="image/webp" media="(min-width:768px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet-2x.webp 2x" width="678" height="345">
@@ -96,8 +96,8 @@
                 </picture>
               </div>
 
-              <div class="gym__element gym-video__container">
-                <div class="gym__video-preload">
+              <div class="gym__element photo-video__video-container">
+                <div class="photo-video__video-preload">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-video-desktop.webp"  width="364" height="228">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-video-desktop.webp" width="266" height="167">
@@ -107,14 +107,14 @@
                     <img  src="img/gym-video-mobile.png" width="364" height="167" alt="Просмотр видео">
                   </picture>
                 </div>
-                <button type='button' class="button-play" aria-label="Запустить видео"></button>
+                <button type='button' class="gym__button-play" aria-label="Запустить видео"></button>
               </div>
             </div>
           </div>
         </section>
 
         <section class="membership" id="membership"> <!--Блок Абонементы-->
-          <div class="container membership-wrapper" data-tabs="parent" data-delay="300" data-height="max">
+          <div class="container membership__wrapper" data-tabs="parent" data-delay="300" data-height="max">
             <h2 class="section-title membership__title">Абонементы</h2>
             <div class="membership__controls tab-controls" data-tabs="controls">
               <button class="tab-controls__month" data-tabs="control" data-index="0"
@@ -125,28 +125,28 @@
               aria-label="Абонементы на 12 месяцев">12 месяцев</button>
             </div>
 
-            <div class="tabs-content" data-tabs="content">
+            <div class="membership__tabs-content" data-tabs="content">
               <div class="tabs-content__element plan-list" data-tabs="element">
                 <div class="tabs-content__plan-card plan" >
                   <h3>С тренером</h3>
                   <p class="plan__subtitle">12 занятий</p>
                   <p class="plan__price">5000</p>
                   <p class="plan__price-blur">5000</p>
-                  <a href="sitemap.html" class="btn button-standard button-plan">Купить абонемент</a>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">Купить абонемент</a>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Дневной</h3>
                   <p class="plan__subtitle">с 8:00 до 17:00</p>
                   <p class="plan__price">1700</p>
                   <p class="plan__price-blur">1700</p>
-                  <a href="sitemap.html" class="btn button-standard button-plan">Купить абонемент</a>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">Купить абонемент</a>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Полный день</h3>
                   <p class="plan__subtitle">с 8:00 до 22:00</p>
                   <p class="plan__price">2700</p>
                   <p class="plan__price-blur">2700</p>
-                  <a href="sitemap.html" class="btn button-standard button-plan">Купить абонемент</a>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">Купить абонемент</a>
                 </div>
               </div>
 
@@ -156,21 +156,21 @@
                   <p class="plan__subtitle">12 занятий</p>
                   <p class="plan__price">5000</p>
                   <p class="plan__price-blur">5000</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Дневной</h3>
                   <p class="plan__subtitle">с 8:00 до 17:00</p>
                   <p class="plan__price">8000</p>
                   <p class="plan__price-blur">8000</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Полный день</h3>
                   <p class="plan__subtitle">с 8:00 до 22:00</p>
                   <p class="plan__price">12000</p>
                   <p class="plan__price-blur">12000</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
               </div>
 
@@ -180,21 +180,21 @@
                   <p class="plan__subtitle">12 занятий</p>
                   <p class="plan__price">5000</p>
                   <p class="plan__price-blur">5000</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Дневной</h3>
                   <p class="plan__subtitle">с 8:00 до 17:00</p>
                   <p class="plan__price">11999</p>
                   <p class="plan__price-blur">11999</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
                 <div class="membership__plan-card plan">
                   <h3>Полный день</h3>
                   <p class="plan__subtitle">с 8:00 до 22:00</p>
                   <p class="plan__price">14999</p>
                   <p class="plan__price-blur">14999</p>
-                  <button type="button" class="button btn button-standard button-plan">Купить абонемент</button>
+                  <button type="button" class="button btn button-standard plan__button-plan">Купить абонемент</button>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
         </section>
 
         <aside class="commercial"> <!--Блок Supergames-->
-          <div class="container commercial-wrapper">
+          <div class="container commercial__wrapper">
             <div class="commercial__text supergames">
               <h2>Super Games</h2>
               <div class="supergames__dateandtime dateandtime">
@@ -219,7 +219,7 @@
                 </div>
               </div>
               <div class="supergames__description">Ежегодные соревнования по CrossFit</div>
-              <a class="button btn button-standard button-link" href="#">Заполнить заявку</a>
+              <a class="button btn button-standard supergames__button-link" href="#">Заполнить заявку</a>
             </div>
             <div class="commercial__photo">
               <picture>
@@ -235,7 +235,7 @@
         </aside>
 
         <section class="coaches"> <!--Раздел Тренеры-->
-          <div class="coaches-wrapper">
+          <div class="coaches__wrapper">
             <h2 class="section-title coaches__title">Тренеры</h2>
             <div class="slider swiper">
 
@@ -409,7 +409,7 @@
         </section>
 
         <section class="features"> <!--Блок Наши Преимущества-->
-          <div class="container features-wrapper">
+          <div class="container features__wrapper">
             <h2 class="section-title features__title">Наши преимущества</h2>
             <ul class="features__list features-list">
               <li class="features__item feature">
@@ -465,7 +465,7 @@
         </section>
 
         <aside class="promotions"> <!--Блок Акции-->
-          <div class="container promotions-wrapper">
+          <div class="container promotions__wrapper">
             <h2 class="section-title promotions__title">Акции</h2>
             <ul class="promotions__list promotions-list">
               <li class="promotions-list__item promotion-main">
@@ -501,7 +501,7 @@
         </aside>
 
         <section class="faq"> <!--Блок Вопросы и ответы-->
-          <div class="container faq-wrapper">
+          <div class="container faq__wrapper">
           <h2 class="section-title faq__title">Вопросы и ответы</h2>
 
             <div class="faq__tab-wrapper tab-wrapper" data-tabs="parent">
@@ -663,10 +663,10 @@
         </section>
 
         <section class="feedback"> <!--Блок Отзывы-->
-          <div class="container feedback-wrapper">
+          <div class="container feedback__wrapper">
             <h2 class="section-title feedback__title">Отзывы</h2>
-            <div class="feedback__slider swiper feedback-slider">
-              <div class="swiper-wrapper feedback-slider-wrapper ">
+            <div class="feedback__slider swiper feedback__feedback-slider">
+              <div class="swiper-wrapper feedback__feedback-slider-wrapper ">
                 <div class="swiper-slide feedback-slide">
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
@@ -686,7 +686,7 @@
         </section>
 
         <div class="lower-block">
-          <div class="lower-wrapper">
+          <div class="lower-block__wrapper">
             <section class="free"> <!--Блок Бесплатное занятие-->
               <h2 class="free__title">Бесплатное занятие</h2>
               <div class="free__form-container" data-form-validate data-callback="base">
@@ -704,7 +704,7 @@
                         <input type="tel" name="phone" id="phone-form" placeholder="Телефон" aria-label="Телефон" required>
                       </label>
                     </div>
-                    <button type="submit" class="button btn button-standard button-send">Отправить</button>
+                    <button type="submit" class="button btn button-standard free__button-send">Отправить</button>
                   </div>
                 </form>
               </div>
@@ -712,8 +712,8 @@
 
           <section class="contacts"> <!--Блок Контакты-->
             <h2 class="section-title contacts__title">Контакты</h2>
-              <div class="contacts-wrapper">
-                <div class="contacts__item address-block">
+              <div class="contacts__wrapper">
+                <div class="contacts__item contacts__address-block">
                   <div class="address-block__item address">
                     <h3>Адрес</h3>
                     <p>г. Омск, ул. 60 лет Октября, 7</p>
@@ -723,7 +723,7 @@
                     <p>Пн-Вс: с 8:00 до 22:00</p>
                   </div>
                 </div>
-                <div class="phone-block">
+                <div class="contacts__phone-block">
                   <div class="phone-block__item phone">
                     <h3>Телефон</h3>
                     <a href="#">8-800-555-55-55</a>
@@ -740,9 +740,9 @@
       </main>
 
       <footer class="footer">
-        <div class="container footer-wrapper">
-          <div class="footer__item footer-logo">
-            <a class="footer-logo__logo" href="#">
+        <div class="container footer__wrapper">
+          <div class="footer__footer-logo">
+            <a href="#">
               <picture>
                 <source media="(min-width:1200px)" srcset="img/svg/logo-footer-desktop.svg" width="88" height="32">
                 <img src="img/svg/logo-footer-mobile.svg" width="68" height="15" alt="Логотип фитнесс-центра Supergym">

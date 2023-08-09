@@ -1,36 +1,3 @@
-.address-block {
-  display: flex;
-  flex-direction: column;
-  margin-right: 100px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    height: 102px;
-    width: 2px;
-    background-color: #74819c;
-    content: "";
-    top: 21px;
-    left: 211px;
-
-    @include vp-1199 {
-      left: 236px;
-    }
-
-    @include vp-767 {
-      display: none;
-    }
-  }
-
-  @include vp-1199 {
-    margin-right: 130px;
-  }
-
-  @include vp-767 {
-    margin-right: 0;
-  }
-}
-
 .address p {
   margin-top: 0;
   margin-bottom: 15px;

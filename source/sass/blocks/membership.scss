@@ -27,7 +27,7 @@
   }
 }
 
-.membership-wrapper {
+.membership__wrapper {
   padding-top: 120px;
   display: flex;
   flex-direction: column;
@@ -47,4 +47,9 @@
 .membership__title {
   margin-left: -3px;
   margin-bottom: 10px;
+}
+
+.membership__tabs-content {
+  margin-bottom: 120px;
+  align-self: start;
 }
