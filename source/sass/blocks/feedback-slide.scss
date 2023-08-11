@@ -2,7 +2,7 @@
   background-color: #1c3374;
   color: $color-default-white;
   width: 560px;
-  padding-left: 33%;
+  padding-left: 34%;
   box-sizing: border-box;
   padding-right: 10%;
   display: flex;
@@ -10,9 +10,8 @@
   padding-top: 50px;
   background-image: url("../../img/author-desktop.png");
   background-repeat: no-repeat;
-  background-position: 10% 32%;
-  margin-left: -30px;
-
+  background-position: 14% 32%;
+  margin-left: -10px;
 
   @include vp-1199 {
     width: 566px;

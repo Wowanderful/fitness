@@ -5,7 +5,7 @@
   align-items: center;
 
   @include vp-767 {
-    padding-top: 51px;
+    padding-top: 75px;
   }
 }
 
@@ -42,11 +42,12 @@
 }
 
 .feedback__button-prev {
-  left: -19px;
+  left: 79px;
   right: 0;
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  background-color: #ffffff;
 
   @include hover-focus {
     border: 2px solid #102654;
@@ -62,11 +63,12 @@
 }
 
 .feedback__button-next {
-  right: 10px;
+  right: 80px;
   z-index: 12;
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  background-color: #ffffff;
 
   @include hover-focus {
     border: 2px solid #102654;
@@ -91,7 +93,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/sprite/arrow-left.svg");
+  background-image: url("../../img/svg/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -99,7 +101,7 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("../../img/sprite/arrow-left-white.svg");
+    background-image: url("../../img/svg/arrow-left-white.svg");
   }
 }
 
@@ -109,7 +111,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/sprite/arrow-right.svg");
+  background-image: url("../../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -117,6 +119,6 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("../../img/sprite/arrow-right-white.svg");
+    background-image: url("../../img/svg/arrow-right-white.svg");
   }
 }

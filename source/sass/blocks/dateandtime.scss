@@ -1,11 +1,11 @@
 .dateandtime {
   display: flex;
   flex-direction: column;
-  width: 108px;
+  width: 95px;
   justify-content: start;
   padding: 0;
   margin-top: 0;
-  margin-left: 10px;
+
 
   @include vp-1199 {
     width: 70px;

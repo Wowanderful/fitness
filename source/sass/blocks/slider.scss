@@ -20,6 +20,7 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  background-color: #ffffff;
 
   @include hover-focus {
     border: 2px solid #102654;
@@ -40,6 +41,7 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  background-color: #ffffff;
 
   @include hover-focus {
     border: 2px solid #102654;
@@ -64,7 +66,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("/build/img/sprite.svg#arrow-left");
+  background-image: url("../../img/svg/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -72,7 +74,7 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("/build/img/sprite.svg#arrow-left-white");
+    background-image: url("../../img/svg/arrow-left-white.svg");
   }
 }
 
@@ -82,7 +84,7 @@
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("/build/img/sprite.svg#arrow-right");
+  background-image: url("../../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -90,6 +92,6 @@
   box-sizing: border-box;
 
   &:active {
-    background-image: url("/build/img/sprite.svg#arrow-right-white.svg");
+    background-image: url("../../img/svg/arrow-right-white.svg");
   }
 }

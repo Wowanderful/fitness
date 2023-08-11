@@ -28,7 +28,7 @@ const slider = new Swiper('.slider', {
 }
 );
 
-const feedbackSlider = new Swiper('.feedback-slider', {
+const feedbackSlider = new Swiper('.feedback__slider', {
   cssMode: true,
   loop: false,
   direction: 'horizontal',

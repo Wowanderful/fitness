@@ -7,7 +7,7 @@
   flex-direction: column;
   margin-right: 40px;
   align-items: center;
-  padding-top: 68px;
+  padding-top: 62px;
   position: relative;
 
   @include vp-1199 {
@@ -18,8 +18,9 @@
 
   @include vp-767 {
     width: 290px;
-    margin-bottom: -30px;
+    margin-bottom: 35px;
     padding-top: 43px;
+    height: 384px;
   }
 
   @include hover-focus {
@@ -46,27 +47,32 @@
   }
 }
 
-.plan__subtitle {
+.plan p {
   color: #102654;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 14px;
 
   @include vp-767 {
     margin-top: 5px;
   }
 }
 
-.plan__price {
+.plan span {
   color: #103aae;
   font-size: 60px;
   font-weight: 700;
   position: absolute;
-  top: 165px;
+  top: 222px;
   left: 102px;
 
+  @include vp-1199 {
+    top: 231px;
+    left: 138px;
+  }
+
   @include vp-767 {
-    top: 130px;
+    top: 181px;
     left: 77px;
     font-size: 48px;
   }
@@ -76,19 +82,20 @@
     content: "";
     width: 30px;
     height: 42px;
-    background-image: url("/build/img/sprite.svg#ruble");
+    background-image: url("../../img/svg/ruble.svg");
     background-repeat: no-repeat;
     top: -7px;
-    padding-left: 10px;
+    right: -43px;
   }
 }
 
-.plan__price-blur {
+.plan strong {
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  margin-top: 47px;
+  margin-top: 61px;
   color: #e8e8e8;
+  margin-bottom: 98px;
 
   @include vp-767 {
     margin-bottom: 72px;

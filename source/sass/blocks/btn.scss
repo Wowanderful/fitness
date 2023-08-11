@@ -51,19 +51,19 @@
   width: 42px;
   height: 42px;
   cursor: pointer;
-  right: 0;
+  right: -43px;
   top: -8px;
   background-color: transparent;
-  background-image: url("/build/img/sprite.svg#open-default");
+  background-image: url("../../img/svg/open-default.svg");
   background-repeat: no-repeat;
 
   @include hover-focus {
-    background-image: url("/build/img/sprite.svg#open-hover.svg");
+    background-image: url("../../img/svg/open-hover.svg");
     opacity: 1;
   }
 
   &:disabled {
-    background-image: url("/build/img/sprite.svg#open-disabled.svg");
+    background-image: url("../../img/svg/open-disabled.svg");
   }
 
   @include vp-1199 {
@@ -82,14 +82,14 @@
   width: 42px;
   height: 42px;
   cursor: pointer;
-  right: 0;
-  top: -8px;
+  right: -44px;
+  top: -14px;
   background-color: transparent;
-  background-image: url("/build/img/sprite.svg#close.svg");
+  background-image: url("../../img/svg/close.svg");
   background-repeat: no-repeat;
 
   @include hover-focus {
-    background-image: url("/build/img/sprrite.svg#close.svg");
+    background-image: url("../../img/svg/close.svg");
     opacity: 1;
   }
 

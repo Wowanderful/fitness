@@ -8,7 +8,7 @@ const onButtonClick = () => {
   iframe.classList.add('photo-video__video');
   iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
   iframe.setAttribute('autoplay', '1');
-  iframe.setAttribute('width', '364');
+  iframe.setAttribute('width', '100%');
   iframe.setAttribute('height', 'auto');
   videoContainer.appendChild(iframe);
   button.classList.add('photo-video__button-hidden');

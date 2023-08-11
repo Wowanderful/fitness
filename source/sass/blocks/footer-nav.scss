@@ -25,34 +25,34 @@
   }
 }
 
-.footer-nav li:first-child {
+.footer-nav__element-1 {
   @include vp-767 {
     order: 1;
   }
 }
 
-.footer-nav li:nth-child(4) {
+.footer-nav__element-4 {
   @include vp-767 {
     order: 2;
   }
 }
 
-.footer-nav li:nth-child(2) {
+.footer-nav__element-2 {
   @include vp-767 {
     order: 3;
   }
 }
 
-.footer-nav li:last-child {
+.footer-nav__element-5 {
   @include vp-767 {
     order: 4;
   }
 }
 
-.footer-nav li:nth-child(3) {
+.footer-nav__element-3 {
   @include vp-767 {
     order: 5;
-    transform: translateX(159px) translateY(-119px);
+    margin-top: 17px;
   }
 }
 

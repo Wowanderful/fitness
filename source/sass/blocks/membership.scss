@@ -1,17 +1,18 @@
 .membership {
   background-color: #f8f9fc;
   position: relative;
-  margin-bottom: -67px;
+  margin-bottom: 0;
 
   &::after {
     position: absolute;
+    content: "";
     width: 285px;
     height: 353px;
     background-image: url("../../img/weight.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    bottom: -82px;
+    bottom: -79px;
     right: 0;
 
     @include vp-1199 {

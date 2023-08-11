@@ -40,7 +40,7 @@
   }
 }
 
-.feature-highlighted-wrapper {
+.feature-highlighted__wrapper {
   background-color: #1c3374;
   width: 100%;
   height: 307px;
@@ -67,7 +67,7 @@
   }
 }
 
-.feature-highlighted__number {
+.feature-highlighted p {
   color: $color-default-white;
   font-size: 74px;
   font-style: normal;
@@ -79,24 +79,24 @@
   }
 }
 
-.feature-highlighted__name {
+.feature-highlighted h3 {
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
   color: $color-default-white;
-  margin-top: -5px;
+  margin-top: 24px;
 
-  @include vp-767 {
+  @include vp-1199 {
     margin-top: 15px;
   }
 
   @include vp-767 {
     font-size: 22px;
-    margin-top: -15px;
+    margin-top: 17px;
   }
 }
 
-.feature-highlighted__description {
+.feature-highlighted span {
   font-weight: 400;
   color: $color-default-white;
   text-align: center;
