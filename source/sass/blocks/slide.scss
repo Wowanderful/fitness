@@ -80,9 +80,6 @@
 }
 
 .slide__list {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -92,6 +89,9 @@
   margin-left: none;
   margin-bottom: 14px;
   position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 
   &::before {
     position: absolute;
