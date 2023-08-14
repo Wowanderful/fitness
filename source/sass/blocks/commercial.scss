@@ -10,8 +10,26 @@
   }
 
   @include vp-767 {
-    flex-direction: column;
+
     margin-bottom: 3px;
     padding-top: 0;
   }
+}
+
+.commercial__block {
+  display: flex;
+  height: 500px;
+
+  @include vp-1199 {
+    height: 292px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.commercial__photo {
+  background-color: #0e0874;
 }

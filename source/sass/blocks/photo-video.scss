@@ -16,6 +16,8 @@
 }
 
 .photo-video__photo-container {
+  background-color: #b0b0b0;
+
   @include vp-767 {
     margin-bottom: 40px;
     height: 313px;

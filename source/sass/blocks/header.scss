@@ -69,6 +69,7 @@
 .header__image-container {
   transform: translateY(-21px);
   margin-bottom: 30px;
+  background-color: #f10026;
 
   @include vp-1199 {
     transform: none;
