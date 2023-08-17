@@ -2,9 +2,9 @@
   color: #ffffff;
   width: 50%;
   box-sizing: border-box;
-  padding-left: 2px;
+  padding-left: 4px;
   padding-right: 100px;
-  padding-top: 51px;
+  padding-top: 54px;
 
 
   @include vp-1199 {
@@ -27,7 +27,7 @@
   font-size: 54px;
   font-weight: 800;
   line-height: 85px;
-  letter-spacing: 1.62px;
+  letter-spacing: 2px;
 
   @include vp-1199 {
     font-size: 42px;

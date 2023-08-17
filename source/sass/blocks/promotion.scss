@@ -8,6 +8,7 @@
   border-style: solid;
   border-image: $red-to-blue 1;
   padding-top: 22px;
+  padding-left: 30px;
 
   @include vp-1199 {
     width: 47%;
@@ -48,7 +49,7 @@
 }
 
 .promotion p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   margin-top: 0;
@@ -67,7 +68,7 @@
 }
 
 .promotion a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.7px;
   text-transform: uppercase;

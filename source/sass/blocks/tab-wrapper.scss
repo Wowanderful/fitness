@@ -1,6 +1,7 @@
 .tab-wrapper {
   display: flex;
   padding-top: 45px;
+  margin-bottom: 40px;
 
   @include vp-1199 {
     flex-direction: column;

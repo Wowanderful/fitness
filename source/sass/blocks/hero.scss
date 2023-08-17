@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   width: 48%;
   margin-bottom: 20px;
-  margin-top: 34px;
+  margin-top: 38px;
 
   @include vp-1199 {
     margin-top: -34px;
@@ -30,7 +30,7 @@
   width: 63%;
   text-align: right;
   padding-right: 27px;
-  padding-top: 23px;
+  padding-top: 21px;
 
   @include vp-1199 {
     font-size: 72px;
@@ -52,7 +52,7 @@
 .hero p {
   color: $color-default-white;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.44px;
@@ -62,8 +62,8 @@
   width: 100%;
   text-align: right;
   align-self: end;
-  padding-right: 113px;
-  padding-top: 2px;
+  padding-right: 118px;
+  padding-top: 0;
 
   @include vp-1199 {
     font-size: 34px;
@@ -116,7 +116,7 @@
   text-align: right;
   margin-left: auto;
   margin-right: 67px;
-  margin-top: -25px;
+  margin-top: 0;
   margin-bottom: 20px;
 
   @include hover-focus {

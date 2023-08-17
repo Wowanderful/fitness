@@ -37,14 +37,15 @@
 
 .features__list {
   display: grid;
-  grid-template-columns: 400px 260px 400px;
+  grid-template-columns: 345px 260px 400px;
   grid-template-rows: 154px 154px;
   margin-bottom: 57px;
   grid-column-gap: 40px;
   grid-row-gap: 80px;
-  margin-top: 50px;
+  margin-top: 37px;
   padding-left: 0;
   box-sizing: border-box;
+  margin-left: 74px;
 
   @include vp-1199 {
     margin-bottom: 100px;
