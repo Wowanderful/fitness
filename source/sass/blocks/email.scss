@@ -1,6 +1,14 @@
 .email a {
   margin-top: 12px;
 
+  @include hover {
+    border-bottom: 2px #000000 solid;
+  }
+
+  @include focus {
+    outline: 2px #000000 solid;
+  }
+
   @include vp-767 {
     font-size: 18px;
     line-height: 27px;

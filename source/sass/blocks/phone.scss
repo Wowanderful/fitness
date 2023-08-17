@@ -3,6 +3,14 @@
   margin-top: 12px;
   margin-bottom: 5px;
 
+  @include hover {
+    border-bottom: 2px #000000 solid;
+  }
+
+  @include focus {
+    outline: 2px #000000 solid;
+  }
+
   @include vp-1199 {
     margin-bottom: 23px;
   }

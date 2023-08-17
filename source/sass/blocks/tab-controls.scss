@@ -31,6 +31,21 @@
   cursor: pointer;
   position: relative;
 
+  @include hover-focus {
+    color: #102654;
+
+    &::after {
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+      position: absolute;
+      content: "";
+      z-index: 3;
+      top: 33px;
+      left: 0;
+    }
+  }
+
   &.is-active {
     color: #102654;
     pointer-events: none;
@@ -45,5 +60,9 @@
       top: 33px;
       left: 0;
     }
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
