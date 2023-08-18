@@ -18,6 +18,12 @@
   }
 }
 
+.faq__tab-wrapper {
+  @include vp-1199 {
+    padding-left: 10px;
+  }
+}
+
 .faq h2 {
   color: #102654;
   font-family: $ff-alumni;
@@ -47,7 +53,7 @@
     flex-direction: row;
     flex-wrap: no-wrap;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
@@ -66,8 +72,10 @@
 
   @include vp-1199 {
     width: 100%;
-    margin-bottom: -20px;
-    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   @include vp-767 {
@@ -87,7 +95,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  width: 260px;
   padding-top: 17px;
   padding-bottom: 17px;
 
@@ -111,13 +118,10 @@
   }
 
   @include vp-1199 {
-    font-size: 16px;
-  }
-
-  @include vp-1199 {
     min-width: 162px;
     width: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    font-size: 16px;
   }
 
   @include vp-767 {

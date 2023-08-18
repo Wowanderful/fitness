@@ -67,7 +67,8 @@
   }
 
   @include vp-1199 {
-    right: 40px;
+    top: -3px;
+    right: 13px;
   }
 
   @include vp-767 {
@@ -91,6 +92,11 @@
   @include hover-focus {
     background-image: url("../../img/svg/close.svg");
     opacity: 1;
+  }
+
+  @include vp-1199 {
+    right: 13px;
+    top: -10px
   }
 
   @include vp-767 {

@@ -17,6 +17,10 @@
     top: 43px;
     z-index: 2;
   }
+
+  @include vp-1199 {
+    margin-top: 1px;
+  }
 }
 
 .tab-controls__month {

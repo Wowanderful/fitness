@@ -18,7 +18,7 @@
     @include vp-1199 {
       width: 341px;
       height: 403px;
-      bottom: -49px;
+      bottom: -103px;
       background-image: url("../../img/weight-tablet.png");
     }
 
@@ -67,4 +67,8 @@
 .membership__tabs-content {
   margin-bottom: 120px;
   align-self: start;
+
+  @include vp-1199 {
+    margin-bottom: 109px;
+  }
 }

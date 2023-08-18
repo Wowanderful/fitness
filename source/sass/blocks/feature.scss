@@ -1,13 +1,10 @@
 .feature {
   display: flex;
 
-
-
   @include vp-1199 {
     margin-bottom: 10px;
     margin-right: 0;
-
-    width: 40%;
+    width: 43%;
     justify-content: start;
   }
 

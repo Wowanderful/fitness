@@ -9,7 +9,8 @@
   @include vp-1199 {
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
+    height: 462px;
   }
 
   @include vp-767 {
@@ -28,6 +29,12 @@
   box-sizing: border-box;
   flex-grow: 1;
 
+  @include vp-1199 {
+    width: 40%;
+    margin-left: 52px;
+    padding-left: 0;
+  }
+
   @include vp-767 {
     width: 100%;
     align-items: center;
@@ -42,7 +49,7 @@
   background-color: #ed0233;
 
   @include vp-1199 {
-    width: 72%;
+    width: 68%;
     margin-left: auto;
   }
 
@@ -52,6 +59,10 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.promotion-main__photo-block img {
+  object-fit: fill;
 }
 
 .promotion-main__text-block span {

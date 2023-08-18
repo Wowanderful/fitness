@@ -75,8 +75,9 @@
 
   @include vp-1199 {
     text-align: center;
-    margin-top: -4px;
-    margin-bottom: 18px;
+    margin-bottom: 45px;
+    width: 102%;
+    margin-top: 0;
   }
 
   @include vp-767 {
