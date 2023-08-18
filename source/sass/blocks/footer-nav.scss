@@ -37,6 +37,7 @@
 
 .footer-nav__element-4 {
   @include vp-767 {
+    width: 20%;
     order: 2;
   }
 }
@@ -49,6 +50,7 @@
 
 .footer-nav__element-5 {
   @include vp-767 {
+    width: 20%;
     order: 4;
   }
 }
@@ -57,6 +59,7 @@
   @include vp-767 {
     order: 5;
     margin-top: 17px;
+    transform: translateX(158px) translateY(-136px);
   }
 }
 
