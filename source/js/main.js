@@ -6,6 +6,7 @@ import {initTabs} from './tabs/init-tabs';
 import {slider, feedbackSlider} from './modules/slider';
 import {initAccordions} from './accordion/init-accordion';
 import {toggleButton} from './modules/button';
+import {initPhoneMask} from './utils/phone-mask';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
@@ -13,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     playVideo();
     toggleButton();
-
+    initPhoneMask();
   });
 });
 

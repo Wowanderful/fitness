@@ -41,7 +41,9 @@
   z-index: 14;
 }
 
-.slide:hover .slide__image-container h3 {
+.slide:hover .slide__image-container h3,
+.slide:active .slide__image-container h3,
+.slide:focus-visible .slide__image-container h3 {
   display: none;
 }
 
@@ -59,7 +61,9 @@
   z-index: 15;
 }
 
-.slide:hover .slide__text-block {
+.slide:hover .slide__text-block,
+.slide:focus-visible .slide__text-block,
+.slide:active .slide__text-block {
   display: flex;
   z-index: 18;
 }

@@ -370,6 +370,7 @@ html {
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -2525,6 +2526,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding-right: 0;
     padding-left: 15px;
+    margin: 0 auto;
   }
 }
 
@@ -3013,8 +3015,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767px) {
   .plan-list {
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
@@ -3722,7 +3723,9 @@ button.swiper-pagination-bullet {
   z-index: 14;
 }
 
-.slide:hover .slide__image-container h3 {
+.slide:hover .slide__image-container h3,
+.slide:active .slide__image-container h3,
+.slide:focus-visible .slide__image-container h3 {
   display: none;
 }
 
@@ -3746,7 +3749,9 @@ button.swiper-pagination-bullet {
   z-index: 15;
 }
 
-.slide:hover .slide__text-block {
+.slide:hover .slide__text-block,
+.slide:focus-visible .slide__text-block,
+.slide:active .slide__text-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5514,6 +5519,11 @@ button.swiper-pagination-bullet {
     line-height: 27px;
     margin-bottom: 26px;
   }
+}
+
+.phone input {
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .email a {
