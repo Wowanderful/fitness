@@ -17,20 +17,17 @@ const slider = new Swiper('.slider', {
     1200: {
       slidesPerView: 3,
       spaceBetween: 40,
-      slidesPerGroup: 1,
     },
 
     1366: {
       slidesPerView: 4,
       spaceBetween: 40,
-      slidesPerGroup: 1,
     },
   },
 
   navigation: {
     nextEl: '.slider__swiper-button-next',
     prevEl: '.slider__swiper-button-prev',
-    clickable: true,
   },
 }
 );
@@ -44,7 +41,6 @@ const feedbackSlider = new Swiper('.feedback__slider', {
   navigation: {
     nextEl: '.feedback__button-next',
     prevEl: '.feedback__button-prev',
-    clickable: true,
   },
 });
 

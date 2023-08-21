@@ -3678,7 +3678,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-wrapper {
-  width: 1160px;
+  width: 1140px;
   margin: 0 auto;
 }
 @media (max-width: 1365px) {
@@ -5378,7 +5378,9 @@ button.swiper-pagination-bullet {
     padding-right: 133px;
     margin: 0 auto;
     margin-bottom: 46px;
-    displa: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
