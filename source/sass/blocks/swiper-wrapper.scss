@@ -1,6 +1,11 @@
 .swiper-wrapper {
-  width: 87%;
-  margin-left: 100px;
+  width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1365 {
+    width: 890px;
+    margin: 0 auto;
+  }
 
   @include vp-1199 {
     width: 580px;

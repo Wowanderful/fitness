@@ -90,7 +90,7 @@
 }
 
 .feedback__button-next {
-  right: 80px;
+  right: 0;
   z-index: 12;
   border-radius: 50%;
   width: 56px;
@@ -104,6 +104,10 @@
 
   &:active {
     background-color: #102654;
+  }
+
+  @include vp-1365 {
+    right: 0;
   }
 
   @include vp-1199 {

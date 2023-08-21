@@ -8,6 +8,10 @@
   box-sizing: border-box;
   width: 43%;
 
+  @include vp-1365 {
+    padding-top: 1%;
+  }
+
   @include vp-1199 {
     width: 292px;
     padding: 48px;

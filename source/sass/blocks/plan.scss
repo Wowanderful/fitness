@@ -12,9 +12,11 @@
 
   @include vp-1199 {
     width: 442px;
+    margin: 0 auto;
     margin-bottom: 40px;
     margin-right: 0;
     padding-top: 68px;
+
   }
 
   @include vp-767 {
