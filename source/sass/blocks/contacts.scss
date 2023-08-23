@@ -21,7 +21,9 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 67px;
+    margin: 0 auto;
     margin-bottom: 61px;
+    width: 100%;
   }
 }
 
@@ -33,13 +35,14 @@
   @include vp-1199 {
     padding-top: 33px;
     margin: 0 auto;
-    max-width: 768px;
+    width: 100%;
   }
 
   @include vp-767 {
+    width: 100%;
     padding-top: 39px;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -53,10 +56,12 @@
 
   @include vp-1199 {
     font-size: 42px;
+    align-self: start;
   }
 
   @include vp-767 {
     font-size: 32px;
+    align-self: start;
   }
 }
 
@@ -69,7 +74,7 @@
 .contacts__address-block {
   display: flex;
   flex-direction: column;
-  margin-right: 8%;
+  margin-right: 22%;
   position: relative;
   width: 190px;
 
@@ -91,13 +96,19 @@
     }
   }
 
+  @include vp-1365 {
+     margin-right: 6%;
+  }
+
   @include vp-1199 {
-    margin-right: 102px;
+    margin-right: 100px;
+    width: 214px;
   }
 
   @include vp-767 {
-    width: 160px;
+    width: 100%;
     margin-right: 0;
+
   }
 }
 

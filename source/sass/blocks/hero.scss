@@ -32,7 +32,7 @@
   width: 63%;
   text-align: right;
   padding-right: 27px;
-  padding-top: 7px;
+  padding-top: 23px;
   margin-right: 20px;
 
   @include vp-1199 {
@@ -67,7 +67,7 @@
   width: 100%;
   text-align: right;
   align-self: end;
-  padding-right: 118px;
+  padding-right: 94px;
   padding-top: 0;
   margin-right: 25px;
 
@@ -91,9 +91,8 @@
   order: 2;
   width: 170px;
   text-align: right;
-
   padding-top: 142px;
-  margin-left: -58px;
+  margin-left: -40px;
 
   @include vp-1199 {
     padding-top: 101px;

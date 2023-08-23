@@ -34,7 +34,7 @@
   display: flex;
   padding-top: 37px;
   margin-bottom: 115px;
-  padding-left: 158px;
+  padding-left: 71px;
   padding-right: 70px;
 
   @include vp-1199 {
@@ -45,12 +45,13 @@
   @include vp-767 {
     padding-top: 42px;
     padding-left: 34px;
+    margin-bottom: 66px;
   }
 }
 
 .feedback__feedback-slider-wrapper {
   min-width: 560px;
-  max-width: 638px;
+  max-width: 560px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -76,6 +77,10 @@
 
   &:active {
     background-color: #102654;
+  }
+
+  @include vp-1365 {
+    left: 0;
   }
 
   @include vp-1199 {
