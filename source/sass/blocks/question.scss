@@ -5,8 +5,12 @@
     height: 1px;
     background-color: rgba(28, 51, 116, 0.2);
     content: "";
-    top: -35px;
+    top: 16px;
     left: 0;
+  }
+
+  @include vp-767 {
+    top: 6px;
   }
 }
 
@@ -22,8 +26,9 @@
   }
 
   @include vp-767 {
-    margin-bottom: 10px;
-    padding-bottom: 9px;
+    margin-bottom: -21px;
+    padding-top:20px;
+    padding-bottom: 12px;
   }
 }
 

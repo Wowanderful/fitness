@@ -27,10 +27,12 @@
   font-size: 54px;
   font-weight: 800;
   line-height: 85px;
-  letter-spacing: 2px;
+  letter-spacing: 2.3px;
 
   @include vp-1199 {
     font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
   }
 
   @include vp-767 {
@@ -42,10 +44,9 @@
 }
 
 .free__form-wrapper {
-  padding-top: 15px;
+  padding-top: 18px;
   display: flex;
   flex-wrap: wrap;
-  width: 86%;
   margin-bottom: -5px;
 
   @include vp-1199 {
@@ -55,18 +56,20 @@
 
   @include vp-767 {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     width: 100%;
-    padding-top: 16px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-left: 4%;
   }
 }
 
 .free__name-wrapper {
   margin-right: 30px;
-  width: 45%;
+  width: 190px;
 
   @include vp-1199 {
-    margin-right: 47px;
+    margin-right: 69px;
   }
 
   @include vp-767 {
@@ -78,7 +81,7 @@
 
 .free__tel-wrapper {
   margin-bottom: 30px;
-  width: 45%;
+  width: 190px;
 
   @include vp-1199 {
     width: 45%;
@@ -98,6 +101,7 @@
   background-color: #102654;
   padding-bottom: 5px;
   color: #ffffff;
+  width: 100%;
 
   &::placeholder {
     color: #ffffff;
@@ -126,8 +130,7 @@
   }
 
   @include vp-767 {
-    min-width: 290px;
-    width: 100%;
+    width: 114%;
   }
 }
 
@@ -152,27 +155,33 @@
 }
 
 .free__button-send {
-  width: 100%;
+  width: 408px;
   background-color: transparent;
   box-sizing: border-box;
   border: 3px solid #ffffff;
   margin-bottom: 70px;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: #ffffff;
     opacity: 1;
     color: #102654;
   }
 
-  @include active {
+  &:active {
     opacity: 0.5;
   }
 
   @include vp-1199 {
-    margin-bottom: 64px;
+    width: 478px;
+    margin-bottom: 70px;
+    height: 52px;
   }
 
   @include vp-767 {
-    margin-left: 9px;
+    margin-left: 2px;
+    width: 290px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
   }
 }

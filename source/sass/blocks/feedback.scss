@@ -1,5 +1,5 @@
 .feedback__wrapper {
-  padding-top: 123px;
+  padding-top: 126px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding-top: 50px;
+    padding-top: 73px;
   }
 }
 
@@ -33,13 +33,14 @@
 .feedback__feedback-slider {
   display: flex;
   padding-top: 37px;
-  margin-bottom: 115px;
+  margin-bottom: 120px;
   padding-left: 71px;
   padding-right: 70px;
 
   @include vp-1199 {
     padding-left: 57px;
-    margin-bottom: 96px;
+    margin-bottom: 101px;
+    padding-top: 41px;
   }
 
   @include vp-767 {
@@ -63,15 +64,32 @@
   }
 }
 
+.feedback__button-prev::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/svg/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
 .feedback__button-prev {
-  left: 0;
+  left: -4px;
   right: 0;
   border-radius: 50%;
   width: 56px;
   height: 56px;
   background-color: #ffffff;
+  top: 54%;
+  z-index: 10;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     border: 2px solid #102654;
   }
 
@@ -94,17 +112,33 @@
   }
 }
 
+.feedback__button-next::after {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-image: url("../../img/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
 .feedback__button-next {
-  right: 0;
+  right: -5px;
   z-index: 12;
   border-radius: 50%;
   width: 56px;
   height: 56px;
   background-color: #ffffff;
+  top: 54%;
+  z-index: 10;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     border: 2px solid #102654;
-
   }
 
   &:active {
@@ -116,7 +150,7 @@
   }
 
   @include vp-1199 {
-    right: 7px;
+    right: -7px;
     top: 154px;
   }
 
@@ -126,38 +160,13 @@
   }
 }
 
-.feedback__button-prev::after {
-  position: absolute;
-  cursor: pointer;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background-image: url("../../img/svg/arrow-left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
+.feedback__button-next:active::after {
   z-index: 11;
-  box-sizing: border-box;
-
-  &:active {
-    background-image: url("../../img/svg/arrow-left-white.svg");
-  }
+  background-image: url("../../img/svg/arrow-left-white.svg");
+  transform: rotate(180deg);
 }
 
-.feedback__button-next::after {
-  position: absolute;
-  cursor: pointer;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background-image: url("../../img/svg/arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
+.feedback__button-prev:active::after {
   z-index: 11;
-  box-sizing: border-box;
-
-  &:active {
-    background-image: url("../../img/svg/arrow-right-white.svg");
-  }
+  background-image: url("../../img/svg/arrow-left-white.svg");
 }

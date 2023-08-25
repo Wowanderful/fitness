@@ -11,6 +11,8 @@
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -40px;
+    grid-gap: 33px;
   }
 
   @include vp-767 {

@@ -8,7 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+
 }
 
 html {
@@ -35,8 +35,15 @@ body {
   font-size: 16px;
   line-height: 24px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+main {
+  grid-area: main;
+  height: 100%;
 }
 
 a {

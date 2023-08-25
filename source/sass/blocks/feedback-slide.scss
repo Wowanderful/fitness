@@ -7,10 +7,10 @@
   padding-right: 10%;
   display: flex;
   flex-direction: column;
-  padding-top: 56px;
+  padding-top: 53px;
   background-image: url("../../img/author-desktop.png");
   background-repeat: no-repeat;
-  background-position: 14% 32%;
+  background-position: 15% 37%;
   margin-left: -10px;
 
   @include vp-1199 {
@@ -37,11 +37,13 @@
   font-weight: 700;
   line-height: 30px;
   width: 330px;
+  margin-bottom: -2px;
 
   @include vp-767 {
     width: 32px;
     align-self: center;
     padding-left: 30px;
+    margin-bottom: 3px;
   }
 }
 

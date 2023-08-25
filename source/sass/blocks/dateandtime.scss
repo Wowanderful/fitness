@@ -11,4 +11,8 @@
     width: 70px;
     margin-top: -31px;
   }
+
+  @include vp-767 {
+    margin-top: -26px;
+  }
 }

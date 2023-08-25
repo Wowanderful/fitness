@@ -8,6 +8,12 @@ import {initAccordions} from './accordion/init-accordion';
 import {toggleButton} from './modules/button';
 import {initPhoneMask} from './utils/phone-mask';
 
+// document.addEventListener('click', (evt) => {
+//   if (evt.target.matches('.btn')) {
+//     evt.target.focus();
+//   }
+// });
+
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();

@@ -6,8 +6,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 40%;
-    left: -169%;
+    top: 43%;
+    left: -153%;
     width: 340px;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
@@ -24,8 +24,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 40%;
-    left: 129%;
+    top: 43%;
+    left: 116%;
     width: 340px;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
@@ -43,20 +43,20 @@
 .feature-highlighted__wrapper {
   background-color: #1c3374;
   width: 93%;
-  height: 307px;
+  height: 305px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 20px;
+  margin-top: 17px;
 
   @include vp-1199 {
     width: 64%;
     margin: 0 auto;
     margin-top: -62px;
-    padding-left: 18px;
+    padding-left: 12px;
     height: 239px;
     margin-bottom: -37px;
     margin-left: 20%;
@@ -65,8 +65,9 @@
   @include vp-767 {
     width: 100%;
     margin-top: 0;
-    padding-top: 17px;
-    margin-left: 0;
+    padding-top: 13px;
+    margin: 0 auto;
+    padding-left: 24px;
   }
 }
 
@@ -78,7 +79,7 @@
   margin-bottom: 0;
 
   @include vp-1199 {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
