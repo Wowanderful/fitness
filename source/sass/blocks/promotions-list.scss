@@ -4,21 +4,24 @@
   grid-template-rows: 211px 211px;
   grid-gap: 39px;
   margin-bottom: 115px;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-left: -46px;
 
   @include vp-1199 {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -40px;
-    grid-gap: 33px;
+    margin-left: -25px;
+    grid-gap: 30px;
   }
 
   @include vp-767 {
+    width:290px;
     margin-top: 34px;
     flex-direction: column;
     grid-gap: 0;
+    margin: 0;
+    padding: 0;
     margin-bottom: 58px;
   }
 }

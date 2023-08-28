@@ -10,6 +10,8 @@
   }
 
   @include vp-767 {
+    align-items: start;
     padding-top: 31px;
+
   }
 }

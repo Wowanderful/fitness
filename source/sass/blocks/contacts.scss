@@ -30,7 +30,7 @@
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 39px;
+  padding-top: 38px;
 
   @include vp-1199 {
     padding-top: 33px;
@@ -67,7 +67,10 @@
 }
 
 .contacts h3 {
-  @include vp-767 {
+  font-size: 16px;
+  font-weight: 700;
+
+  @include vp-1199 {
     font-size: 20px;
   }
 }
@@ -81,15 +84,16 @@
 
   &::after {
     position: absolute;
-    height: 110px;
+    height: 102px;
     width: 2px;
     background-color: #74819c;
     content: "";
-    top: 11px;
+    top: 5px;
     left: 233px;
 
     @include vp-1199 {
-      left: 236px;
+      left: 266px;
+      height: 130px;
     }
 
     @include vp-767 {

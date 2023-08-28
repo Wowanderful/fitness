@@ -7,15 +7,15 @@
   margin-top: 38px;
 
   @include vp-1199 {
-    width: 52%;
+    width: 50%;
     margin-top: -34px;
     margin-right: 0;
   }
 
   @include vp-767 {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 4px;
+    width: 290px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -24,7 +24,7 @@
   font-family: $ff-alumni;
   font-size: 92px;
   font-weight: 600;
-  line-height: 106px;
+  line-height: 112px;
   letter-spacing: 4.6px;
   text-transform: uppercase;
   margin: 0;
@@ -32,7 +32,7 @@
   width: 63%;
   text-align: right;
   padding-right: 27px;
-  padding-top: 23px;
+  padding-top: 14px;
   margin-right: 20px;
 
   @include vp-1199 {
@@ -42,19 +42,24 @@
     text-transform: lowercase;
     padding-right: 0;
     width: 53%;
-    padding-top: 5px;
+    padding-top: 6px;
     margin-bottom: 0;
+    font-weight: 800;
   }
 
   @include vp-767 {
-    width: 65%;
+    width: 70%;
     line-height: 88px;
     padding-top: 12px;
     margin-right: 0;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     text-align: right;
-    font-weight: 700;
-    font-weight: 74px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 154px;
+    right: 16px;
   }
 }
 
@@ -72,22 +77,27 @@
   text-align: right;
   align-self: end;
   padding-right: 94px;
-  padding-top: 0;
+  padding-top: 5px;
   margin-right: 25px;
 
   @include vp-1199 {
-    font-size: 34px;
+    font-size: 30px;
     letter-spacing: 0.84px;
     padding-right: 0;
     padding-top: 35px;
+    margin-right: 35px;
   }
 
   @include vp-767 {
-    font-size: 26px;
+    width: 100%;
+    font-size: 24px;
     padding-top: 86px;
     padding-right: 0;
     margin-right: 0;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 53px;
+    letter-spacing: 1.4px;
   }
 }
 
@@ -95,23 +105,27 @@
   order: 2;
   width: 170px;
   text-align: right;
-  padding-top: 142px;
-  margin-left: -40px;
+  padding-top: 138px;
+  margin-left: -38px;
 
   @include vp-1199 {
     padding-top: 96px;
     margin-right: 20px;
-    margin-left: -54px;
+    margin-left: -55px;
   }
 
   @include vp-767 {
     margin-right: 0;
-    width: 155px;
+    width: 112px;
     padding-top: 93px;
     white-space: nowrap;
     display: flex;
     flex-direction: column;
-    transform: translateX(10px);
+    // transform: translateX(10px);
+    margin: 0;
+    padding: 0;
+    margin-top: 92px;
+    margin-bottom: 67px;
   }
 }
 
@@ -141,7 +155,7 @@
   text-align: right;
   margin-left: auto;
   margin-right: 67px;
-  margin-top: 0;
+  margin-top: -6px;
   margin-bottom: 20px;
 
   &:hover {
@@ -166,20 +180,19 @@
 
   @include vp-1199 {
     margin-right: 11px;
-    margin-top: -8px;
+    margin-top: -7px;
     width: 183px;
     margin-left: 40%;
     transform: translateY(-12px);
+    height: 61px;
   }
 
   @include vp-767 {
-    margin-top: 38px;
-    width: 300px;
-    margin-bottom: 60px;
-    margin-left: 0;
-    margin-right: 0;
+    width: 290px;
     height: 60px;
-    transform: translateY(-12px);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 68px;
   }
 }
 

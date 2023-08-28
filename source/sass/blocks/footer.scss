@@ -21,6 +21,7 @@
     padding-top: 52px;
     padding-bottom: 52px;
     flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -29,10 +30,15 @@
   margin-left: 6px;
 
   @include vp-1199 {
-    margin-left: 0;
+    margin-left: 16px;
     display: block;
     width: 90px;
     padding-top: 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    width: auto;
   }
 }
 
@@ -42,7 +48,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    max-width: 200px;
     padding-top: 20px;
     margin-left: 0;
     padding-left: 0;

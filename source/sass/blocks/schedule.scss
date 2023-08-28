@@ -9,10 +9,13 @@
 .schedule p {
   margin-top: 2px;
   color: #102654;
+  font-size: 14px;
+  letter-spacing: 0.3px;
 
   @include vp-1199 {
     font-size: 18px;
     margin-top: 7px;
+    letter-spacing: 0.09px;
   }
 
   @include vp-767 {

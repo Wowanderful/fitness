@@ -9,6 +9,8 @@
 .email a {
   margin-top: 12px;
   color: #102654;
+  font-size: 14px;
+  letter-spacing: 0.3px;
 
   @include hover {
     border-bottom: 2px #000000 solid;

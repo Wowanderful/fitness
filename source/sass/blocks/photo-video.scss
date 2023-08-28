@@ -8,10 +8,13 @@
   }
 
   @include vp-767 {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-bottom: 70px;
+
   }
 }
 
@@ -20,8 +23,11 @@
 
 
   @include vp-767 {
+    width: 320px;
     margin-bottom: 40px;
     height: 313px;
+    margin-left: 0;
+    margin-right: 0;
 
   }
 }
@@ -43,7 +49,17 @@
       width: 266px;
       height: 167px;
     }
+
+    @include vp-767 {
+      width: 320px;
+    }
   }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+
 }
 
 .photo-video__video-container {
@@ -62,7 +78,7 @@
 
   @include vp-767 {
     position: static;
-    width: 100%;
+    width: 320px;
     height: 167px;
   }
 }
@@ -70,6 +86,10 @@
 .photo-video__video {
   width: 364px;
   height: 228px;
+
+  @include vp-767 {
+    width: 266px;
+  }
 }
 
 .photo-video__video-hidden,

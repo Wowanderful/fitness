@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 }
 
@@ -18,11 +18,15 @@
   padding-top: 38px;
 
   @include vp-1199 {
-    padding-top: 38px;
+    padding-top: 41px;
   }
 
   @include vp-767 {
     padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: start;
   }
 }
 
@@ -30,11 +34,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-
   margin-left: 3px;
 
   @include vp-1199 {
     margin-bottom: 19px;
+    margin-left: 14px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    width: 290px;
+    align-items: start;
+    margin-right: 0;
   }
 }
 
@@ -44,19 +55,24 @@
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
-
+  margin-top: -4px;
+  margin-right: 4px;
   display: block;
-  padding-left: 2px;
-
 
   @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.48px;
+    margin-right: 15px;
   }
 
   @include vp-767 {
+    display: block;
     font-size: 20px;
-    margin-top: -5px;
+    margin: 0;
+    align-self: start;
+    padding-top: 0;
+    vertical-align: top;
+    margin-top: -4px;
   }
 
   @include hover-focus {
@@ -92,5 +108,13 @@
 
   @include vp-1199 {
     width: 100%;
+  }
+
+  @include vp-767 {
+    display: block;
+    width: 290px;
+    margin-left: 0;
+    margin-right: 0;
+
   }
 }

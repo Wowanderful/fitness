@@ -11,24 +11,34 @@
   &::after {
     position: absolute;
     content: "";
-    width: 351px;
+    width: 342px;
     height: 2px;
     background-color: #787878;
-    top: 43px;
+    top: 46px;
     z-index: 2;
+
+    @include vp-1199 {
+      left: 15px;
+      width: 330px;
+    }
 
     @include vp-767 {
       width: 290px;
+      left: 0;
+      top: 44px;
     }
   }
 
   @include vp-1199 {
     margin-top: 1px;
+    padding: 4px;
+    margin-bottom: 52px;
   }
 
   @include vp-767 {
     width: 290px;
-    padding-left: 0;
+    align-self: start;
+    margin-bottom: 46px;
   }
 }
 
@@ -44,10 +54,16 @@
   cursor: pointer;
   position: relative;
 
+  @include vp-1199 {
+    font-size: 18px;
+    padding-left: 9px;
+  }
+
   @include vp-767 {
     font-size: 16px;
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
   }
 
   @include hover-focus {
@@ -62,6 +78,17 @@
       z-index: 3;
       top: 42px;
       left: 0;
+
+      @include vp-1199 {
+        left: 8px;
+        width: 83%;
+      }
+
+      @include vp-767 {
+        left: 0;
+        width: 100%;
+        top: 39px;
+      }
     }
   }
 
@@ -78,6 +105,17 @@
       z-index: 3;
       top: 42px;
       left: 0;
+
+      @include vp-1199 {
+        left: 8px;
+        width: 83%;
+      }
+
+      @include vp-767 {
+        left: 0;
+        width: 100%;
+        top: 39px;
+      }
     }
   }
 
