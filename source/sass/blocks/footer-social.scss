@@ -30,17 +30,48 @@
   justify-content: center;
   align-items: center;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: #103aae;
   }
 
-  @include active {
+  &:active {
     background-color: #102654;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
 .footer-social__link:hover svg,
 .footer-social__link:active svg,
 .footer-social__link:focus svg {
-  fill: $color-default-white;
+  display: none;
+}
+
+.footer-social__link--vk:hover,
+.footer-social__link--vk:focus,
+.footer-social__link--vk:active {
+  background-image: url("../../img/svg/vk-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social__link--ok:hover,
+.footer-social__link--ok:focus,
+.footer-social__link--ok:active {
+  background-image: url("../../img/svg/odnoklassniki-white.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 40%;
+}
+
+.footer-social__link--reddit:hover,
+.footer-social__link--reddit:focus,
+.footer-social__link--reddit:active {
+  background-image: url("../../img/svg/Reddit-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
 }

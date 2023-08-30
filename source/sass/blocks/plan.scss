@@ -31,6 +31,11 @@
     border-width: 7px;
     border-style: solid;
     border-image: $red-to-blue 1;
+    padding-top: 55px;
+
+    @include vp-767 {
+      padding-top: 36px;
+    }
 
     .button-plan {
       background: $red-to-blue;
@@ -98,6 +103,17 @@
   }
 }
 
+.plan:hover span {
+  left: 95px;
+  top: 215px;
+
+  @include vp-767 {
+    top: 174px;
+    left: 70px;
+  }
+
+}
+
 .plan strong {
   font-size: 100px;
   font-style: normal;
@@ -113,7 +129,7 @@
 
 .plan__button-plan {
   background-color: transparent;
-  border: 4px solid #102654;
+  border: 2px solid #1C3374;
   color: #102654;
   width: 211px;
   height: 65px;

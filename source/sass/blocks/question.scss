@@ -69,3 +69,15 @@
     margin-bottom: 6px;
   }
 }
+
+.question__answer-text--modify p {
+  @include vp-767 {
+    margin-bottom: 12px;
+  }
+}
+
+.question__answer-wrapper--modify p {
+  @include vp-767 {
+    width: 74%;
+  }
+}

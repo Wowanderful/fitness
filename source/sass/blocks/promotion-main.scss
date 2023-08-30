@@ -127,7 +127,7 @@
   margin-top: 0;
   margin-bottom: 0;
   color: $color-default-white;
-  border-bottom: 2px solid $color-default-white;
+  border-bottom: 1px solid $color-default-white;
   align-self: start;
   cursor: pointer;
 
@@ -136,12 +136,12 @@
   }
 
   &:focus {
-    outline: 2px solid $color-default-white;
+    outline: 1px solid $color-default-white;
     opacity: 1;
   }
 
   &:active {
-    border-bottom: 2px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
     outline: none;
     opacity: 1;
   }

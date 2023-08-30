@@ -1,9 +1,24 @@
 .lower-block {
   width: 100%;
   background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+  position: relative;
 
   @include vp-1199 {
     background: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #74819C;
+    top: 0;
+    left: 0;
+
+    @include vp-1199 {
+      display: none;
+    }
   }
 }
 

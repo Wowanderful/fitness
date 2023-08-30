@@ -47,7 +47,9 @@
   font-size: 71px;
   font-weight: 700;
   line-height: 84.5px;
-  color: #2e35ac;
+  background-image: $red-to-blue;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 0;
   font-style: normal;
 
