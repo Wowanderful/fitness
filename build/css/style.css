@@ -3907,6 +3907,7 @@ button.swiper-pagination-bullet {
   max-width: 1160px;
   position: relative;
   overflow: visible;
+  height: 100%;
 }
 @media (max-width: 1365px) {
   .slider {
@@ -4052,6 +4053,7 @@ button.swiper-pagination-bullet {
 .swiper-wrapper {
   width: 1160px;
   margin-left: 0;
+  height: 270px;
 }
 @media (max-width: 1365px) {
   .swiper-wrapper {
