@@ -1,7 +1,8 @@
 .tab-controls {
   display: flex;
+  flex-wrap: wrap;
   width: 358px;
-  height: 40px;
+  height: auto;
   padding: 2px;
   justify-content: space-between;
   margin-top: 5px;
@@ -33,6 +34,7 @@
     margin-top: 1px;
     padding: 4px;
     margin-bottom: 52px;
+    align-self: start;
   }
 
   @include vp-767 {
@@ -68,11 +70,12 @@
 
   @include hover-focus {
     color: #102654;
+    outline: none;
 
     &::after {
       width: 95%;
       height: 2px;
-      background-color: #d10a42;
+      background-color: #ED0233;
       position: absolute;
       content: "";
       z-index: 3;

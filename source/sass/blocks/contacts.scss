@@ -7,11 +7,11 @@
   position: relative;
 
   @include vp-1199 {
-    width: 100%;
+    width: 768px;
     padding-top: 70px;
-    padding-left: 133px;
-    padding-right: 133px;
-    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
     margin-bottom: 46px;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     padding-top: 67px;
     margin: 0 auto;
     margin-bottom: 61px;
-    width: 100%;
+    width: 320px;
   }
 }
 
@@ -35,15 +35,16 @@
 
   @include vp-1199 {
     padding-top: 33px;
-    margin: 0 auto;
-    width: 100%;
+    justify-content: center;
+    width: 768px;
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 290px;
     padding-top: 39px;
     flex-direction: column;
     align-items: start;
+
   }
 }
 
@@ -100,10 +101,6 @@
     @include vp-767 {
       display: none;
     }
-  }
-
-  @include vp-1365 {
-     margin-right: 6%;
   }
 
   @include vp-1199 {

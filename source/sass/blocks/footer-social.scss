@@ -56,6 +56,7 @@
   background-image: url("../../img/svg/vk-white.svg");
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 }
 
 .footer-social__link--ok:hover,
@@ -65,6 +66,7 @@
   background-repeat: no-repeat;
   background-position:center;
   background-size: 40%;
+  outline: none;
 }
 
 .footer-social__link--reddit:hover,
@@ -74,4 +76,5 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  outline: none;
 }

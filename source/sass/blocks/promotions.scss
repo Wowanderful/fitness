@@ -8,13 +8,17 @@
   @include vp-1199 {
     padding-top: 90px;
     margin-bottom: -17px;
+    width: 708px;
+    align-items: start;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @include vp-767 {
     padding-top: 71px;
-    width: 320px;
-    align-items: start;
-    margin-left: 0;
+    width: 290px;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 

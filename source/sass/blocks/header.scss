@@ -2,7 +2,6 @@
   grid-area: header;
   background: conic-gradient(from 279deg at 16.03% 39.06%, #003d85 32deg, #b80027 152deg, #003d85 333deg);
   margin-bottom: 120px;
-
   width: 100%;
 
   @include vp-1199 {
@@ -16,6 +15,7 @@
 
 .header__wrapper {
   padding-top: 38px;
+  max-width: 1490px;
 
   @include vp-1199 {
     padding-top: 41px;
@@ -24,9 +24,9 @@
   @include vp-767 {
     padding-top: 20px;
     display: flex;
-    margin: 0 auto;
+;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 }
 
@@ -38,15 +38,19 @@
 
   @include vp-1199 {
     margin-bottom: 19px;
-    margin-left: 14px;
+    width: 708px;
+    margin-left: 0;
   }
 
   @include vp-767 {
-    margin-left: 0;
     width: 290px;
     align-items: start;
     margin-right: 0;
   }
+}
+
+.header__upper-block a:first-child {
+  margin-right: 10px;
 }
 
 .header__phone {
@@ -107,14 +111,14 @@
   width: 83%;
 
   @include vp-1199 {
-    width: 100%;
+    width: 708px;
+    justify-content: start;
   }
 
   @include vp-767 {
-    display: block;
     width: 290px;
+    justify-content: center;
     margin-left: 0;
     margin-right: 0;
-
   }
 }

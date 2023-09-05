@@ -15,7 +15,6 @@
 
 .button-standard {
   width: 230px;
-  height: 57px;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -25,12 +24,10 @@
 
   @include vp-1199 {
     width: 183px;
-    height: 57px;
   }
 
   @include vp-1199 {
     width: 290px;
-    height: 59px;
   }
 }
 
@@ -48,6 +45,7 @@
   @include hover-focus {
     background-image: url("../../img/svg/open-hover.svg");
     opacity: 1;
+    outline: none;
   }
 
   &:disabled {
