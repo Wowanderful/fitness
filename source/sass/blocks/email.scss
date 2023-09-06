@@ -1,5 +1,9 @@
 .email {
   color: #102654;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 
   @include vp-767 {
     width: 100%;
@@ -7,10 +11,10 @@
 }
 
 .email a {
-  margin-top: 12px;
   color: #102654;
   font-size: 14px;
   letter-spacing: 0.3px;
+  margin-right: 5px;
 
   @include hover {
     border-bottom: 2px #000000 solid;

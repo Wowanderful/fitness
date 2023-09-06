@@ -49,8 +49,25 @@
   }
 }
 
-.header__upper-block a:first-child {
+.header__logo {
   margin-right: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+
+  &:active {
+    opacity: 1;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .header__phone {
@@ -79,12 +96,21 @@
     margin-top: -4px;
   }
 
-  @include hover-focus {
-    border-bottom: 2px solid #ffffff;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid #ffffff;
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 1;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 

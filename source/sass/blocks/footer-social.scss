@@ -1,6 +1,8 @@
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 4px;
+  width: 150px;
 
   @include vp-1199 {
     margin-right: 16px;

@@ -1,7 +1,8 @@
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 59px;
-  width: 70%;
+  width: 100%;
 
   @include vp-1199 {
     margin-left: -31px;
