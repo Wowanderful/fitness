@@ -20,18 +20,19 @@
   }
 
   @include vp-767 {
+    min-height: 349px;
     min-width: 226px;
     padding-left: 9%;
     padding-right: 15%;
     margin-left: 0;
     margin-right: 0;
-    height: 337px;
-    padding-top: 50px;
+    padding-top: 62px;
     padding-left: 22px;
     padding-right: 22px;
     background-size: 31%;
-    background-position: 25% 15%;
-    padding-bottom: 0;
+    background-position: 25% 19%;
+    // padding-bottom: 10px;
+
   }
 }
 
@@ -47,6 +48,7 @@
     align-self: center;
     padding-left: 30px;
     margin-bottom: 3px;
+    line-height: 28px;
   }
 }
 
@@ -62,6 +64,7 @@
     align-self: center;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 22.4px;
 
   }
 }

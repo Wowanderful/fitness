@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 48%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-top: 38px;
 
   @include vp-1199 {
@@ -48,7 +48,7 @@
   }
 
   @include vp-767 {
-    width: 70%;
+    width: 68%;
     line-height: 88px;
     padding-top: 12px;
     letter-spacing: 3px;
@@ -56,10 +56,7 @@
     font-weight: 800;
     margin: 0;
     padding: 0;
-    // position: absolute;
-    // top: 76px;
-    // right: 0;
-    transform: translateY(-239px) translateX(90px);
+    transform: translateY(-161px) translateX(90px);
   }
 }
 
@@ -93,11 +90,11 @@
     font-size: 24px;
     padding-top: 86px;
     padding-right: 0;
-    margin-right: 0;
     margin: 0;
     padding: 0;
     margin-top: 53px;
-    letter-spacing: 1.4px;
+    margin-bottom: 45px;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -124,8 +121,8 @@
     // transform: translateX(10px);
     margin: 0;
     padding: 0;
-    margin-top: 92px;
-    margin-bottom: 67px;
+    margin-top: 46px;
+    margin-bottom: 20px;
   }
 }
 
@@ -189,12 +186,11 @@
 
   @include vp-767 {
     position: absolute;
-    width: 90%;
+    width: 92%;
     margin: 0;
     padding: 0;
-    margin-bottom: 68px;
-    top: 335px;
-    left: 5%;
+    top: 363px;
+    left: 4%;
   }
 }
 

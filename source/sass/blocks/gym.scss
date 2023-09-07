@@ -46,9 +46,8 @@
   @include vp-767 {
     width: 73px;
     height: 73px;
-    top: calc(80% - 35px);
+    top: 400px;
     left: calc(50% - 35px);
-    margin-top: 9%;
   }
 
   &:disabled {

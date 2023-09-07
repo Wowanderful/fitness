@@ -1,6 +1,7 @@
 .features {
   background-color: #f8f9fc;
   margin-bottom: 1px;
+  position: relative;
 }
 
 .features__wrapper {
@@ -15,10 +16,9 @@
   }
 
   @include vp-767 {
-    padding-top: 67px;
-    align-items: center;
-    width: 290px;
-    margin: 0 auto;
+    padding-top: 36px;
+    width: 280px;
+
   }
 }
 
@@ -36,7 +36,7 @@
 
   @include vp-767 {
     font-size: 32px;
-    margin-bottom: 11px;
+    margin-bottom: 48px;
     letter-spacing: 0.96px;
     margin-left: 15%;
   }
@@ -72,6 +72,7 @@
     flex-direction: column;
     grid-gap: 0;
     margin: 0 auto;
+    margin-bottom: 32px;
   }
 }
 
@@ -83,4 +84,8 @@
 .features__list li:last-child {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+.features__list li:nth-child(2) {
+  margin-bottom: 272px;
 }
