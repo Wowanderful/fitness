@@ -171,11 +171,16 @@
 }
 
 .image--3 img {
-  width: 124%;
+  width: 123%;
+  height: 356px;
   max-width: 156%;
-  -o-object-fit: scale-down;
-  object-fit: scale-down;
+  object-fit: fill;
   position: absolute;
-  top: -32px;
-  left: -35px;
+  top: -28px;
+  left: -33px;
+
+  @include vp-1199 {
+  left: -14px;
+  height: 338px;
+  }
 }
