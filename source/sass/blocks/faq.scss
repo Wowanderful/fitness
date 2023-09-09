@@ -3,7 +3,7 @@
 }
 
 .faq__wrapper {
-  padding-top: 126px;
+  padding-top: 111px;
   box-sizing: border-box;
   max-width: 1490px;
 
@@ -47,6 +47,8 @@
 
   @include vp-1199 {
     font-size: 42px;
+    align-self: center;
+    margin-left: 60px;
   }
 
   @include vp-767 {

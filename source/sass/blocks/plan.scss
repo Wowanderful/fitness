@@ -7,7 +7,7 @@
   flex-direction: column;
   margin-right: 40px;
   align-items: center;
-  padding-top: 62px;
+  padding-top: 65px;
   position: relative;
 
   @include vp-1199 {
@@ -72,8 +72,8 @@
   font-size: 60px;
   font-weight: 700;
   position: absolute;
-  top: 222px;
-  left: 102px;
+  top: 226px;
+  left: 98px;
 
   @include vp-1199 {
     top: 224px;
@@ -136,6 +136,8 @@
   color: #102654;
   width: 211px;
   height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &:hover, &:focus {
     background: $red-to-blue;
@@ -146,11 +148,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.5);
-  }
-
-  @include vp-767 {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 

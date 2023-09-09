@@ -12,7 +12,7 @@
   @include vp-767 {
 
     min-height: 274px;
-    max-width: 294px;
+    max-height: 274px;
     width: 100%;
   }
 }
@@ -20,14 +20,25 @@
 .slide__image-container {
   width: 100%;
   min-height: 274px;
+  height: 294px;
   position: relative;
   background-color: #b5c4ca;
+
+  @include vp-1199 {
+    height: 274px;
+  }
 }
 
 .slide__image-container img {
   width: 100%;
-  object-fit: cover;
+  top: 0;
+  height: 294px;
   position: absolute;
+
+  @include vp-1199 {
+  top: 0px;
+  height: 274px;
+  }
 }
 
 .slide__image-container h3 {

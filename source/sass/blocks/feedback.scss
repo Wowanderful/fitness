@@ -28,11 +28,14 @@
 
   @include vp-1199 {
     font-size: 42px;
+    margin-left: 60px;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
     font-size: 32px;
     margin-bottom: 41px;
+    margin-left: 0;
   }
 }
 
@@ -44,12 +47,10 @@
   padding-right: 70px;
   overflow: visible;
 
-
   @include vp-1199 {
     padding-left: 69px;
-    margin-bottom: 101px;
-    padding-top: 41px;
-
+    margin-bottom: 37px;
+    padding-top: 0;
   }
 
   @include vp-767 {
@@ -70,6 +71,11 @@
   overflow: hidden;
   margin-left: 0;
   padding-right: 50px;
+  height: 242px;
+
+  @include vp-767 {
+    min-height: 242px;
+  }
 
   @include vp-767 {
     min-width: 228px;
@@ -124,7 +130,7 @@
 
   @include vp-1199 {
     left: -9px;
-    top: 154px;
+    top: 119px;
   }
 
   @include vp-767 {
@@ -179,7 +185,7 @@
 
   @include vp-1199 {
     right: -7px;
-    top: 154px;
+    top: 119px;
   }
 
   @include vp-767 {

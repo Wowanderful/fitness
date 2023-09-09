@@ -15,11 +15,11 @@
   @include vp-1199 {
     margin-top: 30px;
     max-width: 560px;
+    margin-bottom: 90px;
   }
 
   @include vp-767 {
     width: 226px;
-
     margin-top: 42px;
     margin-bottom: 68px;
     margin-left: 38px;
@@ -54,6 +54,7 @@
   height: 56px;
   background-color: #ffffff;
   z-index: 10;
+  top: 144px;
 
   &:hover,
   &:focus {
@@ -75,7 +76,7 @@
   }
 
   @include vp-767 {
-    left: -58px;
+    left: -62px;
     top: 134px;
   }
 }
@@ -89,6 +90,7 @@
   height: 56px;
   background-color: #ffffff;
   z-index: 10;
+  top: 144px;
 
   &:hover,
   &:focus {

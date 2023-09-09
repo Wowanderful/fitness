@@ -4,10 +4,12 @@
   box-sizing: border-box;
 
   @include vp-1199 {
-    margin-bottom: 183px;
+    margin-bottom: 188px;
+    padding-left: 45px;
   }
 
   @include vp-767 {
+    padding-left: 0;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -32,6 +34,10 @@
 }
 
 .photo-video__photo-container img {
+
+  width: 100%;
+  height: 100%;
+
   @include vp-767 {
     width: 100%;
     height: 100%;
@@ -89,7 +95,7 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    left: 31%;
+    left: 250px;
     top: 259px;
   }
 
@@ -104,7 +110,7 @@
   width: 364px;
   height: 228px;
 
-  @include vp-767 {
+   @include vp-767 {
     width: 100%;
   }
 }

@@ -13,20 +13,18 @@
     margin: 0 auto;
     margin-bottom: 0;
     height: 462px;
-       align-self: center;
+    align-self: center;
   }
 
   @include vp-767 {
     width: 290px;
     flex-direction: column;
     justify-content: start;
-
-
     height: auto;
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
-
+    align-self: start;
   }
 }
 

@@ -20,7 +20,7 @@
       height: 403px;
       bottom: -95px;
       background-image: url("../../img/weight-tablet.png");
-      right: 265px;
+      right: 0;
     }
 
     @include vp-767 {
@@ -39,10 +39,10 @@
   max-width: 1490px;
 
   @include vp-1199 {
-    align-items: start;
+    align-items: center;
     padding-top: 100px;
+    max-width: none;
     width: 708px;
-    margin-left: 0;
   }
 
   @include vp-767 {
@@ -51,9 +51,6 @@
     align-items: center;
     width: 290px;
     margin: 0 auto;
-
-
-
   }
 }
 

@@ -2,7 +2,6 @@
   background-color: #030a1a;
   box-sizing: border-box;
   grid-area: footer;
-
 }
 
 .footer__wrapper {
@@ -16,7 +15,7 @@
   @include vp-1199 {
     padding-top: 47px;
     padding-bottom: 13px;
-    width: 708px;
+    width: 768px;
     margin-left: 0;
   }
 
@@ -35,9 +34,9 @@
   width: 120px;
 
   @include vp-1199 {
-    margin-left: 0;
+    margin-left: 15px;
     display: block;
-    width: 90px;
+    width: 121px;
     padding-top: 0;
   }
 
@@ -48,9 +47,7 @@
 }
 
 .footer__menu {
-  @include vp-1199 {
-    width: 50%;
-  }
+margin-left: 0;
 
   @include vp-767 {
     max-width: 200px;
