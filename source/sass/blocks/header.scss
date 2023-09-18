@@ -10,6 +10,7 @@
 
   @include vp-767 {
     margin-bottom: 63px;
+    position: relative;
   }
 }
 
@@ -19,13 +20,16 @@
 
   @include vp-1199 {
     padding-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @include vp-767 {
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
   }
 }
 
@@ -34,11 +38,11 @@
   justify-content: space-between;
   margin-bottom: 10px;
   margin-left: 3px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     margin-bottom: 21px;
     width: 708px;
-    margin-left: 0;
   }
 
   @include vp-767 {
@@ -86,6 +90,7 @@
   margin-top: -4px;
   margin-right: 4px;
   display: block;
+  margin-bottom: 15px;
 
   @include vp-1199 {
     font-size: 24px;

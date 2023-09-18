@@ -3,39 +3,9 @@
   grid-column: 2/3;
   grid-row: 1/3;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 49%;
-    left: -153%;
-    width: 340px;
-    height: 2px;
-    background-color: rgba(209, 10, 66, 0.2);
-
-    @include vp-1199 {
-      display: none;
-    }
-
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 49%;
-    left: 116%;
-    width: 340px;
-    height: 2px;
-    background-color: rgba(209, 10, 66, 0.2);
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
-
   @include vp-1199 {
     width: 100%;
     padding-left: 20px;
-
   }
 
   @include vp-767 {

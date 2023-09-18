@@ -1,5 +1,5 @@
 .plan-list {
-  width: 1166px;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -19,7 +19,3 @@
   }
 }
 
-.plan-list div:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
-}

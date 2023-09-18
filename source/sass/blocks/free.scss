@@ -48,8 +48,7 @@
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.26px;
-    align-self: start;
-    padding-left: 100px;
+    // padding-left: 100px;
   }
 
   @include vp-767 {
@@ -160,6 +159,11 @@
   }
 }
 
+.free__name-wrapper label,
+.free__tel-wrapper label {
+  position: relative;
+}
+
 .free__name-wrapper input:focus::placeholder,
 .free__name-wrapper input:active::placeholder,
 .free__tel-wrapper input:focus::placeholder,
@@ -173,8 +177,12 @@
 }
 
 .input-message {
+  position: absolute;
   color: #ff121f;
   font-size: 14px;
+  width: 300px;
+  top: 28px;
+  left: 0;
 }
 
 .is-invalid input {

@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 4px;
-  width: 150px;
+  width: 140px;
+  padding-left: 0;
 
   @include vp-1199 {
     margin-right: 9px;
@@ -19,6 +20,7 @@
 
 .footer-social li {
   margin-left: 11px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     margin-left: 9px;

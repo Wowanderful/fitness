@@ -10,13 +10,13 @@
   box-sizing: border-box;
   padding-top: 42px;
   padding-bottom: 32px;
-  max-width: 1490px;
+  width: 1368px;
+
 
   @include vp-1199 {
     padding-top: 47px;
     padding-bottom: 13px;
     width: 768px;
-    margin-left: 0;
   }
 
   @include vp-767 {

@@ -11,6 +11,7 @@
     padding-top: 60px;
     padding-left: 130px;
     padding-right: 30px;
+    margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -90,12 +91,12 @@
 
   &::after {
     position: absolute;
-    height: 100%;
-    width: 2px;
+    height: 84%;
+    width: 1px;
     background-color: #74819c;
     content: "";
-    top: 5px;
-    left: 226px;
+    top: 0;
+    left: 238px;
 
     @include vp-1199 {
       left: 266px;

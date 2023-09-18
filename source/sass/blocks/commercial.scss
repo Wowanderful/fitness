@@ -11,8 +11,7 @@
   @include vp-1199 {
     padding-top: 88px;
     width: 708px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 
@@ -23,7 +22,6 @@
     align-items: center;
     justify-content: center;
     width: 320px;
-    margin: 0 auto;
       }
 }
 
@@ -36,6 +34,7 @@
     padding-left: 60px;
     width: 738px;
     min-height: 292px;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -45,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin: 0 auto;
+
   }
 }
 
