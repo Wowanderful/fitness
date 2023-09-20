@@ -37,6 +37,7 @@ const feedbackSlider = new Swiper('.feedback__slider', {
   loop: false,
   direction: 'horizontal',
   slidesPerView: 1,
+  spaceBetween: 5,
 
   navigation: {
     nextEl: '.feedback__button-next',

@@ -24,7 +24,7 @@
     }
 
     @include vp-767 {
-      width: 290px;
+      width: 100%;
       left: 0;
       top: 44px;
     }
@@ -37,10 +37,10 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
     align-self: start;
-    margin-bottom: 46px;
-    margin-left: -19px;
+    margin-bottom: 36px;
+    margin-left: 0;
   }
 }
 
@@ -67,7 +67,7 @@
     padding-left: 0;
     padding-right: 0;
     margin: 0;
-    margin-right: 5px;
+    margin-right: 0;
     margin-bottom: 10px;
   }
 
