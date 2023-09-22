@@ -1,15 +1,15 @@
 .slider {
   margin-bottom: 100px;
   margin-top: 48px;
-  // box-sizing: border-box;
-  // max-width: 1160px;
+  align-self: center;
   position: relative;
   overflow: visible;
-  // height: 100%;
+  height: 100%;
 
 
   @include vp-1365 {
     max-width: 860px;
+    height: 294px;
   }
 
   @include vp-1199 {
@@ -20,12 +20,11 @@
 
   @include vp-767 {
     min-width: 226px;
-    max-width: 268px;
+    width: 100%;
     margin-top: 42px;
     margin-bottom: 68px;
-    margin-left: 39px;
-    margin-right: 32px;
-;
+    margin-right: -279px;
+    margin-left: -280px;
   }
 }
 
@@ -33,8 +32,8 @@
   position: absolute;
   cursor: pointer;
   content: "";
-  width: 28px;
-  height: 28px;
+  width: 56px;
+  height: 56px;
   background-image: url("../../img/svg/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -43,6 +42,8 @@
   box-sizing: border-box;
 
   @include vp-767 {
+    width: 28px;
+    height: 28px;
     background-size: 34%;
   }
 }
@@ -52,8 +53,8 @@
   left: -77px;
   right: 0;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 56px;
+  height: 56px;
   background-color: #ffffff;
   z-index: 10;
   top: 144px;
@@ -73,16 +74,16 @@
   }
 
   @include vp-1199 {
-    left: -44px;
+    left: -80px;
     top: 142px;
     padding: 0;
-    width: 33px;
-    height: 33px;
   }
 
   @include vp-767 {
-    left: -51px;
-    top: 141px;
+    left: -16px;
+    top: 50%;
+    width: 28px;
+    height: 28px;
 
   }
 }
@@ -117,8 +118,8 @@
   }
 
   @include vp-767 {
-    top: 141px;
-    right: -35px;
+    top: 50%;
+    left: 92%;
     padding: 0;
     width: 33px;
     height: 33px;
@@ -129,8 +130,8 @@
   position: absolute;
   cursor: pointer;
   content: "";
-  width: 28px;
-  height: 28px;
+  width: 56px;
+  height: 56px;
   background-image: url("../../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -139,6 +140,8 @@
   box-sizing: border-box;
 
   @include vp-767 {
+    width: 28px;
+    height: 28px;
     background-size: 34%;
   }
 }

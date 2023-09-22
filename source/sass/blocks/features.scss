@@ -5,19 +5,19 @@
 }
 
 .features__wrapper {
-  padding-top: 103px;
+  padding-top: 112px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include vp-1199 {
-    padding-top: 90px;
+    padding-top: 101px;
     width: 768px;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    padding-top: 62px;
+    padding-top: 45px;
     width: 100%;
   }
 }
@@ -103,7 +103,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -45px;
+    bottom: -60px;
     left: -14px;
     width: 340px;
     height: 2px;
@@ -127,8 +127,8 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -45px;
-    left: -14px;
+    bottom: -60px;
+    left: 2px;
     width: 340px;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);

@@ -5,18 +5,15 @@
   // grid-column: 1 / 2;
   display: flex;
   box-sizing: border-box;
-  width: 50%;
+  width: 56%;
   align-self: start;
 
   @include vp-1199 {
-    // max-width: 768px;
-    // width: 678px;
-    width: 100%;
+    width: 95%;
+    max-width: 1120px;
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 0;
-
-
   }
 
   @include vp-767 {
@@ -33,7 +30,7 @@
 .promotion-main__text-block {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 51%;
   padding-top: 33px;
   padding-left: 45px;
   box-sizing: border-box;
@@ -112,7 +109,7 @@
   margin-bottom: 154px;
 
   @include vp-1199 {
-    margin-bottom: 183px;
+    margin-bottom: 79%;
   }
 
   @include vp-767 {
@@ -157,6 +154,7 @@
   @include vp-1199 {
     margin-top: 1px;
     line-height: 20px;
+    margin-bottom: 42px;
   }
 
   @include vp-767 {

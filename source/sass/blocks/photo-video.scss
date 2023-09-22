@@ -4,14 +4,15 @@
   box-sizing: border-box;
 
   @include vp-1199 {
-    margin-bottom: 188px;
+    margin-bottom: 183px;
     padding-left: 45px;
+    width: 100%;
   }
 
   @include vp-767 {
     padding-left: 0;
     margin: 0 auto;
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -22,6 +23,10 @@
 
 .photo-video__photo-container {
   background-color: #b0b0b0;
+
+  @include vp-1199 {
+    width: 93%;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -37,8 +42,6 @@
   height: 100%;
 
   @include vp-767 {
-    width: 100%;
-    height: 100%;
     object-fit: none;
     object-position: center;
   }
@@ -46,24 +49,22 @@
 
 .photo-video__video-container {
   position: absolute;
-  top: 283px;
-  left: -9%;
+  top: 290px;
+  left: -10%;
   width: 364px;
   height: 428px;
 
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    left: 250px;
-    top: 259px;
+    left: calc(50% - 136px);
+    top: 76%;
   }
 
   @include vp-767 {
     position: static;
     width: 100%;
     height: auto;
-    // min-height: 167px;
-    // max-height: 428px;
   }
 }
 

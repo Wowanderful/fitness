@@ -18,7 +18,8 @@
     width: 566px;
     background-position: 15% 38%;
     padding-left: 175px;
-    height: 242px;
+    min-height: 242px;
+    height: auto;
     margin-left: 0;
   }
 
@@ -58,7 +59,7 @@
   width: 330px;
 
   @include vp-1199 {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {

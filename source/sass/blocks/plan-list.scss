@@ -5,19 +5,19 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-left: 0;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
   justify-content: center;
 
   @include vp-1199 {
     flex-direction: column;
-    margin: 0 auto;
-    width: 442px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
   }
 
   @include vp-767 {
-    width: 100%;
     margin: 0;
-    align-items: center;
+
   }
 }
 

@@ -19,8 +19,10 @@
   @include vp-767 {
 
     // min-width: 70%;
-
+    width: auto;
     max-width: 100%;
-    // margin-left: -4px;
+    overflow: hidden!important;
+    margin-right: 13%;
+    margin-left: 12%;
   }
 }

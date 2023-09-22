@@ -45,22 +45,38 @@
   @include vp-1199 {
     margin-bottom: 21px;
     width: 708px;
+    padding-left: 15px;
   }
 
   @include vp-767 {
     width: 320px;
     margin-left: 0;
     align-items: start;
-    padding-left: 15px;
     padding-right: 15px;
   }
 }
 
+.header__logo::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  display: none;
+}
+
 .header__logo {
   margin-right: 10px;
+  position: relative;
 
   &:hover {
     opacity: 0.8;
+    &::after {
+      display: block;
+      opacity: 0.8;
+    }
   }
 
   &:focus {
@@ -70,19 +86,30 @@
   &:active {
     opacity: 1;
     outline: none;
+    &::after {
+      display: block;
+      opacity: 1;
+    }
   }
 
   &:disabled {
     opacity: 0.3;
   }
 
-  @include vp-1199 {
-    margin-left: 14px;
-  }
-
   @include vp-767 {
     margin-left: 0;
   }
+}
+
+.header__phone::after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  display: none;
 }
 
 .header__phone {
@@ -95,11 +122,13 @@
   margin-right: 4px;
   display: block;
   margin-bottom: 15px;
+  position: relative;
 
   @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.48px;
     margin-right: 15px;
+    margin-bottom: 1px;
   }
 
   @include vp-767 {
@@ -114,6 +143,10 @@
 
   &:hover {
     opacity: 0.8;
+    &::after {
+      display: block;
+      opacity: 0.8;
+    }
   }
 
   &:focus {
@@ -123,6 +156,10 @@
   &:active {
     opacity: 1;
     outline: none;
+    &::after {
+      display: block;
+      opacity: 1;
+    }
   }
 
   &:disabled {
@@ -137,8 +174,8 @@
 }
 
 .header__image-container {
-  transform: translateY(-21px);
-  margin-bottom: 30px;
+  transform: translateY(-29px);
+  margin-bottom: 18px;
   background-color: #f10026;
 
   @include vp-1199 {

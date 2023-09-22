@@ -3,10 +3,10 @@
   flex-wrap: wrap;
   margin-right: 4px;
   width: 140px;
-  padding-left: 0;
+  padding-left: 30px;
 
   @include vp-1199 {
-    margin-right: 9px;
+    margin-right: 12px;
     width: 110px;
     padding-left: 0;
   }
