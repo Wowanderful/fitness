@@ -20,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 320px;
   }
 }
 
@@ -28,6 +27,11 @@
   display: flex;
   min-height: 500px;
   margin: 0 auto;
+
+  @include vp-1365 {
+    width: 80%;
+    min-height: 450px;
+  }
 
   @include vp-1199 {
     padding-left: 0;
@@ -43,10 +47,10 @@
     padding-left: 0;
     width: 100%;
     min-height: none;
+    max-height: none;
     flex-direction: column;
     align-items: center;
     height: auto;
-
   }
 }
 
@@ -59,8 +63,8 @@
   }
 
   @include vp-767 {
-    width: 290px;
-    margin: 0 auto;
+    width: 100%;
+
   }
 
 
@@ -69,5 +73,18 @@
 .commercial__photo img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: fill;;
+
+  @include vp-1365 {
+    width: 95%;
+    height: 95%;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+
 }

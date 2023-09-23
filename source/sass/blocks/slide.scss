@@ -15,7 +15,7 @@
   @include vp-767 {
     min-width: 226px;
     max-width: none;
-    width: 70%!important;
+    width: 100%!important;
     height: auto;
     min-height: 274px;
     margin-right: 30%;
@@ -25,7 +25,7 @@
 
 .slide__image-container {
   width: 100%;
-  min-height: 294px;
+  min-height: 274px;
   height: auto;
   position: relative;
   background-color: #b5c4ca;
@@ -36,7 +36,7 @@
 
   @include vp-767 {
     width: 100%;
-    height: auto;
+    height: 100%;
     min-height: 274px;
     margin-bottom: 0;
   }
@@ -45,7 +45,7 @@
 .slide__image-container img {
   position: absolute;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   height: 100%;
   top: 0;
   min-height: 294px;
@@ -64,6 +64,7 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
+
   }
 
 }
@@ -199,17 +200,28 @@
     top: 7px;
   }
 }
+.image--3 {
+
+    overflow: hidden;
+
+}
 
 .image--3 img {
-  width: 103%;
-  height: 356px;
+  width: 123%;
+  height: 364px;
   max-width: 156%;
+  -o-object-fit: fill;
   object-fit: fill;
-  top: -28px;
-  left: -10px;
+  top: -31px;
+  left: -34px;
 
   @include vp-1199 {
-  left: -27px;
-  height: 338px;
+    left: -30px;
+    height: 363px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    height: 323px;
   }
 }

@@ -6,6 +6,7 @@
   border: none;
   cursor: pointer;
   transition: opacity $trans-default;
+  outline: none;
 
   &:disabled {
     opacity: 0.5;
@@ -52,6 +53,10 @@
     background-image: url("../../img/svg/open-disabled.svg");
   }
 
+  @include vp-1365 {
+    right: 30px;
+  }
+
   @include vp-1199 {
     top: -3px;
     right: 23px;
@@ -78,6 +83,10 @@
   @include hover-focus {
     background-image: url("../../img/svg/close.svg");
     opacity: 1;
+  }
+
+  @include vp-1365 {
+    right: 30px;
   }
 
   @include vp-1199 {

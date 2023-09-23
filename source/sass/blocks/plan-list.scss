@@ -8,6 +8,10 @@
   margin-bottom: 70px;
   justify-content: center;
 
+  @include vp-1365 {
+    width: 1054px;
+  }
+
   @include vp-1199 {
     flex-direction: column;
     margin: 0;

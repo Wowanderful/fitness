@@ -33,7 +33,7 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -50,17 +50,17 @@
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.26px;
-    width: 71%;
   }
 
   @include vp-767 {
-    width: 290px;
+    width:100%;
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0.96px;
     margin-left: 0;
     padding-left: 0;
     align-self: center;
+    padding-left: 3%;
   }
 }
 
@@ -79,7 +79,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     align-items: center;
     padding-right: 10px;
@@ -92,20 +92,29 @@
   margin-right: 30px;
   width: 190px;
 
+  @include vp-1365 {
+    width: 170px;
+  }
+
   @include vp-1199 {
     margin-right: 77px;
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
+    padding-left: 3%;
   }
 }
 
 .free__tel-wrapper {
   margin-bottom: 30px;
   width: 190px;
+
+  @include vp-1365 {
+    width: 170px;
+  }
 
   @include vp-1199 {
     width: 30%;
@@ -115,7 +124,8 @@
   @include vp-767 {
     margin-right: 0;
     margin-bottom: 166px;
-    width: 290px;
+    width: 100%;
+    padding-left: 3%;
   }
 }
 
@@ -214,6 +224,10 @@
     opacity: 1;
     background-color: #ffffff;
     color: #102654;
+  }
+
+  @include vp-1365 {
+    width: 375px;
   }
 
   @include vp-1199 {

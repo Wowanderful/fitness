@@ -38,6 +38,10 @@
   margin-bottom: 3px;
   max-width: 1490px;
 
+  @include vp-1365 {
+    width: 1100px;
+  }
+
   @include vp-1199 {
     align-items: center;
     padding-top: 100px;

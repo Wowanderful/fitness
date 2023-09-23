@@ -38,6 +38,10 @@
   font-weight: 500;
   line-height: 28px;
 
+  @include vp-1365 {
+    width: 90%;
+  }
+
   @include vp-1199 {
     width: 85%;
   }

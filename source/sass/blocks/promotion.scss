@@ -10,9 +10,12 @@
   padding-top: 25px;
   padding-left: 30px;
   margin-bottom: 0;
+  height: 100%;
+
 
 
   @include vp-1199 {
+    justify-self: start;
     width: 47%;
     max-width: 560px;
     margin-bottom: 30px;
@@ -22,6 +25,7 @@
   }
 
   @include vp-767 {
+    max-width: none;
     width: 100%;
     padding-top: 36px;
     margin-bottom: 29px;

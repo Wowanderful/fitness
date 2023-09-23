@@ -6,6 +6,10 @@
   box-sizing: border-box;
   position: relative;
 
+  @include vp-1365 {
+    padding-left: 77px;
+  }
+
   @include vp-1199 {
     width: 768px;
     padding-top: 60px;
@@ -35,6 +39,10 @@
   grid-template-columns: 68% 50%;
   grid-template-rows: auto;
   margin-bottom: 20px;
+
+  @include vp-1365 {
+    grid-template-columns: 66% 50%;
+  }
 
   @include vp-1199 {
     display: flex;
@@ -95,6 +103,11 @@
     content: "";
     top: 0;
     left: 238px;
+
+    @include vp-1365 {
+      left: 228px;
+      height: 72%;
+    }
 
     @include vp-1199 {
       left: 266px;

@@ -5,6 +5,11 @@
   margin-right: 5%;
   padding-left: 57px;
 
+  @include vp-1365 {
+    padding-left: 0;
+    margin-right: 3%;
+  }
+
   @include vp-1199 {
     margin-right: 0;
     width: 100%;

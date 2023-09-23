@@ -7,7 +7,6 @@
 }
 
 .phone a {
-  display: block;
   margin-top: 3px;
   margin-bottom: 14px;
   color: #102654;
@@ -15,11 +14,11 @@
   letter-spacing: 0.3px;
 
   @include hover {
-    border-bottom: 2px #000000 solid;
+    border-bottom: 2px #102654 solid;
   }
 
   @include focus {
-    outline: 2px #000000 solid;
+    outline: 2px #102654 solid;
   }
 
   @include vp-1199 {
