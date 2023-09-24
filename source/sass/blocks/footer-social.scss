@@ -1,20 +1,19 @@
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 4px;
-  padding-left: 30px;
-  width: 140px;
+  padding-left: 88px;
+
 
   @include vp-1199 {
     margin-right: 12px;
-    width: 110px;
-    padding-left: 0;
+    padding-left: 15px;
   }
 
   @include vp-767 {
-    // transform: translateX(-10px) translateY(-40px);
-    margin-right: 0;
+    padding-left: 0;
+    margin-right: 10px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -24,6 +23,11 @@
 
   @include vp-1199 {
     margin-left: 10px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-right: 11px;
   }
 }
 

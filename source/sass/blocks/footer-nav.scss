@@ -2,30 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 30px;
+  padding-left: 159px;
 
 
   @include vp-1199 {
-    margin-left: 12px;
+    margin-left: 38px;
     justify-content: left;
     padding-left: 0;
+    margin-top: -3px;
   }
 
   @include vp-767 {
-    // justify-content: left;
-    // flex-wrap: wrap;
-    // margin-bottom: 0;
     margin-left: 0;
-    // padding-left: 0;
     display: grid;
     max-width: 280x;
     grid-template-columns: 140px 140px;
-
-    // grid-template-areas:  ". promotion"
-    //                       "service coaches"
-    //                       "member schedule";
     grid-auto-flow: dense;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-row-gap: 17px;
+    grid-column-gap: 19px;
+    margin-bottom: 30px;
   }
 }
 
@@ -33,16 +28,15 @@
   margin-right: 41px;
 
   @include vp-1199 {
-    margin-right: 30px;
-  }
-
-  @include vp-767 {
-    // width: 34%;
-    // margin-bottom: 16px;
-    // margin-right: 0;
+    margin-right: 31px;
   }
 }
 
+.footer-nav li:last-child{
+  @include vp-1199 {
+    margin-right: 0;
+  }
+}
 .footer-nav__element-1 {
   @include vp-767 {
     grid-row: 1 / 3;
@@ -55,25 +49,6 @@
     grid-row: 3 / 4;
   }
 }
-
-// .footer-nav__element-3 {
-//   @include vp-767 {
-//     grid-area: promotion;
-//   }
-// }
-
-// .footer-nav__element-4 {
-//   @include vp-767 {
-//     grid-area: coaches;
-//   }
-// }
-
-// .footer-nav__element-5 {
-//   @include vp-767 {
-// grid-area: schedule;
-//   }
-// }
-
 
 .footer-nav a {
   font-size: 14px;
