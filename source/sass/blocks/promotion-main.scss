@@ -8,10 +8,13 @@
 
   @include vp-1365 {
     width: 46%;
+    height: 464px;
+
   }
 
   @include vp-1199 {
     width: 95%;
+    height: auto;
     max-width: 1120px;
     justify-content: space-between;
     margin: 0 auto;
@@ -65,7 +68,13 @@
   height: auto;
   background-color: #ed0233;
 
+  @include vp-1365 {
+    height: 100%;
+  }
+
+
   @include vp-1199 {
+    height: auto;
     width: 68%;
     margin-left: auto;
   }
@@ -135,7 +144,7 @@
   // align-self: start;
   cursor: pointer;
   position: absolute;
-  bottom: 25px;
+  bottom: 37px;
 
   &:hover {
     opacity: 0.7;

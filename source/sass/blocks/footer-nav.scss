@@ -4,6 +4,9 @@
   margin-left: 30px;
   padding-left: 159px;
 
+  @include vp-1365 {
+    margin-left: 0;
+  }
 
   @include vp-1199 {
     margin-left: 38px;
